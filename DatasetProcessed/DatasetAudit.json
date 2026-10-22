@@ -1,0 +1,4697 @@
+{
+  "CheckedDate": "2026-10-19",
+  "Scope": "Local readability, assets, filename-based candidate pairing, and consistency with existing processed data; not verified against an official release manifest.",
+  "Folders": {
+    "base_img": {
+      "Files": 110,
+      "Formats": {
+        ".png": 58,
+        ".JPG": 52
+      }
+    },
+    "base_mask": {
+      "Files": 363,
+      "Formats": {
+        ".png": 234,
+        ".npy": 129
+      }
+    },
+    "base_mask_extra": {
+      "Files": 61,
+      "Formats": {
+        ".png": 38,
+        ".npy": 23
+      }
+    },
+    "base_shape": {
+      "Files": 360,
+      "Formats": {
+        ".mtl": 121,
+        ".obj": 116,
+        ".png": 123
+      }
+    },
+    "base_shape_extra": {
+      "Files": 37,
+      "Formats": {
+        ".png": 15,
+        ".mtl": 11,
+        ".obj": 11
+      }
+    },
+    "deform_raw": {
+      "Files": 56,
+      "Formats": {
+        ".ply": 43,
+        ".obj": 13
+      }
+    },
+    "deform_raw_denoise": {
+      "Files": 76,
+      "Formats": {
+        ".ply": 76
+      }
+    },
+    "deform_raw_new": {
+      "Files": 0,
+      "Formats": {}
+    },
+    "deform_train": {
+      "Files": 122,
+      "Formats": {
+        ".ply": 122
+      }
+    },
+    "deform_train_new": {
+      "Files": 119,
+      "Formats": {
+        ".ply": 104,
+        ".obj": 15
+      }
+    },
+    "maple_extra": {
+      "Files": 22,
+      "Formats": {
+        ".png": 8,
+        ".obj": 7,
+        ".mtl": 5,
+        ".JPG": 2
+      }
+    }
+  },
+  "ZeroByteFiles": [],
+  "ReadErrors": [],
+  "Geometry": [
+    {
+      "Path": "Dataset/base_shape/1-1.obj",
+      "Vertices": 19282,
+      "Faces": 38317,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/1-4.obj",
+      "Vertices": 26653,
+      "Faces": 53050,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/1-6.obj",
+      "Vertices": 19685,
+      "Faces": 39140,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/17.obj",
+      "Vertices": 20681,
+      "Faces": 41126,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/18.obj",
+      "Vertices": 14644,
+      "Faces": 29101,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/2-2.obj",
+      "Vertices": 12322,
+      "Faces": 24381,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/2-5.obj",
+      "Vertices": 9569,
+      "Faces": 18904,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/2.obj",
+      "Vertices": 14266,
+      "Faces": 28330,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/26.obj",
+      "Vertices": 19032,
+      "Faces": 37812,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/29.obj",
+      "Vertices": 11284,
+      "Faces": 22339,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/3-1.obj",
+      "Vertices": 11616,
+      "Faces": 23019,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/3-3.obj",
+      "Vertices": 12500,
+      "Faces": 24767,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/3-4.obj",
+      "Vertices": 20681,
+      "Faces": 41126,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/3.obj",
+      "Vertices": 13773,
+      "Faces": 27332,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/30.obj",
+      "Vertices": 17661,
+      "Faces": 35090,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/31.obj",
+      "Vertices": 13441,
+      "Faces": 26670,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/34.obj",
+      "Vertices": 12515,
+      "Faces": 24779,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/36.obj",
+      "Vertices": 12546,
+      "Faces": 24807,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/37.obj",
+      "Vertices": 11188,
+      "Faces": 22155,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/4.obj",
+      "Vertices": 7928,
+      "Faces": 15614,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/40.obj",
+      "Vertices": 12936,
+      "Faces": 25684,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/41.obj",
+      "Vertices": 15347,
+      "Faces": 30484,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/42.obj",
+      "Vertices": 13453,
+      "Faces": 26672,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/44.obj",
+      "Vertices": 15171,
+      "Faces": 30055,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/45.obj",
+      "Vertices": 14905,
+      "Faces": 29594,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/49.obj",
+      "Vertices": 16434,
+      "Faces": 32648,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/5-1.obj",
+      "Vertices": 14668,
+      "Faces": 29134,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/50.obj",
+      "Vertices": 17565,
+      "Faces": 34858,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/56.obj",
+      "Vertices": 12610,
+      "Faces": 24964,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/58.obj",
+      "Vertices": 16363,
+      "Faces": 32507,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/6.obj",
+      "Vertices": 20176,
+      "Faces": 40095,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/60.obj",
+      "Vertices": 13753,
+      "Faces": 27284,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/61.obj",
+      "Vertices": 13753,
+      "Faces": 27284,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/64.obj",
+      "Vertices": 12500,
+      "Faces": 24767,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/66.obj",
+      "Vertices": 24553,
+      "Faces": 48833,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/7-1.obj",
+      "Vertices": 13441,
+      "Faces": 26670,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/7-3.obj",
+      "Vertices": 15171,
+      "Faces": 30055,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/70.obj",
+      "Vertices": 29010,
+      "Faces": 57756,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/71.obj",
+      "Vertices": 13336,
+      "Faces": 26441,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/74.obj",
+      "Vertices": 24519,
+      "Faces": 48748,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/77.obj",
+      "Vertices": 9551,
+      "Faces": 18875,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/78.obj",
+      "Vertices": 12907,
+      "Faces": 25637,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/79.obj",
+      "Vertices": 37555,
+      "Faces": 74772,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/8.obj",
+      "Vertices": 19614,
+      "Faces": 38964,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/82.obj",
+      "Vertices": 21637,
+      "Faces": 43016,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/83.obj",
+      "Vertices": 12159,
+      "Faces": 24063,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/84.obj",
+      "Vertices": 10313,
+      "Faces": 20359,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/88.obj",
+      "Vertices": 10784,
+      "Faces": 21303,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/89.obj",
+      "Vertices": 9554,
+      "Faces": 18852,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/9.obj",
+      "Vertices": 19282,
+      "Faces": 38317,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/92.obj",
+      "Vertices": 12322,
+      "Faces": 24381,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/93.obj",
+      "Vertices": 14902,
+      "Faces": 29530,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/94.obj",
+      "Vertices": 17376,
+      "Faces": 34504,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_0.obj",
+      "Vertices": 21284,
+      "Faces": 42315,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_1.obj",
+      "Vertices": 19585,
+      "Faces": 38923,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_11.obj",
+      "Vertices": 18128,
+      "Faces": 36040,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_17.obj",
+      "Vertices": 26929,
+      "Faces": 53534,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_18.obj",
+      "Vertices": 17380,
+      "Faces": 34541,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_2.obj",
+      "Vertices": 17861,
+      "Faces": 35459,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_21.obj",
+      "Vertices": 16136,
+      "Faces": 32038,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_22.obj",
+      "Vertices": 27104,
+      "Faces": 53929,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_23.obj",
+      "Vertices": 14952,
+      "Faces": 29703,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_24.obj",
+      "Vertices": 15899,
+      "Faces": 31568,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_27.obj",
+      "Vertices": 11541,
+      "Faces": 22770,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_28.obj",
+      "Vertices": 18323,
+      "Faces": 36402,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_29.obj",
+      "Vertices": 14972,
+      "Faces": 29721,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_35.obj",
+      "Vertices": 15177,
+      "Faces": 30102,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_37.obj",
+      "Vertices": 17669,
+      "Faces": 35056,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_40.obj",
+      "Vertices": 16133,
+      "Faces": 31939,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_41.obj",
+      "Vertices": 6006,
+      "Faces": 11705,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_46.obj",
+      "Vertices": 16711,
+      "Faces": 33175,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_47.obj",
+      "Vertices": 16494,
+      "Faces": 32726,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_6.obj",
+      "Vertices": 34975,
+      "Faces": 69635,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple10_d1.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple10_d3.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple10_d4.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple10_d5.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple10_d7.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple10_d8.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple1_d3.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple1_d4.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple1_d5.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple1_d8.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple2_d1.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple2_d2.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple2_d4.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple2_d6.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple2_d7.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple3_d4.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple3_d5.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple3_d7.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple4_d3.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple4_d4.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple4_d6.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple4_d7.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple5_d2.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple5_d3.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple5_d4.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple5_d5.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple5_d7.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple5_d8.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple6_d4.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple7_d5.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple7_d6.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple7_d7.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple8_d2.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple8_d3.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple8_d4.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple8_d5.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple8_d6.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple8_d7.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple9_d2.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple9_d3.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple9_d4.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple9_d7.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape/maple9_d8.obj",
+      "Vertices": 25327,
+      "Faces": 50109,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape_extra/0003_0030_rgb.obj",
+      "Vertices": 16213,
+      "Faces": 32166,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape_extra/0003_0140_rgb.obj",
+      "Vertices": 22647,
+      "Faces": 45038,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape_extra/0006_0040_rgb.obj",
+      "Vertices": 32493,
+      "Faces": 64646,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape_extra/0006_0108_rgb.obj",
+      "Vertices": 35737,
+      "Faces": 71178,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape_extra/0008_0025_rgb.obj",
+      "Vertices": 18280,
+      "Faces": 36293,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape_extra/0008_0116_rgb.obj",
+      "Vertices": 26365,
+      "Faces": 52405,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape_extra/0011_0026_rgb.obj",
+      "Vertices": 35031,
+      "Faces": 69562,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape_extra/0011_0082_rgb.obj",
+      "Vertices": 29385,
+      "Faces": 58224,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape_extra/0016_0024_rgb.obj",
+      "Vertices": 24687,
+      "Faces": 49115,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape_extra/0016_0074_rgb.obj",
+      "Vertices": 16938,
+      "Faces": 33654,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/base_shape_extra/0016_0090_rgb.obj",
+      "Vertices": 14727,
+      "Faces": 29232,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/1-1.obj",
+      "Vertices": 4592,
+      "Faces": 8591,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/1-2.obj",
+      "Vertices": 5476,
+      "Faces": 10130,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/1-4.obj",
+      "Vertices": 5944,
+      "Faces": 11005,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/1-7.obj",
+      "Vertices": 8822,
+      "Faces": 16908,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/1.ply",
+      "Vertices": 2417773,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/14.ply",
+      "Vertices": 1264599,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/2-3.obj",
+      "Vertices": 3918,
+      "Faces": 7163,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/2-5.obj",
+      "Vertices": 7658,
+      "Faces": 14380,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/2-6.obj",
+      "Vertices": 5503,
+      "Faces": 10158,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/20.ply",
+      "Vertices": 965504,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/22.ply",
+      "Vertices": 1164957,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/27.ply",
+      "Vertices": 2266928,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/30.ply",
+      "Vertices": 794685,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/31.ply",
+      "Vertices": 1248447,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/36.ply",
+      "Vertices": 823070,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/4.ply",
+      "Vertices": 552934,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/40.ply",
+      "Vertices": 1514392,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/42.ply",
+      "Vertices": 1287577,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/44.ply",
+      "Vertices": 3177212,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/47.ply",
+      "Vertices": 589017,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/49.ply",
+      "Vertices": 1726459,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/5-1.obj",
+      "Vertices": 10629,
+      "Faces": 20310,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/50.ply",
+      "Vertices": 774108,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/52.ply",
+      "Vertices": 1111482,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/56.ply",
+      "Vertices": 1162123,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/57.ply",
+      "Vertices": 1480612,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/58.ply",
+      "Vertices": 766747,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/6-2.obj",
+      "Vertices": 3103,
+      "Faces": 5700,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/6-3.obj",
+      "Vertices": 8514,
+      "Faces": 15846,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/6.ply",
+      "Vertices": 1741400,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/64.ply",
+      "Vertices": 1136231,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/65.ply",
+      "Vertices": 2459912,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/66.ply",
+      "Vertices": 902824,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/68.ply",
+      "Vertices": 667334,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/69.ply",
+      "Vertices": 1325785,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/7-1.obj",
+      "Vertices": 3633,
+      "Faces": 6770,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/7-2.obj",
+      "Vertices": 8911,
+      "Faces": 16846,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/7-3.obj",
+      "Vertices": 12439,
+      "Faces": 23795,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/7.ply",
+      "Vertices": 2499425,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/70.ply",
+      "Vertices": 2322234,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/71.ply",
+      "Vertices": 1730306,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/74.ply",
+      "Vertices": 736582,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/75.ply",
+      "Vertices": 2598504,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/76.ply",
+      "Vertices": 641377,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/77.ply",
+      "Vertices": 711814,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/79.ply",
+      "Vertices": 1532732,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/82.ply",
+      "Vertices": 2006468,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/84.ply",
+      "Vertices": 1180462,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/85.ply",
+      "Vertices": 1180651,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/88.ply",
+      "Vertices": 409478,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/89.ply",
+      "Vertices": 623267,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/90.ply",
+      "Vertices": 1116783,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/91.ply",
+      "Vertices": 1147039,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/93.ply",
+      "Vertices": 990070,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/94.ply",
+      "Vertices": 965420,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw/95.ply",
+      "Vertices": 599813,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/11.ply",
+      "Vertices": 17905,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/14.ply",
+      "Vertices": 37883,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/18.ply",
+      "Vertices": 212393,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/22.ply",
+      "Vertices": 30046,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/27.ply",
+      "Vertices": 297581,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/28.ply",
+      "Vertices": 14636,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/3.ply",
+      "Vertices": 33828,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/30.ply",
+      "Vertices": 92558,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/31.ply",
+      "Vertices": 40775,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/32.ply",
+      "Vertices": 14391,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/36.ply",
+      "Vertices": 23625,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/40.ply",
+      "Vertices": 42263,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/41.ply",
+      "Vertices": 31535,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/43.ply",
+      "Vertices": 33193,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/44.ply",
+      "Vertices": 108842,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/49.ply",
+      "Vertices": 144325,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/54.ply",
+      "Vertices": 42963,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/56.ply",
+      "Vertices": 29428,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/58.ply",
+      "Vertices": 64282,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/59.ply",
+      "Vertices": 17603,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/6.ply",
+      "Vertices": 30983,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/61.ply",
+      "Vertices": 39590,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/63.ply",
+      "Vertices": 239778,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/68.ply",
+      "Vertices": 20376,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/69.ply",
+      "Vertices": 63936,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/7.ply",
+      "Vertices": 55921,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/70.ply",
+      "Vertices": 81665,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/75.ply",
+      "Vertices": 338878,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/79.ply",
+      "Vertices": 43280,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/8.ply",
+      "Vertices": 34261,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/81.ply",
+      "Vertices": 28227,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/82.ply",
+      "Vertices": 212450,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/84.ply",
+      "Vertices": 31290,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/86.ply",
+      "Vertices": 188996,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/89.ply",
+      "Vertices": 23685,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple10_d1.ply",
+      "Vertices": 2972,
+      "Faces": 5450,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple10_d3.ply",
+      "Vertices": 2999,
+      "Faces": 5539,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple10_d4.ply",
+      "Vertices": 3000,
+      "Faces": 5529,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple10_d5.ply",
+      "Vertices": 2999,
+      "Faces": 5531,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple10_d7.ply",
+      "Vertices": 2999,
+      "Faces": 5515,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple10_d8.ply",
+      "Vertices": 3000,
+      "Faces": 5528,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple1_d1.ply",
+      "Vertices": 2999,
+      "Faces": 5512,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple1_d2.ply",
+      "Vertices": 2983,
+      "Faces": 5412,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple1_d6.ply",
+      "Vertices": 2943,
+      "Faces": 5456,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple1_d7.ply",
+      "Vertices": 2998,
+      "Faces": 5531,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple1_d8.ply",
+      "Vertices": 2859,
+      "Faces": 5152,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple2_d1.ply",
+      "Vertices": 2909,
+      "Faces": 5250,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple2_d2.ply",
+      "Vertices": 2937,
+      "Faces": 5257,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple2_d3.ply",
+      "Vertices": 2998,
+      "Faces": 5457,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple2_d5.ply",
+      "Vertices": 2724,
+      "Faces": 4819,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple2_d6.ply",
+      "Vertices": 2872,
+      "Faces": 5130,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple2_d7.ply",
+      "Vertices": 2906,
+      "Faces": 5306,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple2_d8.ply",
+      "Vertices": 2904,
+      "Faces": 5192,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple3_d5.ply",
+      "Vertices": 2886,
+      "Faces": 5266,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple3_d7.ply",
+      "Vertices": 2781,
+      "Faces": 4995,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple4_d2.ply",
+      "Vertices": 2992,
+      "Faces": 5468,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple4_d5.ply",
+      "Vertices": 2927,
+      "Faces": 5339,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple5_d2.ply",
+      "Vertices": 2991,
+      "Faces": 5452,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple5_d5.ply",
+      "Vertices": 2991,
+      "Faces": 5433,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple5_d6.ply",
+      "Vertices": 2594,
+      "Faces": 4405,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple5_d7.ply",
+      "Vertices": 2828,
+      "Faces": 5056,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple5_d8.ply",
+      "Vertices": 2868,
+      "Faces": 5036,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple6_d1.ply",
+      "Vertices": 2994,
+      "Faces": 5394,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple6_d6.ply",
+      "Vertices": 2641,
+      "Faces": 4482,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple6_d8.ply",
+      "Vertices": 2745,
+      "Faces": 4730,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple7_d1.ply",
+      "Vertices": 2994,
+      "Faces": 5421,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple7_d3.ply",
+      "Vertices": 2998,
+      "Faces": 5439,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple7_d6.ply",
+      "Vertices": 2996,
+      "Faces": 5497,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple7_d8.ply",
+      "Vertices": 2793,
+      "Faces": 4921,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple8_d2.ply",
+      "Vertices": 2992,
+      "Faces": 5384,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple8_d3.ply",
+      "Vertices": 3000,
+      "Faces": 5415,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple8_d6.ply",
+      "Vertices": 2800,
+      "Faces": 4921,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple8_d7.ply",
+      "Vertices": 3000,
+      "Faces": 5456,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple9_d1.ply",
+      "Vertices": 2996,
+      "Faces": 5525,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple9_d4.ply",
+      "Vertices": 2995,
+      "Faces": 5562,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_raw_denoise/maple9_d6.ply",
+      "Vertices": 2969,
+      "Faces": 5357,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/12.ply",
+      "Vertices": 19685,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/12_deform.ply",
+      "Vertices": 27377,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/14.ply",
+      "Vertices": 9569,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/14_deform.ply",
+      "Vertices": 37883,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/1_deform.ply",
+      "Vertices": 94040,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/20.ply",
+      "Vertices": 36182,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/20_deform.ply",
+      "Vertices": 40314,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/21_deform.ply",
+      "Vertices": 22433,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/22.ply",
+      "Vertices": 16604,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/22_deform.ply",
+      "Vertices": 30046,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/24_deform.ply",
+      "Vertices": 126549,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/26.ply",
+      "Vertices": 19032,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/27.ply",
+      "Vertices": 17263,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/27_deform.ply",
+      "Vertices": 297581,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/28.ply",
+      "Vertices": 13043,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/28_deform.ply",
+      "Vertices": 14636,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/3.ply",
+      "Vertices": 13773,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/31_deform.ply",
+      "Vertices": 40775,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/34.ply",
+      "Vertices": 12515,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/34_deform.ply",
+      "Vertices": 16446,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/36.ply",
+      "Vertices": 12546,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/36_deform.ply",
+      "Vertices": 23625,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/37.ply",
+      "Vertices": 11188,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/39.ply",
+      "Vertices": 13950,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/3_deform.ply",
+      "Vertices": 33828,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/40_deform.ply",
+      "Vertices": 42263,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/41.ply",
+      "Vertices": 15519,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/45.ply",
+      "Vertices": 14905,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/47.ply",
+      "Vertices": 10836,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/47_deform.ply",
+      "Vertices": 82725,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/49.ply",
+      "Vertices": 16434,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/49_deform.ply",
+      "Vertices": 144325,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/4_deform.ply",
+      "Vertices": 14992,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/50.ply",
+      "Vertices": 17565,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/50_deform.ply",
+      "Vertices": 16677,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/51.ply",
+      "Vertices": 11616,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/51_deform.ply",
+      "Vertices": 51315,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/54.ply",
+      "Vertices": 14024,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/54_deform.ply",
+      "Vertices": 42963,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/55.ply",
+      "Vertices": 11616,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/56_deform.ply",
+      "Vertices": 29428,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/57.ply",
+      "Vertices": 15333,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/57_deform.ply",
+      "Vertices": 150980,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/6.ply",
+      "Vertices": 20176,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/60.ply",
+      "Vertices": 13753,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/61.ply",
+      "Vertices": 13753,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/61_deform.ply",
+      "Vertices": 39590,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/64.ply",
+      "Vertices": 12500,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/64_deform.ply",
+      "Vertices": 150183,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/65.ply",
+      "Vertices": 15171,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/65_deform.ply",
+      "Vertices": 59215,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/66.ply",
+      "Vertices": 24553,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/66_deform.ply",
+      "Vertices": 23789,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/67_deform.ply",
+      "Vertices": 37421,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/68_deform.ply",
+      "Vertices": 20376,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/6_deform.ply",
+      "Vertices": 30983,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/7.ply",
+      "Vertices": 26653,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/73_deform.ply",
+      "Vertices": 135907,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/74_deform.ply",
+      "Vertices": 31111,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/75.ply",
+      "Vertices": 24553,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/78_deform.ply",
+      "Vertices": 18458,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/79.ply",
+      "Vertices": 37555,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/79_deform.ply",
+      "Vertices": 43280,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/8.ply",
+      "Vertices": 19614,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/81.ply",
+      "Vertices": 28234,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/81_deform.ply",
+      "Vertices": 28227,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/83.ply",
+      "Vertices": 12159,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/84.ply",
+      "Vertices": 10313,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/86_deform.ply",
+      "Vertices": 188996,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/88.ply",
+      "Vertices": 10784,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/88_deform.ply",
+      "Vertices": 9979,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/89.ply",
+      "Vertices": 9554,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/8_deform.ply",
+      "Vertices": 34261,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/9.ply",
+      "Vertices": 19282,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/90_deform.ply",
+      "Vertices": 32332,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/91_deform.ply",
+      "Vertices": 45239,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/92.ply",
+      "Vertices": 12322,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/93.ply",
+      "Vertices": 14902,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/93_deform.ply",
+      "Vertices": 27409,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/94.ply",
+      "Vertices": 17376,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/94_deform.ply",
+      "Vertices": 26367,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/95.ply",
+      "Vertices": 29171,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/95_deform.ply",
+      "Vertices": 16041,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_0_base.ply",
+      "Vertices": 85107,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_11_deform.ply",
+      "Vertices": 4041,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_12_deform.ply",
+      "Vertices": 19734,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_15_base.ply",
+      "Vertices": 70393,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_15_deform.ply",
+      "Vertices": 16944,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_16_deform.ply",
+      "Vertices": 17097,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_17_base.ply",
+      "Vertices": 107098,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_17_deform.ply",
+      "Vertices": 5514,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_18_base.ply",
+      "Vertices": 69493,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_19_deform.ply",
+      "Vertices": 17903,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_1_base.ply",
+      "Vertices": 78320,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_20_base.ply",
+      "Vertices": 70122,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_22_base.ply",
+      "Vertices": 108201,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_22_deform.ply",
+      "Vertices": 6701,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_23_deform.ply",
+      "Vertices": 13081,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_25_base.ply",
+      "Vertices": 57667,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_27_base.ply",
+      "Vertices": 45733,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_28_base.ply",
+      "Vertices": 73120,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_29_base.ply",
+      "Vertices": 59906,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_2_base.ply",
+      "Vertices": 71452,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_32_base.ply",
+      "Vertices": 75000,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_32_deform.ply",
+      "Vertices": 16838,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_34_deform.ply",
+      "Vertices": 32431,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_35_deform.ply",
+      "Vertices": 6873,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_36_deform.ply",
+      "Vertices": 38116,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_37_base.ply",
+      "Vertices": 70320,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_38_base.ply",
+      "Vertices": 73589,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_3_base.ply",
+      "Vertices": 79422,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_3_deform.ply",
+      "Vertices": 12358,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_41_deform.ply",
+      "Vertices": 6438,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_42_base.ply",
+      "Vertices": 40783,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_42_deform.ply",
+      "Vertices": 6810,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_43_base.ply",
+      "Vertices": 51924,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_43_deform.ply",
+      "Vertices": 9872,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_44_base.ply",
+      "Vertices": 88986,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_44_deform.ply",
+      "Vertices": 14430,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_47_deform.ply",
+      "Vertices": 9195,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_6_base.ply",
+      "Vertices": 70788,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train/leaf_7_base.ply",
+      "Vertices": 87478,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/1-3.obj",
+      "Vertices": 11007,
+      "Faces": 20836,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/1-7.obj",
+      "Vertices": 8822,
+      "Faces": 16908,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/11_deform.ply",
+      "Vertices": 17905,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/12_deform.ply",
+      "Vertices": 27377,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/14_deform.ply",
+      "Vertices": 37883,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/1_deform.ply",
+      "Vertices": 94040,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/2-1.obj",
+      "Vertices": 5437,
+      "Faces": 10214,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/2-2.obj",
+      "Vertices": 7418,
+      "Faces": 13675,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/2-3.obj",
+      "Vertices": 3918,
+      "Faces": 7163,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/21_deform.ply",
+      "Vertices": 22433,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/22_deform.ply",
+      "Vertices": 30046,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/23_deform.ply",
+      "Vertices": 40729,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/27_deform.ply",
+      "Vertices": 297581,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/28_deform.ply",
+      "Vertices": 14636,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/29_deform.ply",
+      "Vertices": 33614,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/2_deform.ply",
+      "Vertices": 222290,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/3-3.obj",
+      "Vertices": 5272,
+      "Faces": 9810,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/3-4.obj",
+      "Vertices": 5252,
+      "Faces": 9897,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/31_deform.ply",
+      "Vertices": 40775,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/34_deform.ply",
+      "Vertices": 16446,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/35_deform.ply",
+      "Vertices": 216301,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/36_deform.ply",
+      "Vertices": 23625,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/37_deform.ply",
+      "Vertices": 30411,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/39_deform.ply",
+      "Vertices": 39843,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/4-1.obj",
+      "Vertices": 6907,
+      "Faces": 13167,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/40_deform.ply",
+      "Vertices": 42263,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/42_deform.ply",
+      "Vertices": 37762,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/47_deform.ply",
+      "Vertices": 82725,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/49_deform.ply",
+      "Vertices": 144325,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/5-3.obj",
+      "Vertices": 7795,
+      "Faces": 14510,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/50_deform.ply",
+      "Vertices": 16677,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/51_deform.ply",
+      "Vertices": 51315,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/52_deform.ply",
+      "Vertices": 130225,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/54_deform.ply",
+      "Vertices": 42963,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/55_deform.ply",
+      "Vertices": 22317,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/56_deform.ply",
+      "Vertices": 29428,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/57_deform.ply",
+      "Vertices": 150980,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/6-2.obj",
+      "Vertices": 3103,
+      "Faces": 5700,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/6-3.obj",
+      "Vertices": 8514,
+      "Faces": 15846,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/60_deform.ply",
+      "Vertices": 30560,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/62_deform.ply",
+      "Vertices": 52542,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/63_deform.ply",
+      "Vertices": 239778,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/69_deform.ply",
+      "Vertices": 63936,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/7-1.obj",
+      "Vertices": 3633,
+      "Faces": 6770,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/7-4.obj",
+      "Vertices": 3675,
+      "Faces": 6932,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/7-5.obj",
+      "Vertices": 4819,
+      "Faces": 9097,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/7-6.obj",
+      "Vertices": 3183,
+      "Faces": 5925,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/70_deform.ply",
+      "Vertices": 81665,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/74_deform.ply",
+      "Vertices": 31111,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/75_deform.ply",
+      "Vertices": 338878,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/76_deform.ply",
+      "Vertices": 13253,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/77_deform.ply",
+      "Vertices": 7952,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/78_deform.ply",
+      "Vertices": 18458,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/79_deform.ply",
+      "Vertices": 43280,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/7_deform.ply",
+      "Vertices": 55921,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/81_deform.ply",
+      "Vertices": 28227,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/84_deform.ply",
+      "Vertices": 31290,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/85_deform.ply",
+      "Vertices": 37119,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/88_deform.ply",
+      "Vertices": 9979,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/89_deform.ply",
+      "Vertices": 23685,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/95_deform.ply",
+      "Vertices": 16041,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/leaf_0_deform.ply",
+      "Vertices": 26781,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/leaf_12_deform.ply",
+      "Vertices": 19734,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/leaf_15_deform.ply",
+      "Vertices": 16944,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/leaf_16_deform.ply",
+      "Vertices": 17097,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/leaf_17_deform.ply",
+      "Vertices": 5514,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/leaf_18_deform.ply",
+      "Vertices": 5683,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/leaf_19_deform.ply",
+      "Vertices": 17903,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/leaf_22_deform.ply",
+      "Vertices": 6701,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/leaf_23_deform.ply",
+      "Vertices": 13081,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/leaf_24_deform.ply",
+      "Vertices": 10622,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/leaf_26_deform.ply",
+      "Vertices": 8946,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/leaf_27_deform.ply",
+      "Vertices": 7619,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/leaf_28_deform.ply",
+      "Vertices": 21299,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/leaf_29_deform.ply",
+      "Vertices": 28267,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/leaf_2_deform.ply",
+      "Vertices": 23392,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/leaf_34_deform.ply",
+      "Vertices": 32431,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/leaf_37_deform.ply",
+      "Vertices": 7252,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/leaf_42_deform.ply",
+      "Vertices": 6810,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/leaf_44_deform.ply",
+      "Vertices": 14430,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/leaf_5_deform.ply",
+      "Vertices": 14491,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/leaf_6_deform.ply",
+      "Vertices": 22680,
+      "Faces": 0,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple10_d1.ply",
+      "Vertices": 2972,
+      "Faces": 5450,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple10_d2.ply",
+      "Vertices": 2997,
+      "Faces": 5532,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple10_d4.ply",
+      "Vertices": 3000,
+      "Faces": 5529,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple10_d5.ply",
+      "Vertices": 2999,
+      "Faces": 5531,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple10_d6.ply",
+      "Vertices": 3000,
+      "Faces": 5534,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple10_d7.ply",
+      "Vertices": 2999,
+      "Faces": 5515,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple1_d1.ply",
+      "Vertices": 2999,
+      "Faces": 5512,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple1_d8.ply",
+      "Vertices": 2859,
+      "Faces": 5152,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple2_d2.ply",
+      "Vertices": 2937,
+      "Faces": 5257,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple3_d1.ply",
+      "Vertices": 3000,
+      "Faces": 5533,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple3_d2.ply",
+      "Vertices": 2997,
+      "Faces": 5509,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple3_d4.ply",
+      "Vertices": 2999,
+      "Faces": 5567,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple3_d8.ply",
+      "Vertices": 2855,
+      "Faces": 5179,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple4_d3.ply",
+      "Vertices": 2997,
+      "Faces": 5502,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple4_d7.ply",
+      "Vertices": 2982,
+      "Faces": 5448,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple5_d1.ply",
+      "Vertices": 2994,
+      "Faces": 5467,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple5_d2.ply",
+      "Vertices": 2991,
+      "Faces": 5452,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple5_d3.ply",
+      "Vertices": 2995,
+      "Faces": 5492,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple5_d4.ply",
+      "Vertices": 2975,
+      "Faces": 5484,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple5_d5.ply",
+      "Vertices": 2991,
+      "Faces": 5433,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple6_d2.ply",
+      "Vertices": 2885,
+      "Faces": 5285,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple6_d3.ply",
+      "Vertices": 2988,
+      "Faces": 5498,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple6_d4.ply",
+      "Vertices": 2985,
+      "Faces": 5540,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple6_d5.ply",
+      "Vertices": 2813,
+      "Faces": 5303,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple6_d6.ply",
+      "Vertices": 2641,
+      "Faces": 4482,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple6_d8.ply",
+      "Vertices": 2745,
+      "Faces": 4730,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple7_d1.ply",
+      "Vertices": 2994,
+      "Faces": 5421,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple7_d2.ply",
+      "Vertices": 2996,
+      "Faces": 5505,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple7_d5.ply",
+      "Vertices": 2788,
+      "Faces": 5501,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple7_d6.ply",
+      "Vertices": 2996,
+      "Faces": 5497,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple8_d4.ply",
+      "Vertices": 2983,
+      "Faces": 5419,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple8_d6.ply",
+      "Vertices": 2800,
+      "Faces": 4921,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple8_d7.ply",
+      "Vertices": 3000,
+      "Faces": 5456,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple9_d1.ply",
+      "Vertices": 2996,
+      "Faces": 5525,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple9_d3.ply",
+      "Vertices": 2998,
+      "Faces": 5506,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple9_d4.ply",
+      "Vertices": 2995,
+      "Faces": 5562,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/deform_train_new/maple9_d5.ply",
+      "Vertices": 2898,
+      "Faces": 5485,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/maple_extra/base_shape/maple_1.obj",
+      "Vertices": 35253,
+      "Faces": 70148,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/maple_extra/base_shape/maple_3.obj",
+      "Vertices": 22066,
+      "Faces": 43724,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/maple_extra/base_shape/maple_4.obj",
+      "Vertices": 20045,
+      "Faces": 39678,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/maple_extra/deform_raw_denoise/maple_5.obj",
+      "Vertices": 18996,
+      "Faces": 36679,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/maple_extra/deform_raw_denoise/maple_6.obj",
+      "Vertices": 4505,
+      "Faces": 8370,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/maple_extra/deform_train/maple_5.obj",
+      "Vertices": 18996,
+      "Faces": 36679,
+      "NonfiniteVertices": 0
+    },
+    {
+      "Path": "Dataset/maple_extra/deform_train/maple_6.obj",
+      "Vertices": 4505,
+      "Faces": 8370,
+      "NonfiniteVertices": 0
+    }
+  ],
+  "MissingColorResources": [
+    {
+      "Path": "Dataset/base_shape/1-1.obj",
+      "Missing": [
+        "Dataset/base_shape/1-1.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/1-4.obj",
+      "Missing": [
+        "Dataset/base_shape/1-4.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/1-6.obj",
+      "Missing": [
+        "Dataset/base_shape/1-6.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/18.obj",
+      "Missing": [
+        "Dataset/base_shape/18.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/2-2.obj",
+      "Missing": [
+        "Dataset/base_shape/2-2.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/2-5.obj",
+      "Missing": [
+        "2-5.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/3-1.obj",
+      "Missing": [
+        "Dataset/base_shape/3-1.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/3-3.obj",
+      "Missing": [
+        "3-3.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/3.obj",
+      "Missing": [
+        "3.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/30.obj",
+      "Missing": [
+        "30.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/31.obj",
+      "Missing": [
+        "31.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/34.obj",
+      "Missing": [
+        "Dataset/base_shape/34.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/36.obj",
+      "Missing": [
+        "Dataset/base_shape/36.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/37.obj",
+      "Missing": [
+        "37.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/40.obj",
+      "Missing": [
+        "Dataset/base_shape/40.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/42.obj",
+      "Missing": [
+        "Dataset/base_shape/42.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/44.obj",
+      "Missing": [
+        "Dataset/base_shape/44.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/5-1.obj",
+      "Missing": [
+        "5-1.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/50.obj",
+      "Missing": [
+        "Dataset/base_shape/50.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/56.obj",
+      "Missing": [
+        "Dataset/base_shape/56.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/6.obj",
+      "Missing": [
+        "Dataset/base_shape/6.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/60.obj",
+      "Missing": [
+        "60.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/61.obj",
+      "Missing": [
+        "Dataset/base_shape/61.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/64.obj",
+      "Missing": [
+        "64.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/66.obj",
+      "Missing": [
+        "Dataset/base_shape/66.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/7-1.obj",
+      "Missing": [
+        "7-1.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/70.obj",
+      "Missing": [
+        "Dataset/base_shape/70.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/71.obj",
+      "Missing": [
+        "71.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/79.obj",
+      "Missing": [
+        "Dataset/base_shape/79.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/8.obj",
+      "Missing": [
+        "Dataset/base_shape/8.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/84.obj",
+      "Missing": [
+        "Dataset/base_shape/84.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/88.obj",
+      "Missing": [
+        "Dataset/base_shape/88.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/89.obj",
+      "Missing": [
+        "89.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/93.obj",
+      "Missing": [
+        "93.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_1.obj",
+      "Missing": [
+        "Dataset/base_shape/leaf_1.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_17.obj",
+      "Missing": [
+        "Dataset/base_shape/leaf_17.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_18.obj",
+      "Missing": [
+        "Dataset/base_shape/leaf_18.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_2.obj",
+      "Missing": [
+        "Dataset/base_shape/leaf_2.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_21.obj",
+      "Missing": [
+        "Dataset/base_shape/leaf_21.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_22.obj",
+      "Missing": [
+        "Dataset/base_shape/leaf_22.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_23.obj",
+      "Missing": [
+        "leaf_23.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_24.obj",
+      "Missing": [
+        "leaf_24.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_27.obj",
+      "Missing": [
+        "Dataset/base_shape/leaf_27.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_28.obj",
+      "Missing": [
+        "Dataset/base_shape/leaf_28.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_35.obj",
+      "Missing": [
+        "Dataset/base_shape/leaf_35.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_37.obj",
+      "Missing": [
+        "Dataset/base_shape/leaf_37.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_40.obj",
+      "Missing": [
+        "Dataset/base_shape/leaf_40.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_41.obj",
+      "Missing": [
+        "Dataset/base_shape/leaf_41.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/leaf_47.obj",
+      "Missing": [
+        "Dataset/base_shape/leaf_47.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple10_d3.obj",
+      "Missing": [
+        "maple10_d3.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple10_d4.obj",
+      "Missing": [
+        "Dataset/base_shape/maple10_d4.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple10_d5.obj",
+      "Missing": [
+        "Dataset/base_shape/maple10_d5.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple10_d8.obj",
+      "Missing": [
+        "Dataset/base_shape/maple10_d8.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple1_d3.obj",
+      "Missing": [
+        "maple1_d3.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple1_d4.obj",
+      "Missing": [
+        "maple1_d4.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple1_d5.obj",
+      "Missing": [
+        "maple1_d5.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple1_d8.obj",
+      "Missing": [
+        "Dataset/base_shape/maple1_d8.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple2_d1.obj",
+      "Missing": [
+        "Dataset/base_shape/maple2_d1.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple2_d6.obj",
+      "Missing": [
+        "Dataset/base_shape/maple2_d6.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple2_d7.obj",
+      "Missing": [
+        "maple2_d7.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple3_d4.obj",
+      "Missing": [
+        "Dataset/base_shape/maple3_d4.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple3_d5.obj",
+      "Missing": [
+        "Dataset/base_shape/maple3_d5.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple3_d7.obj",
+      "Missing": [
+        "maple3_d7.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple4_d3.obj",
+      "Missing": [
+        "maple4_d3.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple4_d4.obj",
+      "Missing": [
+        "Dataset/base_shape/maple4_d4.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple4_d6.obj",
+      "Missing": [
+        "maple4_d6.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple5_d3.obj",
+      "Missing": [
+        "maple5_d3.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple5_d4.obj",
+      "Missing": [
+        "Dataset/base_shape/maple5_d4.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple5_d5.obj",
+      "Missing": [
+        "maple5_d5.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple6_d4.obj",
+      "Missing": [
+        "Dataset/base_shape/maple6_d4.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple7_d5.obj",
+      "Missing": [
+        "Dataset/base_shape/maple7_d5.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple7_d6.obj",
+      "Missing": [
+        "Dataset/base_shape/maple7_d6.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple8_d2.obj",
+      "Missing": [
+        "maple8_d2.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple8_d3.obj",
+      "Missing": [
+        "Dataset/base_shape/maple8_d3.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple8_d4.obj",
+      "Missing": [
+        "Dataset/base_shape/maple8_d4.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple8_d5.obj",
+      "Missing": [
+        "maple8_d5.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple8_d6.obj",
+      "Missing": [
+        "maple8_d6.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple8_d7.obj",
+      "Missing": [
+        "maple8_d7.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple9_d3.obj",
+      "Missing": [
+        "Dataset/base_shape/maple9_d3.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple9_d4.obj",
+      "Missing": [
+        "Dataset/base_shape/maple9_d4.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple9_d7.obj",
+      "Missing": [
+        "Dataset/base_shape/maple9_d7.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape/maple9_d8.obj",
+      "Missing": [
+        "Dataset/base_shape/maple9_d8.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape_extra/0003_0030_rgb.obj",
+      "Missing": [
+        "Dataset/base_shape_extra/0003_0030_rgb.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape_extra/0003_0140_rgb.obj",
+      "Missing": [
+        "0003_0140_rgb.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape_extra/0006_0040_rgb.obj",
+      "Missing": [
+        "0006_0040_rgb.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape_extra/0006_0108_rgb.obj",
+      "Missing": [
+        "Dataset/base_shape_extra/0006_0108_rgb.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape_extra/0008_0025_rgb.obj",
+      "Missing": [
+        "0008_0025_rgb.png"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape_extra/0008_0116_rgb.obj",
+      "Missing": [
+        "Dataset/base_shape_extra/0008_0116_rgb.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape_extra/0011_0082_rgb.obj",
+      "Missing": [
+        "Dataset/base_shape_extra/0011_0082_rgb.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/base_shape_extra/0016_0024_rgb.obj",
+      "Missing": [
+        "Dataset/base_shape_extra/0016_0024_rgb.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/maple_extra/base_shape/maple_1.obj",
+      "Missing": [
+        "Dataset/maple_extra/base_shape/maple_1.mtl"
+      ]
+    },
+    {
+      "Path": "Dataset/maple_extra/base_shape/maple_3.obj",
+      "Missing": [
+        "maple_3.png"
+      ]
+    },
+    {
+      "Path": "Dataset/maple_extra/base_shape/maple_4.obj",
+      "Missing": [
+        "Dataset/maple_extra/base_shape/maple_4.mtl"
+      ]
+    }
+  ],
+  "ImageCount": 530,
+  "NumericArrayCount": 152,
+  "CandidatePairs": {
+    "deform_raw": {
+      "Shapes": 56,
+      "WithBase": 31,
+      "WithBaseAndMask": 16,
+      "MissingBase": [
+        "Dataset/deform_raw/1-2.obj",
+        "Dataset/deform_raw/1-7.obj",
+        "Dataset/deform_raw/1.ply",
+        "Dataset/deform_raw/14.ply",
+        "Dataset/deform_raw/2-3.obj",
+        "Dataset/deform_raw/2-6.obj",
+        "Dataset/deform_raw/20.ply",
+        "Dataset/deform_raw/22.ply",
+        "Dataset/deform_raw/27.ply",
+        "Dataset/deform_raw/47.ply",
+        "Dataset/deform_raw/52.ply",
+        "Dataset/deform_raw/57.ply",
+        "Dataset/deform_raw/6-2.obj",
+        "Dataset/deform_raw/6-3.obj",
+        "Dataset/deform_raw/65.ply",
+        "Dataset/deform_raw/68.ply",
+        "Dataset/deform_raw/69.ply",
+        "Dataset/deform_raw/7-2.obj",
+        "Dataset/deform_raw/7.ply",
+        "Dataset/deform_raw/75.ply",
+        "Dataset/deform_raw/76.ply",
+        "Dataset/deform_raw/85.ply",
+        "Dataset/deform_raw/90.ply",
+        "Dataset/deform_raw/91.ply",
+        "Dataset/deform_raw/95.ply"
+      ],
+      "MissingMask": [
+        "Dataset/deform_raw/1-4.obj",
+        "Dataset/deform_raw/1-7.obj",
+        "Dataset/deform_raw/2-5.obj",
+        "Dataset/deform_raw/22.ply",
+        "Dataset/deform_raw/27.ply",
+        "Dataset/deform_raw/30.ply",
+        "Dataset/deform_raw/36.ply",
+        "Dataset/deform_raw/42.ply",
+        "Dataset/deform_raw/5-1.obj",
+        "Dataset/deform_raw/56.ply",
+        "Dataset/deform_raw/58.ply",
+        "Dataset/deform_raw/6-2.obj",
+        "Dataset/deform_raw/6-3.obj",
+        "Dataset/deform_raw/64.ply",
+        "Dataset/deform_raw/69.ply",
+        "Dataset/deform_raw/7-2.obj",
+        "Dataset/deform_raw/70.ply",
+        "Dataset/deform_raw/71.ply",
+        "Dataset/deform_raw/74.ply",
+        "Dataset/deform_raw/84.ply",
+        "Dataset/deform_raw/91.ply",
+        "Dataset/deform_raw/93.ply",
+        "Dataset/deform_raw/94.ply",
+        "Dataset/deform_raw/95.ply"
+      ],
+      "CandidateCompleteTriples": [
+        "Dataset/deform_raw/1-1.obj",
+        "Dataset/deform_raw/31.ply",
+        "Dataset/deform_raw/4.ply",
+        "Dataset/deform_raw/40.ply",
+        "Dataset/deform_raw/44.ply",
+        "Dataset/deform_raw/49.ply",
+        "Dataset/deform_raw/50.ply",
+        "Dataset/deform_raw/6.ply",
+        "Dataset/deform_raw/66.ply",
+        "Dataset/deform_raw/7-1.obj",
+        "Dataset/deform_raw/7-3.obj",
+        "Dataset/deform_raw/77.ply",
+        "Dataset/deform_raw/79.ply",
+        "Dataset/deform_raw/82.ply",
+        "Dataset/deform_raw/88.ply",
+        "Dataset/deform_raw/89.ply"
+      ],
+      "Rule": "Strip trailing _deform or _base; compare names only. Identity and registration not verified."
+    },
+    "deform_raw_denoise": {
+      "Shapes": 76,
+      "WithBase": 42,
+      "WithBaseAndMask": 25,
+      "MissingBase": [
+        "Dataset/deform_raw_denoise/11.ply",
+        "Dataset/deform_raw_denoise/14.ply",
+        "Dataset/deform_raw_denoise/22.ply",
+        "Dataset/deform_raw_denoise/27.ply",
+        "Dataset/deform_raw_denoise/28.ply",
+        "Dataset/deform_raw_denoise/32.ply",
+        "Dataset/deform_raw_denoise/43.ply",
+        "Dataset/deform_raw_denoise/54.ply",
+        "Dataset/deform_raw_denoise/59.ply",
+        "Dataset/deform_raw_denoise/63.ply",
+        "Dataset/deform_raw_denoise/68.ply",
+        "Dataset/deform_raw_denoise/69.ply",
+        "Dataset/deform_raw_denoise/7.ply",
+        "Dataset/deform_raw_denoise/75.ply",
+        "Dataset/deform_raw_denoise/81.ply",
+        "Dataset/deform_raw_denoise/86.ply",
+        "Dataset/deform_raw_denoise/maple1_d1.ply",
+        "Dataset/deform_raw_denoise/maple1_d2.ply",
+        "Dataset/deform_raw_denoise/maple1_d6.ply",
+        "Dataset/deform_raw_denoise/maple1_d7.ply",
+        "Dataset/deform_raw_denoise/maple2_d3.ply",
+        "Dataset/deform_raw_denoise/maple2_d5.ply",
+        "Dataset/deform_raw_denoise/maple2_d8.ply",
+        "Dataset/deform_raw_denoise/maple4_d2.ply",
+        "Dataset/deform_raw_denoise/maple4_d5.ply",
+        "Dataset/deform_raw_denoise/maple5_d6.ply",
+        "Dataset/deform_raw_denoise/maple6_d1.ply",
+        "Dataset/deform_raw_denoise/maple6_d6.ply",
+        "Dataset/deform_raw_denoise/maple6_d8.ply",
+        "Dataset/deform_raw_denoise/maple7_d1.ply",
+        "Dataset/deform_raw_denoise/maple7_d3.ply",
+        "Dataset/deform_raw_denoise/maple7_d8.ply",
+        "Dataset/deform_raw_denoise/maple9_d1.ply",
+        "Dataset/deform_raw_denoise/maple9_d6.ply"
+      ],
+      "MissingMask": [
+        "Dataset/deform_raw_denoise/11.ply",
+        "Dataset/deform_raw_denoise/22.ply",
+        "Dataset/deform_raw_denoise/27.ply",
+        "Dataset/deform_raw_denoise/28.ply",
+        "Dataset/deform_raw_denoise/30.ply",
+        "Dataset/deform_raw_denoise/32.ply",
+        "Dataset/deform_raw_denoise/36.ply",
+        "Dataset/deform_raw_denoise/54.ply",
+        "Dataset/deform_raw_denoise/56.ply",
+        "Dataset/deform_raw_denoise/58.ply",
+        "Dataset/deform_raw_denoise/59.ply",
+        "Dataset/deform_raw_denoise/61.ply",
+        "Dataset/deform_raw_denoise/63.ply",
+        "Dataset/deform_raw_denoise/69.ply",
+        "Dataset/deform_raw_denoise/70.ply",
+        "Dataset/deform_raw_denoise/81.ply",
+        "Dataset/deform_raw_denoise/84.ply",
+        "Dataset/deform_raw_denoise/86.ply",
+        "Dataset/deform_raw_denoise/maple10_d5.ply",
+        "Dataset/deform_raw_denoise/maple10_d7.ply",
+        "Dataset/deform_raw_denoise/maple10_d8.ply",
+        "Dataset/deform_raw_denoise/maple1_d1.ply",
+        "Dataset/deform_raw_denoise/maple1_d8.ply",
+        "Dataset/deform_raw_denoise/maple2_d1.ply",
+        "Dataset/deform_raw_denoise/maple2_d5.ply",
+        "Dataset/deform_raw_denoise/maple2_d7.ply",
+        "Dataset/deform_raw_denoise/maple3_d5.ply",
+        "Dataset/deform_raw_denoise/maple4_d2.ply",
+        "Dataset/deform_raw_denoise/maple4_d5.ply",
+        "Dataset/deform_raw_denoise/maple5_d5.ply",
+        "Dataset/deform_raw_denoise/maple5_d7.ply",
+        "Dataset/deform_raw_denoise/maple6_d6.ply",
+        "Dataset/deform_raw_denoise/maple7_d1.ply",
+        "Dataset/deform_raw_denoise/maple8_d7.ply",
+        "Dataset/deform_raw_denoise/maple9_d1.ply",
+        "Dataset/deform_raw_denoise/maple9_d6.ply"
+      ],
+      "CandidateCompleteTriples": [
+        "Dataset/deform_raw_denoise/18.ply",
+        "Dataset/deform_raw_denoise/3.ply",
+        "Dataset/deform_raw_denoise/31.ply",
+        "Dataset/deform_raw_denoise/40.ply",
+        "Dataset/deform_raw_denoise/41.ply",
+        "Dataset/deform_raw_denoise/44.ply",
+        "Dataset/deform_raw_denoise/49.ply",
+        "Dataset/deform_raw_denoise/6.ply",
+        "Dataset/deform_raw_denoise/79.ply",
+        "Dataset/deform_raw_denoise/8.ply",
+        "Dataset/deform_raw_denoise/82.ply",
+        "Dataset/deform_raw_denoise/89.ply",
+        "Dataset/deform_raw_denoise/maple10_d1.ply",
+        "Dataset/deform_raw_denoise/maple10_d3.ply",
+        "Dataset/deform_raw_denoise/maple10_d4.ply",
+        "Dataset/deform_raw_denoise/maple2_d2.ply",
+        "Dataset/deform_raw_denoise/maple2_d6.ply",
+        "Dataset/deform_raw_denoise/maple3_d7.ply",
+        "Dataset/deform_raw_denoise/maple5_d2.ply",
+        "Dataset/deform_raw_denoise/maple5_d8.ply",
+        "Dataset/deform_raw_denoise/maple7_d6.ply",
+        "Dataset/deform_raw_denoise/maple8_d2.ply",
+        "Dataset/deform_raw_denoise/maple8_d3.ply",
+        "Dataset/deform_raw_denoise/maple8_d6.ply",
+        "Dataset/deform_raw_denoise/maple9_d4.ply"
+      ],
+      "Rule": "Strip trailing _deform or _base; compare names only. Identity and registration not verified."
+    },
+    "deform_train": {
+      "Shapes": 122,
+      "WithBase": 62,
+      "WithBaseAndMask": 33,
+      "MissingBase": [
+        "Dataset/deform_train/12.ply",
+        "Dataset/deform_train/12_deform.ply",
+        "Dataset/deform_train/14.ply",
+        "Dataset/deform_train/14_deform.ply",
+        "Dataset/deform_train/1_deform.ply",
+        "Dataset/deform_train/20.ply",
+        "Dataset/deform_train/20_deform.ply",
+        "Dataset/deform_train/21_deform.ply",
+        "Dataset/deform_train/22.ply",
+        "Dataset/deform_train/22_deform.ply",
+        "Dataset/deform_train/24_deform.ply",
+        "Dataset/deform_train/27.ply",
+        "Dataset/deform_train/27_deform.ply",
+        "Dataset/deform_train/28.ply",
+        "Dataset/deform_train/28_deform.ply",
+        "Dataset/deform_train/39.ply",
+        "Dataset/deform_train/47.ply",
+        "Dataset/deform_train/47_deform.ply",
+        "Dataset/deform_train/51.ply",
+        "Dataset/deform_train/51_deform.ply",
+        "Dataset/deform_train/54.ply",
+        "Dataset/deform_train/54_deform.ply",
+        "Dataset/deform_train/55.ply",
+        "Dataset/deform_train/57.ply",
+        "Dataset/deform_train/57_deform.ply",
+        "Dataset/deform_train/65.ply",
+        "Dataset/deform_train/65_deform.ply",
+        "Dataset/deform_train/67_deform.ply",
+        "Dataset/deform_train/68_deform.ply",
+        "Dataset/deform_train/7.ply",
+        "Dataset/deform_train/73_deform.ply",
+        "Dataset/deform_train/75.ply",
+        "Dataset/deform_train/81.ply",
+        "Dataset/deform_train/81_deform.ply",
+        "Dataset/deform_train/86_deform.ply",
+        "Dataset/deform_train/90_deform.ply",
+        "Dataset/deform_train/91_deform.ply",
+        "Dataset/deform_train/95.ply",
+        "Dataset/deform_train/95_deform.ply",
+        "Dataset/deform_train/leaf_12_deform.ply",
+        "Dataset/deform_train/leaf_15_base.ply",
+        "Dataset/deform_train/leaf_15_deform.ply",
+        "Dataset/deform_train/leaf_16_deform.ply",
+        "Dataset/deform_train/leaf_19_deform.ply",
+        "Dataset/deform_train/leaf_20_base.ply",
+        "Dataset/deform_train/leaf_25_base.ply",
+        "Dataset/deform_train/leaf_32_base.ply",
+        "Dataset/deform_train/leaf_32_deform.ply",
+        "Dataset/deform_train/leaf_34_deform.ply",
+        "Dataset/deform_train/leaf_36_deform.ply",
+        "Dataset/deform_train/leaf_38_base.ply",
+        "Dataset/deform_train/leaf_3_base.ply",
+        "Dataset/deform_train/leaf_3_deform.ply",
+        "Dataset/deform_train/leaf_42_base.ply",
+        "Dataset/deform_train/leaf_42_deform.ply",
+        "Dataset/deform_train/leaf_43_base.ply",
+        "Dataset/deform_train/leaf_43_deform.ply",
+        "Dataset/deform_train/leaf_44_base.ply",
+        "Dataset/deform_train/leaf_44_deform.ply",
+        "Dataset/deform_train/leaf_7_base.ply"
+      ],
+      "MissingMask": [
+        "Dataset/deform_train/12.ply",
+        "Dataset/deform_train/12_deform.ply",
+        "Dataset/deform_train/21_deform.ply",
+        "Dataset/deform_train/22.ply",
+        "Dataset/deform_train/22_deform.ply",
+        "Dataset/deform_train/27.ply",
+        "Dataset/deform_train/27_deform.ply",
+        "Dataset/deform_train/28.ply",
+        "Dataset/deform_train/28_deform.ply",
+        "Dataset/deform_train/34.ply",
+        "Dataset/deform_train/34_deform.ply",
+        "Dataset/deform_train/36.ply",
+        "Dataset/deform_train/36_deform.ply",
+        "Dataset/deform_train/37.ply",
+        "Dataset/deform_train/54.ply",
+        "Dataset/deform_train/54_deform.ply",
+        "Dataset/deform_train/55.ply",
+        "Dataset/deform_train/56_deform.ply",
+        "Dataset/deform_train/60.ply",
+        "Dataset/deform_train/61.ply",
+        "Dataset/deform_train/61_deform.ply",
+        "Dataset/deform_train/64.ply",
+        "Dataset/deform_train/64_deform.ply",
+        "Dataset/deform_train/73_deform.ply",
+        "Dataset/deform_train/74_deform.ply",
+        "Dataset/deform_train/81.ply",
+        "Dataset/deform_train/81_deform.ply",
+        "Dataset/deform_train/83.ply",
+        "Dataset/deform_train/84.ply",
+        "Dataset/deform_train/86_deform.ply",
+        "Dataset/deform_train/91_deform.ply",
+        "Dataset/deform_train/92.ply",
+        "Dataset/deform_train/93.ply",
+        "Dataset/deform_train/93_deform.ply",
+        "Dataset/deform_train/94.ply",
+        "Dataset/deform_train/94_deform.ply",
+        "Dataset/deform_train/95.ply",
+        "Dataset/deform_train/95_deform.ply",
+        "Dataset/deform_train/leaf_0_base.ply",
+        "Dataset/deform_train/leaf_12_deform.ply",
+        "Dataset/deform_train/leaf_16_deform.ply",
+        "Dataset/deform_train/leaf_17_base.ply",
+        "Dataset/deform_train/leaf_17_deform.ply",
+        "Dataset/deform_train/leaf_22_base.ply",
+        "Dataset/deform_train/leaf_22_deform.ply",
+        "Dataset/deform_train/leaf_23_deform.ply",
+        "Dataset/deform_train/leaf_27_base.ply",
+        "Dataset/deform_train/leaf_37_base.ply",
+        "Dataset/deform_train/leaf_38_base.ply",
+        "Dataset/deform_train/leaf_44_base.ply",
+        "Dataset/deform_train/leaf_44_deform.ply",
+        "Dataset/deform_train/leaf_47_deform.ply",
+        "Dataset/deform_train/leaf_6_base.ply"
+      ],
+      "CandidateCompleteTriples": [
+        "Dataset/deform_train/26.ply",
+        "Dataset/deform_train/3.ply",
+        "Dataset/deform_train/31_deform.ply",
+        "Dataset/deform_train/3_deform.ply",
+        "Dataset/deform_train/40_deform.ply",
+        "Dataset/deform_train/41.ply",
+        "Dataset/deform_train/45.ply",
+        "Dataset/deform_train/49.ply",
+        "Dataset/deform_train/49_deform.ply",
+        "Dataset/deform_train/4_deform.ply",
+        "Dataset/deform_train/50.ply",
+        "Dataset/deform_train/50_deform.ply",
+        "Dataset/deform_train/6.ply",
+        "Dataset/deform_train/66.ply",
+        "Dataset/deform_train/66_deform.ply",
+        "Dataset/deform_train/6_deform.ply",
+        "Dataset/deform_train/78_deform.ply",
+        "Dataset/deform_train/79.ply",
+        "Dataset/deform_train/79_deform.ply",
+        "Dataset/deform_train/8.ply",
+        "Dataset/deform_train/88.ply",
+        "Dataset/deform_train/88_deform.ply",
+        "Dataset/deform_train/89.ply",
+        "Dataset/deform_train/8_deform.ply",
+        "Dataset/deform_train/9.ply",
+        "Dataset/deform_train/leaf_11_deform.ply",
+        "Dataset/deform_train/leaf_18_base.ply",
+        "Dataset/deform_train/leaf_1_base.ply",
+        "Dataset/deform_train/leaf_28_base.ply",
+        "Dataset/deform_train/leaf_29_base.ply",
+        "Dataset/deform_train/leaf_2_base.ply",
+        "Dataset/deform_train/leaf_35_deform.ply",
+        "Dataset/deform_train/leaf_41_deform.ply"
+      ],
+      "Rule": "Strip trailing _deform or _base; compare names only. Identity and registration not verified."
+    },
+    "deform_train_new": {
+      "Shapes": 119,
+      "WithBase": 57,
+      "WithBaseAndMask": 27,
+      "MissingBase": [
+        "Dataset/deform_train_new/1-3.obj",
+        "Dataset/deform_train_new/1-7.obj",
+        "Dataset/deform_train_new/11_deform.ply",
+        "Dataset/deform_train_new/12_deform.ply",
+        "Dataset/deform_train_new/14_deform.ply",
+        "Dataset/deform_train_new/1_deform.ply",
+        "Dataset/deform_train_new/2-1.obj",
+        "Dataset/deform_train_new/2-3.obj",
+        "Dataset/deform_train_new/21_deform.ply",
+        "Dataset/deform_train_new/22_deform.ply",
+        "Dataset/deform_train_new/23_deform.ply",
+        "Dataset/deform_train_new/27_deform.ply",
+        "Dataset/deform_train_new/28_deform.ply",
+        "Dataset/deform_train_new/35_deform.ply",
+        "Dataset/deform_train_new/39_deform.ply",
+        "Dataset/deform_train_new/4-1.obj",
+        "Dataset/deform_train_new/47_deform.ply",
+        "Dataset/deform_train_new/5-3.obj",
+        "Dataset/deform_train_new/51_deform.ply",
+        "Dataset/deform_train_new/52_deform.ply",
+        "Dataset/deform_train_new/54_deform.ply",
+        "Dataset/deform_train_new/55_deform.ply",
+        "Dataset/deform_train_new/57_deform.ply",
+        "Dataset/deform_train_new/6-2.obj",
+        "Dataset/deform_train_new/6-3.obj",
+        "Dataset/deform_train_new/62_deform.ply",
+        "Dataset/deform_train_new/63_deform.ply",
+        "Dataset/deform_train_new/69_deform.ply",
+        "Dataset/deform_train_new/7-4.obj",
+        "Dataset/deform_train_new/7-5.obj",
+        "Dataset/deform_train_new/7-6.obj",
+        "Dataset/deform_train_new/75_deform.ply",
+        "Dataset/deform_train_new/76_deform.ply",
+        "Dataset/deform_train_new/7_deform.ply",
+        "Dataset/deform_train_new/81_deform.ply",
+        "Dataset/deform_train_new/85_deform.ply",
+        "Dataset/deform_train_new/95_deform.ply",
+        "Dataset/deform_train_new/leaf_12_deform.ply",
+        "Dataset/deform_train_new/leaf_15_deform.ply",
+        "Dataset/deform_train_new/leaf_16_deform.ply",
+        "Dataset/deform_train_new/leaf_19_deform.ply",
+        "Dataset/deform_train_new/leaf_26_deform.ply",
+        "Dataset/deform_train_new/leaf_34_deform.ply",
+        "Dataset/deform_train_new/leaf_42_deform.ply",
+        "Dataset/deform_train_new/leaf_44_deform.ply",
+        "Dataset/deform_train_new/leaf_5_deform.ply",
+        "Dataset/deform_train_new/maple10_d2.ply",
+        "Dataset/deform_train_new/maple10_d6.ply",
+        "Dataset/deform_train_new/maple1_d1.ply",
+        "Dataset/deform_train_new/maple3_d1.ply",
+        "Dataset/deform_train_new/maple3_d2.ply",
+        "Dataset/deform_train_new/maple3_d8.ply",
+        "Dataset/deform_train_new/maple5_d1.ply",
+        "Dataset/deform_train_new/maple6_d2.ply",
+        "Dataset/deform_train_new/maple6_d3.ply",
+        "Dataset/deform_train_new/maple6_d5.ply",
+        "Dataset/deform_train_new/maple6_d6.ply",
+        "Dataset/deform_train_new/maple6_d8.ply",
+        "Dataset/deform_train_new/maple7_d1.ply",
+        "Dataset/deform_train_new/maple7_d2.ply",
+        "Dataset/deform_train_new/maple9_d1.ply",
+        "Dataset/deform_train_new/maple9_d5.ply"
+      ],
+      "MissingMask": [
+        "Dataset/deform_train_new/1-3.obj",
+        "Dataset/deform_train_new/1-7.obj",
+        "Dataset/deform_train_new/11_deform.ply",
+        "Dataset/deform_train_new/12_deform.ply",
+        "Dataset/deform_train_new/2-1.obj",
+        "Dataset/deform_train_new/21_deform.ply",
+        "Dataset/deform_train_new/22_deform.ply",
+        "Dataset/deform_train_new/23_deform.ply",
+        "Dataset/deform_train_new/27_deform.ply",
+        "Dataset/deform_train_new/28_deform.ply",
+        "Dataset/deform_train_new/29_deform.ply",
+        "Dataset/deform_train_new/2_deform.ply",
+        "Dataset/deform_train_new/3-3.obj",
+        "Dataset/deform_train_new/34_deform.ply",
+        "Dataset/deform_train_new/36_deform.ply",
+        "Dataset/deform_train_new/37_deform.ply",
+        "Dataset/deform_train_new/42_deform.ply",
+        "Dataset/deform_train_new/5-3.obj",
+        "Dataset/deform_train_new/54_deform.ply",
+        "Dataset/deform_train_new/55_deform.ply",
+        "Dataset/deform_train_new/56_deform.ply",
+        "Dataset/deform_train_new/6-2.obj",
+        "Dataset/deform_train_new/6-3.obj",
+        "Dataset/deform_train_new/60_deform.ply",
+        "Dataset/deform_train_new/62_deform.ply",
+        "Dataset/deform_train_new/63_deform.ply",
+        "Dataset/deform_train_new/69_deform.ply",
+        "Dataset/deform_train_new/7-5.obj",
+        "Dataset/deform_train_new/7-6.obj",
+        "Dataset/deform_train_new/70_deform.ply",
+        "Dataset/deform_train_new/74_deform.ply",
+        "Dataset/deform_train_new/81_deform.ply",
+        "Dataset/deform_train_new/84_deform.ply",
+        "Dataset/deform_train_new/95_deform.ply",
+        "Dataset/deform_train_new/leaf_0_deform.ply",
+        "Dataset/deform_train_new/leaf_12_deform.ply",
+        "Dataset/deform_train_new/leaf_16_deform.ply",
+        "Dataset/deform_train_new/leaf_17_deform.ply",
+        "Dataset/deform_train_new/leaf_22_deform.ply",
+        "Dataset/deform_train_new/leaf_23_deform.ply",
+        "Dataset/deform_train_new/leaf_24_deform.ply",
+        "Dataset/deform_train_new/leaf_26_deform.ply",
+        "Dataset/deform_train_new/leaf_27_deform.ply",
+        "Dataset/deform_train_new/leaf_37_deform.ply",
+        "Dataset/deform_train_new/leaf_44_deform.ply",
+        "Dataset/deform_train_new/leaf_5_deform.ply",
+        "Dataset/deform_train_new/leaf_6_deform.ply",
+        "Dataset/deform_train_new/maple10_d5.ply",
+        "Dataset/deform_train_new/maple10_d6.ply",
+        "Dataset/deform_train_new/maple10_d7.ply",
+        "Dataset/deform_train_new/maple1_d1.ply",
+        "Dataset/deform_train_new/maple1_d8.ply",
+        "Dataset/deform_train_new/maple3_d1.ply",
+        "Dataset/deform_train_new/maple3_d4.ply",
+        "Dataset/deform_train_new/maple3_d8.ply",
+        "Dataset/deform_train_new/maple4_d3.ply",
+        "Dataset/deform_train_new/maple4_d7.ply",
+        "Dataset/deform_train_new/maple5_d5.ply",
+        "Dataset/deform_train_new/maple6_d5.ply",
+        "Dataset/deform_train_new/maple6_d6.ply",
+        "Dataset/deform_train_new/maple7_d1.ply",
+        "Dataset/deform_train_new/maple7_d2.ply",
+        "Dataset/deform_train_new/maple8_d4.ply",
+        "Dataset/deform_train_new/maple8_d7.ply",
+        "Dataset/deform_train_new/maple9_d1.ply",
+        "Dataset/deform_train_new/maple9_d3.ply",
+        "Dataset/deform_train_new/maple9_d5.ply"
+      ],
+      "CandidateCompleteTriples": [
+        "Dataset/deform_train_new/2-2.obj",
+        "Dataset/deform_train_new/3-4.obj",
+        "Dataset/deform_train_new/31_deform.ply",
+        "Dataset/deform_train_new/40_deform.ply",
+        "Dataset/deform_train_new/49_deform.ply",
+        "Dataset/deform_train_new/50_deform.ply",
+        "Dataset/deform_train_new/7-1.obj",
+        "Dataset/deform_train_new/77_deform.ply",
+        "Dataset/deform_train_new/78_deform.ply",
+        "Dataset/deform_train_new/79_deform.ply",
+        "Dataset/deform_train_new/88_deform.ply",
+        "Dataset/deform_train_new/89_deform.ply",
+        "Dataset/deform_train_new/leaf_18_deform.ply",
+        "Dataset/deform_train_new/leaf_28_deform.ply",
+        "Dataset/deform_train_new/leaf_29_deform.ply",
+        "Dataset/deform_train_new/leaf_2_deform.ply",
+        "Dataset/deform_train_new/maple10_d1.ply",
+        "Dataset/deform_train_new/maple10_d4.ply",
+        "Dataset/deform_train_new/maple2_d2.ply",
+        "Dataset/deform_train_new/maple5_d2.ply",
+        "Dataset/deform_train_new/maple5_d3.ply",
+        "Dataset/deform_train_new/maple5_d4.ply",
+        "Dataset/deform_train_new/maple6_d4.ply",
+        "Dataset/deform_train_new/maple7_d5.ply",
+        "Dataset/deform_train_new/maple7_d6.ply",
+        "Dataset/deform_train_new/maple8_d6.ply",
+        "Dataset/deform_train_new/maple9_d4.ply"
+      ],
+      "Rule": "Strip trailing _deform or _base; compare names only. Identity and registration not verified."
+    }
+  },
+  "ProcessedComparison": {
+    "ExistingRecords": 253,
+    "CurrentSelectedSources": 192,
+    "MissingSources": [
+      "Dataset/base_shape/1-3.obj",
+      "Dataset/base_shape/1-5.obj",
+      "Dataset/base_shape/1-7.obj",
+      "Dataset/base_shape/1.obj",
+      "Dataset/base_shape/11.obj",
+      "Dataset/base_shape/14.obj",
+      "Dataset/base_shape/2-1.obj",
+      "Dataset/base_shape/2-4.obj",
+      "Dataset/base_shape/2-6.obj",
+      "Dataset/base_shape/20.obj",
+      "Dataset/base_shape/22.obj",
+      "Dataset/base_shape/23.obj",
+      "Dataset/base_shape/24.obj",
+      "Dataset/base_shape/27.obj",
+      "Dataset/base_shape/28.obj",
+      "Dataset/base_shape/3-2.obj",
+      "Dataset/base_shape/32.obj",
+      "Dataset/base_shape/35.obj",
+      "Dataset/base_shape/39.obj",
+      "Dataset/base_shape/4-1.obj",
+      "Dataset/base_shape/43.obj",
+      "Dataset/base_shape/47.obj",
+      "Dataset/base_shape/48.obj",
+      "Dataset/base_shape/5-3.obj",
+      "Dataset/base_shape/51.obj",
+      "Dataset/base_shape/52.obj",
+      "Dataset/base_shape/54.obj",
+      "Dataset/base_shape/55.obj",
+      "Dataset/base_shape/57.obj",
+      "Dataset/base_shape/59.obj",
+      "Dataset/base_shape/6-1.obj",
+      "Dataset/base_shape/6-2.obj",
+      "Dataset/base_shape/6-4.obj",
+      "Dataset/base_shape/62.obj",
+      "Dataset/base_shape/63.obj",
+      "Dataset/base_shape/65.obj",
+      "Dataset/base_shape/67.obj",
+      "Dataset/base_shape/68.obj",
+      "Dataset/base_shape/69.obj",
+      "Dataset/base_shape/7-2.obj",
+      "Dataset/base_shape/7-5.obj",
+      "Dataset/base_shape/7-6.obj",
+      "Dataset/base_shape/7.obj",
+      "Dataset/base_shape/73.obj",
+      "Dataset/base_shape/75.obj",
+      "Dataset/base_shape/76.obj",
+      "Dataset/base_shape/81.obj",
+      "Dataset/base_shape/85.obj",
+      "Dataset/base_shape/86.obj",
+      "Dataset/base_shape/91.obj",
+      "Dataset/base_shape/95.obj",
+      "Dataset/base_shape/leaf_10.obj",
+      "Dataset/base_shape/leaf_12.obj",
+      "Dataset/base_shape/leaf_13.obj",
+      "Dataset/base_shape/leaf_15.obj",
+      "Dataset/base_shape/leaf_16.obj",
+      "Dataset/base_shape/leaf_19.obj",
+      "Dataset/base_shape/leaf_20.obj",
+      "Dataset/base_shape/leaf_25.obj",
+      "Dataset/base_shape/leaf_26.obj",
+      "Dataset/base_shape/leaf_3.obj",
+      "Dataset/base_shape/leaf_32.obj",
+      "Dataset/base_shape/leaf_34.obj",
+      "Dataset/base_shape/leaf_36.obj",
+      "Dataset/base_shape/leaf_38.obj",
+      "Dataset/base_shape/leaf_4.obj",
+      "Dataset/base_shape/leaf_42.obj",
+      "Dataset/base_shape/leaf_43.obj",
+      "Dataset/base_shape/leaf_44.obj",
+      "Dataset/base_shape/leaf_45.obj",
+      "Dataset/base_shape/leaf_5.obj",
+      "Dataset/base_shape/leaf_7.obj",
+      "Dataset/base_shape/maple1_d1.obj",
+      "Dataset/base_shape/maple1_d7.obj",
+      "Dataset/base_shape/maple2_d3.obj",
+      "Dataset/base_shape/maple3_d1.obj",
+      "Dataset/base_shape/maple3_d6.obj",
+      "Dataset/base_shape/maple3_d8.obj",
+      "Dataset/base_shape/maple4_d1.obj",
+      "Dataset/base_shape/maple4_d5.obj",
+      "Dataset/base_shape/maple4_d8.obj",
+      "Dataset/base_shape/maple5_d6.obj",
+      "Dataset/base_shape/maple6_d6.obj",
+      "Dataset/base_shape/maple6_d7.obj",
+      "Dataset/base_shape/maple6_d8.obj",
+      "Dataset/base_shape/maple7_d3.obj",
+      "Dataset/base_shape/maple8_d8.obj",
+      "Dataset/deform_raw_denoise/12.ply",
+      "Dataset/deform_raw_denoise/17.ply",
+      "Dataset/deform_raw_denoise/2.ply",
+      "Dataset/deform_raw_denoise/20.ply",
+      "Dataset/deform_raw_denoise/21.ply",
+      "Dataset/deform_raw_denoise/24.ply",
+      "Dataset/deform_raw_denoise/26.ply",
+      "Dataset/deform_raw_denoise/29.ply",
+      "Dataset/deform_raw_denoise/34.ply",
+      "Dataset/deform_raw_denoise/37.ply",
+      "Dataset/deform_raw_denoise/39.ply",
+      "Dataset/deform_raw_denoise/45.ply",
+      "Dataset/deform_raw_denoise/50.ply",
+      "Dataset/deform_raw_denoise/52.ply",
+      "Dataset/deform_raw_denoise/64.ply",
+      "Dataset/deform_raw_denoise/66.ply",
+      "Dataset/deform_raw_denoise/71.ply",
+      "Dataset/deform_raw_denoise/77.ply",
+      "Dataset/deform_raw_denoise/94.ply",
+      "Dataset/deform_raw_denoise/95.ply",
+      "Dataset/deform_raw_denoise/maple10_d2.ply",
+      "Dataset/deform_raw_denoise/maple1_d4.ply",
+      "Dataset/deform_raw_denoise/maple3_d1.ply",
+      "Dataset/deform_raw_denoise/maple3_d2.ply",
+      "Dataset/deform_raw_denoise/maple3_d6.ply",
+      "Dataset/deform_raw_denoise/maple4_d4.ply",
+      "Dataset/deform_raw_denoise/maple4_d6.ply",
+      "Dataset/deform_raw_denoise/maple5_d1.ply",
+      "Dataset/deform_raw_denoise/maple5_d4.ply",
+      "Dataset/deform_raw_denoise/maple6_d2.ply",
+      "Dataset/deform_raw_denoise/maple6_d5.ply",
+      "Dataset/deform_raw_denoise/maple6_d7.ply",
+      "Dataset/deform_raw_denoise/maple7_d2.ply",
+      "Dataset/deform_raw_denoise/maple7_d7.ply",
+      "Dataset/deform_raw_denoise/maple8_d8.ply",
+      "Dataset/deform_raw_denoise/maple9_d2.ply",
+      "Dataset/deform_raw_denoise/maple9_d5.ply",
+      "Dataset/deform_raw_denoise/maple9_d7.ply",
+      "Dataset/deform_raw_denoise/maple9_d8.ply"
+    ],
+    "NewSources": [
+      "Dataset/base_shape/18.obj",
+      "Dataset/base_shape/3-3.obj",
+      "Dataset/base_shape/36.obj",
+      "Dataset/base_shape/92.obj",
+      "Dataset/base_shape/leaf_24.obj",
+      "Dataset/base_shape/leaf_35.obj",
+      "Dataset/base_shape/leaf_41.obj",
+      "Dataset/base_shape/maple10_d3.obj",
+      "Dataset/base_shape/maple10_d5.obj",
+      "Dataset/base_shape/maple1_d5.obj",
+      "Dataset/base_shape/maple1_d8.obj",
+      "Dataset/base_shape/maple2_d1.obj",
+      "Dataset/base_shape/maple2_d6.obj",
+      "Dataset/base_shape/maple3_d4.obj",
+      "Dataset/base_shape/maple3_d5.obj",
+      "Dataset/base_shape/maple4_d6.obj",
+      "Dataset/base_shape/maple4_d7.obj",
+      "Dataset/base_shape/maple5_d2.obj",
+      "Dataset/base_shape/maple5_d3.obj",
+      "Dataset/base_shape/maple5_d8.obj",
+      "Dataset/base_shape/maple7_d5.obj",
+      "Dataset/base_shape/maple7_d6.obj",
+      "Dataset/base_shape/maple7_d7.obj",
+      "Dataset/base_shape/maple8_d3.obj",
+      "Dataset/base_shape/maple8_d4.obj",
+      "Dataset/base_shape/maple8_d5.obj",
+      "Dataset/base_shape/maple9_d2.obj",
+      "Dataset/base_shape/maple9_d3.obj",
+      "Dataset/base_shape/maple9_d7.obj",
+      "Dataset/deform_raw_denoise/11.ply",
+      "Dataset/deform_raw_denoise/22.ply",
+      "Dataset/deform_raw_denoise/27.ply",
+      "Dataset/deform_raw_denoise/31.ply",
+      "Dataset/deform_raw_denoise/32.ply",
+      "Dataset/deform_raw_denoise/40.ply",
+      "Dataset/deform_raw_denoise/43.ply",
+      "Dataset/deform_raw_denoise/44.ply",
+      "Dataset/deform_raw_denoise/49.ply",
+      "Dataset/deform_raw_denoise/54.ply",
+      "Dataset/deform_raw_denoise/56.ply",
+      "Dataset/deform_raw_denoise/59.ply",
+      "Dataset/deform_raw_denoise/6.ply",
+      "Dataset/deform_raw_denoise/69.ply",
+      "Dataset/deform_raw_denoise/7.ply",
+      "Dataset/deform_raw_denoise/70.ply",
+      "Dataset/deform_raw_denoise/75.ply",
+      "Dataset/deform_raw_denoise/maple10_d4.ply",
+      "Dataset/deform_raw_denoise/maple10_d7.ply",
+      "Dataset/deform_raw_denoise/maple10_d8.ply",
+      "Dataset/deform_raw_denoise/maple1_d1.ply",
+      "Dataset/deform_raw_denoise/maple1_d6.ply",
+      "Dataset/deform_raw_denoise/maple1_d7.ply",
+      "Dataset/deform_raw_denoise/maple1_d8.ply",
+      "Dataset/deform_raw_denoise/maple2_d1.ply",
+      "Dataset/deform_raw_denoise/maple2_d2.ply",
+      "Dataset/deform_raw_denoise/maple2_d6.ply",
+      "Dataset/deform_raw_denoise/maple3_d7.ply",
+      "Dataset/deform_raw_denoise/maple4_d2.ply",
+      "Dataset/deform_raw_denoise/maple5_d7.ply",
+      "Dataset/deform_raw_denoise/maple5_d8.ply",
+      "Dataset/deform_raw_denoise/maple6_d1.ply",
+      "Dataset/deform_raw_denoise/maple7_d1.ply",
+      "Dataset/deform_raw_denoise/maple7_d3.ply",
+      "Dataset/deform_raw_denoise/maple7_d8.ply",
+      "Dataset/deform_raw_denoise/maple8_d2.ply"
+    ],
+    "ChangedSources": [],
+    "UnchangedSources": 127,
+    "MissingOrChangedColorDependencies": [
+      {
+        "Source": "Dataset/base_shape/1-1.obj",
+        "Dependency": "Dataset/base_shape/1-1.mtl",
+        "Status": "Missing"
+      },
+      {
+        "Source": "Dataset/base_shape/1-6.obj",
+        "Dependency": "Dataset/base_shape/1-6.mtl",
+        "Status": "Missing"
+      },
+      {
+        "Source": "Dataset/base_shape/1-6.obj",
+        "Dependency": "Dataset/base_shape/1-6.png",
+        "Status": "Missing"
+      },
+      {
+        "Source": "Dataset/base_shape/31.obj",
+        "Dependency": "Dataset/base_shape/31.png",
+        "Status": "Missing"
+      },
+      {
+        "Source": "Dataset/base_shape/34.obj",
+        "Dependency": "Dataset/base_shape/34.mtl",
+        "Status": "Missing"
+      },
+      {
+        "Source": "Dataset/base_shape/37.obj",
+        "Dependency": "Dataset/base_shape/37.png",
+        "Status": "Missing"
+      },
+      {
+        "Source": "Dataset/base_shape/40.obj",
+        "Dependency": "Dataset/base_shape/40.mtl",
+        "Status": "Missing"
+      },
+      {
+        "Source": "Dataset/base_shape/40.obj",
+        "Dependency": "Dataset/base_shape/40.png",
+        "Status": "Missing"
+      },
+      {
+        "Source": "Dataset/base_shape/44.obj",
+        "Dependency": "Dataset/base_shape/44.mtl",
+        "Status": "Missing"
+      },
+      {
+        "Source": "Dataset/base_shape/50.obj",
+        "Dependency": "Dataset/base_shape/50.mtl",
+        "Status": "Missing"
+      },
+      {
+        "Source": "Dataset/base_shape/50.obj",
+        "Dependency": "Dataset/base_shape/50.png",
+        "Status": "Missing"
+      },
+      {
+        "Source": "Dataset/base_shape/56.obj",
+        "Dependency": "Dataset/base_shape/56.mtl",
+        "Status": "Missing"
+      },
+      {
+        "Source": "Dataset/base_shape/71.obj",
+        "Dependency": "Dataset/base_shape/71.png",
+        "Status": "Missing"
+      },
+      {
+        "Source": "Dataset/base_shape/79.obj",
+        "Dependency": "Dataset/base_shape/79.mtl",
+        "Status": "Missing"
+      },
+      {
+        "Source": "Dataset/base_shape/79.obj",
+        "Dependency": "Dataset/base_shape/79.png",
+        "Status": "Missing"
+      },
+      {
+        "Source": "Dataset/base_shape/8.obj",
+        "Dependency": "Dataset/base_shape/8.mtl",
+        "Status": "Missing"
+      },
+      {
+        "Source": "Dataset/base_shape/84.obj",
+        "Dependency": "Dataset/base_shape/84.mtl",
+        "Status": "Missing"
+      },
+      {
+        "Source": "Dataset/base_shape/leaf_2.obj",
+        "Dependency": "Dataset/base_shape/leaf_2.mtl",
+        "Status": "Missing"
+      },
+      {
+        "Source": "Dataset/base_shape/leaf_2.obj",
+        "Dependency": "Dataset/base_shape/leaf_2.png",
+        "Status": "Missing"
+      },
+      {
+        "Source": "Dataset/base_shape/leaf_22.obj",
+        "Dependency": "Dataset/base_shape/leaf_22.mtl",
+        "Status": "Missing"
+      },
+      {
+        "Source": "Dataset/base_shape/leaf_27.obj",
+        "Dependency": "Dataset/base_shape/leaf_27.mtl",
+        "Status": "Missing"
+      },
+      {
+        "Source": "Dataset/base_shape/leaf_47.obj",
+        "Dependency": "Dataset/base_shape/leaf_47.mtl",
+        "Status": "Missing"
+      },
+      {
+        "Source": "Dataset/base_shape/leaf_47.obj",
+        "Dependency": "Dataset/base_shape/leaf_47.png",
+        "Status": "Missing"
+      },
+      {
+        "Source": "Dataset/base_shape/maple10_d4.obj",
+        "Dependency": "Dataset/base_shape/maple10_d4.mtl",
+        "Status": "Missing"
+      },
+      {
+        "Source": "Dataset/base_shape/maple10_d8.obj",
+        "Dependency": "Dataset/base_shape/maple10_d8.mtl",
+        "Status": "Missing"
+      },
+      {
+        "Source": "Dataset/base_shape/maple10_d8.obj",
+        "Dependency": "Dataset/base_shape/maple10_d8.png",
+        "Status": "Missing"
+      },
+      {
+        "Source": "Dataset/base_shape/maple1_d3.obj",
+        "Dependency": "Dataset/base_shape/maple1_d3.png",
+        "Status": "Missing"
+      },
+      {
+        "Source": "Dataset/base_shape/maple4_d4.obj",
+        "Dependency": "Dataset/base_shape/maple4_d4.mtl",
+        "Status": "Missing"
+      }
+    ],
+    "ArchiveArrays": 253,
+    "InvalidArrays": [],
+    "SourceFolders": {
+      "base_shape": 174,
+      "deform_raw_denoise": 79
+    }
+  },
+  "InferenceInput": {
+    "Annotation": "DatasetProcessed/LeafEvalAll.json",
+    "Cases": 360,
+    "Subsets": {
+      "Single": 253,
+      "PairSameName": 106,
+      "SameObjectControl": 1
+    },
+    "UniqueSources": 253,
+    "MissingCurrentSources": [
+      "Dataset/base_shape/1-3.obj",
+      "Dataset/base_shape/1-5.obj",
+      "Dataset/base_shape/1-7.obj",
+      "Dataset/base_shape/1.obj",
+      "Dataset/base_shape/11.obj",
+      "Dataset/base_shape/14.obj",
+      "Dataset/base_shape/2-1.obj",
+      "Dataset/base_shape/2-4.obj",
+      "Dataset/base_shape/2-6.obj",
+      "Dataset/base_shape/20.obj",
+      "Dataset/base_shape/22.obj",
+      "Dataset/base_shape/23.obj",
+      "Dataset/base_shape/24.obj",
+      "Dataset/base_shape/27.obj",
+      "Dataset/base_shape/28.obj",
+      "Dataset/base_shape/3-2.obj",
+      "Dataset/base_shape/32.obj",
+      "Dataset/base_shape/35.obj",
+      "Dataset/base_shape/39.obj",
+      "Dataset/base_shape/4-1.obj",
+      "Dataset/base_shape/43.obj",
+      "Dataset/base_shape/47.obj",
+      "Dataset/base_shape/48.obj",
+      "Dataset/base_shape/5-3.obj",
+      "Dataset/base_shape/51.obj",
+      "Dataset/base_shape/52.obj",
+      "Dataset/base_shape/54.obj",
+      "Dataset/base_shape/55.obj",
+      "Dataset/base_shape/57.obj",
+      "Dataset/base_shape/59.obj",
+      "Dataset/base_shape/6-1.obj",
+      "Dataset/base_shape/6-2.obj",
+      "Dataset/base_shape/6-4.obj",
+      "Dataset/base_shape/62.obj",
+      "Dataset/base_shape/63.obj",
+      "Dataset/base_shape/65.obj",
+      "Dataset/base_shape/67.obj",
+      "Dataset/base_shape/68.obj",
+      "Dataset/base_shape/69.obj",
+      "Dataset/base_shape/7-2.obj",
+      "Dataset/base_shape/7-5.obj",
+      "Dataset/base_shape/7-6.obj",
+      "Dataset/base_shape/7.obj",
+      "Dataset/base_shape/73.obj",
+      "Dataset/base_shape/75.obj",
+      "Dataset/base_shape/76.obj",
+      "Dataset/base_shape/81.obj",
+      "Dataset/base_shape/85.obj",
+      "Dataset/base_shape/86.obj",
+      "Dataset/base_shape/91.obj",
+      "Dataset/base_shape/95.obj",
+      "Dataset/base_shape/leaf_10.obj",
+      "Dataset/base_shape/leaf_12.obj",
+      "Dataset/base_shape/leaf_13.obj",
+      "Dataset/base_shape/leaf_15.obj",
+      "Dataset/base_shape/leaf_16.obj",
+      "Dataset/base_shape/leaf_19.obj",
+      "Dataset/base_shape/leaf_20.obj",
+      "Dataset/base_shape/leaf_25.obj",
+      "Dataset/base_shape/leaf_26.obj",
+      "Dataset/base_shape/leaf_3.obj",
+      "Dataset/base_shape/leaf_32.obj",
+      "Dataset/base_shape/leaf_34.obj",
+      "Dataset/base_shape/leaf_36.obj",
+      "Dataset/base_shape/leaf_38.obj",
+      "Dataset/base_shape/leaf_4.obj",
+      "Dataset/base_shape/leaf_42.obj",
+      "Dataset/base_shape/leaf_43.obj",
+      "Dataset/base_shape/leaf_44.obj",
+      "Dataset/base_shape/leaf_45.obj",
+      "Dataset/base_shape/leaf_5.obj",
+      "Dataset/base_shape/leaf_7.obj",
+      "Dataset/base_shape/maple1_d1.obj",
+      "Dataset/base_shape/maple1_d7.obj",
+      "Dataset/base_shape/maple2_d3.obj",
+      "Dataset/base_shape/maple3_d1.obj",
+      "Dataset/base_shape/maple3_d6.obj",
+      "Dataset/base_shape/maple3_d8.obj",
+      "Dataset/base_shape/maple4_d1.obj",
+      "Dataset/base_shape/maple4_d5.obj",
+      "Dataset/base_shape/maple4_d8.obj",
+      "Dataset/base_shape/maple5_d6.obj",
+      "Dataset/base_shape/maple6_d6.obj",
+      "Dataset/base_shape/maple6_d7.obj",
+      "Dataset/base_shape/maple6_d8.obj",
+      "Dataset/base_shape/maple7_d3.obj",
+      "Dataset/base_shape/maple8_d8.obj",
+      "Dataset/deform_raw_denoise/12.ply",
+      "Dataset/deform_raw_denoise/17.ply",
+      "Dataset/deform_raw_denoise/2.ply",
+      "Dataset/deform_raw_denoise/20.ply",
+      "Dataset/deform_raw_denoise/21.ply",
+      "Dataset/deform_raw_denoise/24.ply",
+      "Dataset/deform_raw_denoise/26.ply",
+      "Dataset/deform_raw_denoise/29.ply",
+      "Dataset/deform_raw_denoise/34.ply",
+      "Dataset/deform_raw_denoise/37.ply",
+      "Dataset/deform_raw_denoise/39.ply",
+      "Dataset/deform_raw_denoise/45.ply",
+      "Dataset/deform_raw_denoise/50.ply",
+      "Dataset/deform_raw_denoise/52.ply",
+      "Dataset/deform_raw_denoise/64.ply",
+      "Dataset/deform_raw_denoise/66.ply",
+      "Dataset/deform_raw_denoise/71.ply",
+      "Dataset/deform_raw_denoise/77.ply",
+      "Dataset/deform_raw_denoise/94.ply",
+      "Dataset/deform_raw_denoise/95.ply",
+      "Dataset/deform_raw_denoise/maple10_d2.ply",
+      "Dataset/deform_raw_denoise/maple1_d4.ply",
+      "Dataset/deform_raw_denoise/maple3_d1.ply",
+      "Dataset/deform_raw_denoise/maple3_d2.ply",
+      "Dataset/deform_raw_denoise/maple3_d6.ply",
+      "Dataset/deform_raw_denoise/maple4_d4.ply",
+      "Dataset/deform_raw_denoise/maple4_d6.ply",
+      "Dataset/deform_raw_denoise/maple5_d1.ply",
+      "Dataset/deform_raw_denoise/maple5_d4.ply",
+      "Dataset/deform_raw_denoise/maple6_d2.ply",
+      "Dataset/deform_raw_denoise/maple6_d5.ply",
+      "Dataset/deform_raw_denoise/maple6_d7.ply",
+      "Dataset/deform_raw_denoise/maple7_d2.ply",
+      "Dataset/deform_raw_denoise/maple7_d7.ply",
+      "Dataset/deform_raw_denoise/maple8_d8.ply",
+      "Dataset/deform_raw_denoise/maple9_d2.ply",
+      "Dataset/deform_raw_denoise/maple9_d5.ply",
+      "Dataset/deform_raw_denoise/maple9_d7.ply",
+      "Dataset/deform_raw_denoise/maple9_d8.ply"
+    ],
+    "BadArchiveReferences": [],
+    "RecordedAnnotation": "../DatasetProcessed/LeafEvalAll.json",
+    "RecordedDataPath": "../DatasetProcessed",
+    "RecordedCases": 360,
+    "SourceFolders": {
+      "Dataset/base_shape": 174,
+      "Dataset/deform_raw_denoise": 79
+    }
+  }
+}

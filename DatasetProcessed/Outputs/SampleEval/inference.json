@@ -1,0 +1,38 @@
+{
+  "model_path": "checkpoints/multi-3dllm",
+  "anno_path": "examples/sample_data/sample_mo3d.json",
+  "data_path": "examples/sample_data/sample_point_clouds",
+  "pointnum": 8192,
+  "metrics": {
+    "num_samples": 1,
+    "exact_match": 0.0,
+    "relaxed_match": 0.0
+  },
+  "generation_kwargs": {
+    "max_new_tokens": 256,
+    "temperature": 0.0,
+    "top_p": 0.9,
+    "top_k": 40,
+    "repetition_penalty": 1.0,
+    "no_repeat_ngram_size": 0,
+    "dedupe_delta_output": false,
+    "max_delta_output_clauses": 6
+  },
+  "results": [
+    {
+      "sample_index": 0,
+      "object_ids": [
+        "object_1.csv",
+        "object_2.csv"
+      ],
+      "question": "<point> <point>\nHow do the shapes of the first and second objects differ?",
+      "ground_truth": "The first object is a compact cube-like shape, while the second object is elongated along one axis.",
+      "answer": null,
+      "prediction": "The first object has a more complex shape with a person inside, while the second object is a simple circle.",
+      "exact_match": false,
+      "relaxed_match": false,
+      "is_shape_mating": false,
+      "metadata": {}
+    }
+  ]
+}

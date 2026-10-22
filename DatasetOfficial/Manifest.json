@@ -1,0 +1,5175 @@
+{
+  "MatchingRule": "Name-based only, with complete nonconstant grayscale masks; no synthetic masks or mesh reconstruction.",
+  "Samples": [
+    {
+      "Id": "1",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/1.obj",
+      "Deform": "DatasetOfficial/deform_train/1.obj",
+      "Mask": "DatasetOfficial/base_mask/1.png",
+      "Sdf": "DatasetOfficial/base_mask/sdf/1_sdf.npy",
+      "DeformGeometry": "Mesh",
+      "SdfStatus": "SameNameAndDimensions_NotRecomputed",
+      "Sources": {
+        "Base": "Dataset/base_shape/1-1.obj",
+        "Deform": "Dataset/deform_raw/1-1.obj",
+        "Mask": "Dataset/base_mask/1-1.png",
+        "Sdf": "Dataset/base_mask/sdf/1-1_sdf.npy"
+      },
+      "SourceSha256": {
+        "Base": "e91570b40e94bc5bc7d0c48bfceed73cdba900b1bf917d32bcb68f0c4220d80e",
+        "Deform": "fdb5bbf3f267f33fe2d7a2541db4a9ef13b369cc71aa6ce2efd728bd2ec4075e",
+        "Mask": "ce0bddd5fa768735fc3f9453c3d8bc754e2b9ba6b79a51d8c90f696e7c89403d",
+        "Sdf": "3dc536407969063aca83430e9c8199bd36b6afb5ece629b0a779c1b37143f2d1"
+      },
+      "Dependencies": [],
+      "MissingColorResources": [
+        "/Disk/HDD/Tzz/DeformLeaf/Dataset/base_shape/1-1.mtl"
+      ],
+      "AlternativeDeforms": [],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "1-1"
+    },
+    {
+      "Id": "2",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/2.obj",
+      "Deform": "DatasetOfficial/deform_train/2_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/2.png",
+      "Sdf": "DatasetOfficial/base_mask/sdf/2_sdf.npy",
+      "DeformGeometry": "PointCloud",
+      "SdfStatus": "SameNameAndDimensions_NotRecomputed",
+      "Sources": {
+        "Base": "Dataset/base_shape/18.obj",
+        "Deform": "Dataset/deform_raw_denoise/18.ply",
+        "Mask": "Dataset/base_mask/18.png",
+        "Sdf": "Dataset/base_mask/sdf/18_sdf.npy"
+      },
+      "SourceSha256": {
+        "Base": "57fa0117cfc70346e28603922e4f701a623d07dac1c51251300ffbcf915c1b2a",
+        "Deform": "678d47fbf18a136c571662bb7dd7e922f5fb183dd9514b72a9d2cab612c01be7",
+        "Mask": "ab9663b1d70d49b166e2f4c2759d7b62770efad662632ab6b5aafacfaded85f5",
+        "Sdf": "ac8f34596ebf2d12b1646181bb63f2b4694c2fa5ba791b38615169390676ff12"
+      },
+      "Dependencies": [],
+      "MissingColorResources": [
+        "/Disk/HDD/Tzz/DeformLeaf/Dataset/base_shape/18.mtl"
+      ],
+      "AlternativeDeforms": [],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "18"
+    },
+    {
+      "Id": "3",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/3.obj",
+      "Deform": "DatasetOfficial/deform_train/3.obj",
+      "Mask": "DatasetOfficial/base_mask/3.png",
+      "Sdf": "",
+      "DeformGeometry": "Mesh",
+      "SdfStatus": "NotAvailable",
+      "Sources": {
+        "Base": "Dataset/base_shape/2-2.obj",
+        "Deform": "Dataset/deform_train_new/2-2.obj",
+        "Mask": "Dataset/base_mask/2-2.png",
+        "Sdf": ""
+      },
+      "SourceSha256": {
+        "Base": "b9fbb5c79ae889448a4910a427875641dd947934de8907991381fa814284887e",
+        "Deform": "6cd0c6be1216f9fc18327df74ca16473901ce0ad2552371d785ecdc4b8e80986",
+        "Mask": "7e5d2a782d002c5db24eb6ac177dac65187a89ccf9fd9859a4d3ae0990c15ef5",
+        "Sdf": ""
+      },
+      "Dependencies": [],
+      "MissingColorResources": [
+        "/Disk/HDD/Tzz/DeformLeaf/Dataset/base_shape/2-2.mtl"
+      ],
+      "AlternativeDeforms": [],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "2-2"
+    },
+    {
+      "Id": "4",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/4.obj",
+      "Deform": "DatasetOfficial/deform_train/4_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/4.png",
+      "Sdf": "DatasetOfficial/base_mask/sdf/4_sdf.npy",
+      "DeformGeometry": "PointCloud",
+      "SdfStatus": "SameNameAndDimensions_NotRecomputed",
+      "Sources": {
+        "Base": "Dataset/base_shape/26.obj",
+        "Deform": "Dataset/deform_train/26.ply",
+        "Mask": "Dataset/base_mask/26.png",
+        "Sdf": "Dataset/base_mask/sdf/26_sdf.npy"
+      },
+      "SourceSha256": {
+        "Base": "5c874fed448325c9aeacdf1ff43284ba1458ac9fe800ebd6da0dbef5eabefa0e",
+        "Deform": "26b73842de36cddbefd7ce6d25d0cf2b43937630d9db90aeb586377830533972",
+        "Mask": "6310634f206d15ce9c45d253f2dceb5de29c0d98dbecbff81aa7a25ba4d77626",
+        "Sdf": "9c397d12d7a020db8b0e40c22c62dbd8ccc703021b7bc0755510888e92f84e79"
+      },
+      "Dependencies": [
+        {
+          "Source": "Dataset/base_shape/26.mtl",
+          "SourceSha256": "4199bea6598735e278dee12a2e2c8d8068081bb79f2a703b74daf0c11de44967",
+          "Output": "DatasetOfficial/base_shape/4BaseMaterial01.mtl"
+        },
+        {
+          "Source": "Dataset/base_shape/26.png",
+          "SourceSha256": "18e66da3e07cee175b0cb3de715599f389ac1f6facb15fe2f3da59e56c265773",
+          "Output": "DatasetOfficial/base_shape/4BaseTexture01.png"
+        }
+      ],
+      "MissingColorResources": [],
+      "AlternativeDeforms": [],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "26"
+    },
+    {
+      "Id": "5",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/5.obj",
+      "Deform": "DatasetOfficial/deform_train/5.obj",
+      "Mask": "DatasetOfficial/base_mask/5.png",
+      "Sdf": "",
+      "DeformGeometry": "Mesh",
+      "SdfStatus": "NotAvailable",
+      "Sources": {
+        "Base": "Dataset/base_shape/3-4.obj",
+        "Deform": "Dataset/deform_train_new/3-4.obj",
+        "Mask": "Dataset/base_mask/3-4.png",
+        "Sdf": ""
+      },
+      "SourceSha256": {
+        "Base": "038ba64f179c263cd4ae8d045d9a0fea66b4ffb8b1c4612000db116092f03734",
+        "Deform": "81d7a2edbf983e9248db688520d13a8dabc0d17624944afba39e85d19226c673",
+        "Mask": "0674c5ef2c8aa5788a8cc827ab62aa98a17c17615fa3f3d369553471f59b0736",
+        "Sdf": ""
+      },
+      "Dependencies": [
+        {
+          "Source": "Dataset/base_shape/3-4.mtl",
+          "SourceSha256": "eb76e5126f2dc25f207aeb04f0cb5533221004fb05f2b4752979bac67a256105",
+          "Output": "DatasetOfficial/base_shape/5BaseMaterial01.mtl"
+        },
+        {
+          "Source": "Dataset/base_shape/3-4.png",
+          "SourceSha256": "b989aaf649b96c815c4fee8a2a632aec6a3755570a4be414f1faba460b2bef5e",
+          "Output": "DatasetOfficial/base_shape/5BaseTexture01.png"
+        }
+      ],
+      "MissingColorResources": [],
+      "AlternativeDeforms": [],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "3-4"
+    },
+    {
+      "Id": "6",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/6.obj",
+      "Deform": "DatasetOfficial/deform_train/6_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/6.png",
+      "Sdf": "",
+      "DeformGeometry": "PointCloud",
+      "SdfStatus": "NotAvailable",
+      "Sources": {
+        "Base": "Dataset/base_shape/3.obj",
+        "Deform": "Dataset/deform_train/3_deform.ply",
+        "Mask": "Dataset/base_mask/3.png",
+        "Sdf": ""
+      },
+      "SourceSha256": {
+        "Base": "1c5bb994fffa2ffa7424a4a2add50e757c40275623a8ad98104078520a59d4b4",
+        "Deform": "56d36fc285ca82787da8e93407056ee10ffa3379394e2c69843d1f1598d3dff4",
+        "Mask": "856a2f449e775801278956727348b3872b7463bf6d9700d52d000ecaf5c8aad4",
+        "Sdf": ""
+      },
+      "Dependencies": [
+        {
+          "Source": "Dataset/base_shape/3.mtl",
+          "SourceSha256": "a7eecdb7b2a3559bc9d7cbc180d24357ac7c84ae61f477f83e1d0c9e07bceee4",
+          "Output": "DatasetOfficial/base_shape/6BaseMaterial01.mtl"
+        }
+      ],
+      "MissingColorResources": [
+        "3.png"
+      ],
+      "AlternativeDeforms": [
+        "Dataset/deform_train/3.ply",
+        "Dataset/deform_raw_denoise/3.ply"
+      ],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "3"
+    },
+    {
+      "Id": "7",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/7.obj",
+      "Deform": "DatasetOfficial/deform_train/7_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/7.png",
+      "Sdf": "",
+      "DeformGeometry": "PointCloud",
+      "SdfStatus": "NotAvailable",
+      "Sources": {
+        "Base": "Dataset/base_shape/31.obj",
+        "Deform": "Dataset/deform_train/31_deform.ply",
+        "Mask": "Dataset/base_mask/31.png",
+        "Sdf": ""
+      },
+      "SourceSha256": {
+        "Base": "22928db4b14ac138c680dc6c2ae14e0336abcf652435507a1590708876e2849a",
+        "Deform": "512ec69655664a823e4ccb0a9082cc462f18666de73ff3f7d857aa357b0bc0a3",
+        "Mask": "c1f5c6d8c2ca8de8a8437d28a08ae4ffcb766ab3760da552f651848fbc2d261a",
+        "Sdf": ""
+      },
+      "Dependencies": [
+        {
+          "Source": "Dataset/base_shape/31.mtl",
+          "SourceSha256": "c8df304578d2c785a6bcf951ba07b9f875ff8d8fc81910cb09605b19636be66b",
+          "Output": "DatasetOfficial/base_shape/7BaseMaterial01.mtl"
+        }
+      ],
+      "MissingColorResources": [
+        "31.png"
+      ],
+      "AlternativeDeforms": [
+        "Dataset/deform_train_new/31_deform.ply",
+        "Dataset/deform_raw_denoise/31.ply",
+        "Dataset/deform_raw/31.ply"
+      ],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "31"
+    },
+    {
+      "Id": "8",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/8.obj",
+      "Deform": "DatasetOfficial/deform_train/8_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/8.png",
+      "Sdf": "DatasetOfficial/base_mask/sdf/8_sdf.npy",
+      "DeformGeometry": "PointCloud",
+      "SdfStatus": "SameNameAndDimensions_NotRecomputed",
+      "Sources": {
+        "Base": "Dataset/base_shape/4.obj",
+        "Deform": "Dataset/deform_train/4_deform.ply",
+        "Mask": "Dataset/base_mask/4.png",
+        "Sdf": "Dataset/base_mask/sdf/4_sdf.npy"
+      },
+      "SourceSha256": {
+        "Base": "3b8bdcdca7ba47b817843db1e6ebfbf99b3cf8ed2ae84fb8f0f88e0a6248153b",
+        "Deform": "f94a98df340fd70ad6ab66aca228766a5bf04152511260602b2a6429464ff065",
+        "Mask": "1873b66419cb8804feb88fa60c2b09904368116205e26737c8d9f9fbd301af94",
+        "Sdf": "6e3a47e54d8009369497157e2a0b299253a15a40442a8359a7bb3deaaa20467e"
+      },
+      "Dependencies": [
+        {
+          "Source": "Dataset/base_shape/4.mtl",
+          "SourceSha256": "8fe73c9ffb85ae07da4945dd533de5f7c58b9f11f918b75eee4cf5ba2b036bce",
+          "Output": "DatasetOfficial/base_shape/8BaseMaterial01.mtl"
+        },
+        {
+          "Source": "Dataset/base_shape/4.png",
+          "SourceSha256": "a2c8f2a0f863cc8db111665249cec513a2c5dbbd9bcfe1f09446e51f6180e721",
+          "Output": "DatasetOfficial/base_shape/8BaseTexture01.png"
+        }
+      ],
+      "MissingColorResources": [],
+      "AlternativeDeforms": [
+        "Dataset/deform_raw/4.ply"
+      ],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "4"
+    },
+    {
+      "Id": "9",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/9.obj",
+      "Deform": "DatasetOfficial/deform_train/9_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/9.png",
+      "Sdf": "DatasetOfficial/base_mask/sdf/9_sdf.npy",
+      "DeformGeometry": "PointCloud",
+      "SdfStatus": "SameNameAndDimensions_NotRecomputed",
+      "Sources": {
+        "Base": "Dataset/base_shape/40.obj",
+        "Deform": "Dataset/deform_train/40_deform.ply",
+        "Mask": "Dataset/base_mask/40.png",
+        "Sdf": "Dataset/base_mask/sdf/40_sdf.npy"
+      },
+      "SourceSha256": {
+        "Base": "54d75a1bc3eecaac36915d09a62e6128d1e9e9b761af5e7eb98c9a7d61e77f9a",
+        "Deform": "49735374c541ee7cd89f5e3c82814354eb0f0e88b2c631f775f00d3943425c88",
+        "Mask": "d83aaaf0bf71bd4e31639969ce6ca5806d2d2846a0282aeed6e00a83cd64b7ea",
+        "Sdf": "2a6db3f6468987ef8c97d2c3f25cc3600fa32a0f81ebb6261a496e3547ee8d18"
+      },
+      "Dependencies": [],
+      "MissingColorResources": [
+        "/Disk/HDD/Tzz/DeformLeaf/Dataset/base_shape/40.mtl"
+      ],
+      "AlternativeDeforms": [
+        "Dataset/deform_train_new/40_deform.ply",
+        "Dataset/deform_raw_denoise/40.ply",
+        "Dataset/deform_raw/40.ply"
+      ],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "40"
+    },
+    {
+      "Id": "10",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/10.obj",
+      "Deform": "DatasetOfficial/deform_train/10_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/10.png",
+      "Sdf": "DatasetOfficial/base_mask/sdf/10_sdf.npy",
+      "DeformGeometry": "PointCloud",
+      "SdfStatus": "SameNameAndDimensions_NotRecomputed",
+      "Sources": {
+        "Base": "Dataset/base_shape/41.obj",
+        "Deform": "Dataset/deform_train/41.ply",
+        "Mask": "Dataset/base_mask/41.png",
+        "Sdf": "Dataset/base_mask/sdf/41_sdf.npy"
+      },
+      "SourceSha256": {
+        "Base": "8cd521225f08335ca58c41dd63387723c1e94ab479fe1c7ef6679a49551bda3d",
+        "Deform": "2c4275c98328dde5375ab508ba00eb745d67c4b1d60e14ee3d18f25e536aed5f",
+        "Mask": "9fafe0726d16482a6f5b0108b1bee3f02d6f4b7198daa187838f7d86fb715885",
+        "Sdf": "9302b6cfa1d95807725ad185dad545a701649a7b0956f0441db11cbc62aaa2fc"
+      },
+      "Dependencies": [
+        {
+          "Source": "Dataset/base_shape/41.mtl",
+          "SourceSha256": "7d5bf3945130160ec4db900e3d74024240761dcadca089b767c1e0615223acc8",
+          "Output": "DatasetOfficial/base_shape/10BaseMaterial01.mtl"
+        },
+        {
+          "Source": "Dataset/base_shape/41.png",
+          "SourceSha256": "ef5d9f5ee5fb53fdf94b23a0deaed79c5a6e3b46a0b41234fb4a695e5a23599a",
+          "Output": "DatasetOfficial/base_shape/10BaseTexture01.png"
+        }
+      ],
+      "MissingColorResources": [],
+      "AlternativeDeforms": [
+        "Dataset/deform_raw_denoise/41.ply"
+      ],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "41"
+    },
+    {
+      "Id": "11",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/11.obj",
+      "Deform": "DatasetOfficial/deform_train/11_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/11.png",
+      "Sdf": "",
+      "DeformGeometry": "PointCloud",
+      "SdfStatus": "NotAvailable",
+      "Sources": {
+        "Base": "Dataset/base_shape/44.obj",
+        "Deform": "Dataset/deform_raw_denoise/44.ply",
+        "Mask": "Dataset/base_mask/44.png",
+        "Sdf": ""
+      },
+      "SourceSha256": {
+        "Base": "4bce104592afba4e001c36c22d5c005a71127ede1ce446b47984ae4f9bb71cbe",
+        "Deform": "59837684bb0bb4af3276aa92a1bc9527f31ee137ef1c3dd97e318a729fec5075",
+        "Mask": "6455fbed0a8c42e84fc0ff2e1f9b29b9b570235323bdaa88dac1ac3826f8357f",
+        "Sdf": ""
+      },
+      "Dependencies": [],
+      "MissingColorResources": [
+        "/Disk/HDD/Tzz/DeformLeaf/Dataset/base_shape/44.mtl"
+      ],
+      "AlternativeDeforms": [
+        "Dataset/deform_raw/44.ply"
+      ],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "44"
+    },
+    {
+      "Id": "12",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/12.obj",
+      "Deform": "DatasetOfficial/deform_train/12_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/12.png",
+      "Sdf": "",
+      "DeformGeometry": "PointCloud",
+      "SdfStatus": "NotAvailable",
+      "Sources": {
+        "Base": "Dataset/base_shape/45.obj",
+        "Deform": "Dataset/deform_train/45.ply",
+        "Mask": "Dataset/base_mask/45.png",
+        "Sdf": ""
+      },
+      "SourceSha256": {
+        "Base": "65f4cf56e7de36acaaa8b83680a68872e5708b2195d4dffd5eda0b59a2dd1787",
+        "Deform": "0543c9f46956fac389c02ecef0dee498130e6f23150e0d57153c5e8f37d2a1ea",
+        "Mask": "a8db5f032fd53d4b6438bde9bc6e747847d5e32ad24cb078301785211723753c",
+        "Sdf": ""
+      },
+      "Dependencies": [
+        {
+          "Source": "Dataset/base_shape/45.mtl",
+          "SourceSha256": "632588dd4600ca291ce9ea73294f5d41b9afdcc32ca35b1ef10b4cba47f258f1",
+          "Output": "DatasetOfficial/base_shape/12BaseMaterial01.mtl"
+        },
+        {
+          "Source": "Dataset/base_shape/45.png",
+          "SourceSha256": "e96a4815d1e457a707f609af9338fdd4f86fc31914433d741b000d5a785df3be",
+          "Output": "DatasetOfficial/base_shape/12BaseTexture01.png"
+        }
+      ],
+      "MissingColorResources": [],
+      "AlternativeDeforms": [],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "45"
+    },
+    {
+      "Id": "13",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/13.obj",
+      "Deform": "DatasetOfficial/deform_train/13_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/13.png",
+      "Sdf": "",
+      "DeformGeometry": "PointCloud",
+      "SdfStatus": "NotAvailable",
+      "Sources": {
+        "Base": "Dataset/base_shape/49.obj",
+        "Deform": "Dataset/deform_train/49_deform.ply",
+        "Mask": "Dataset/base_mask/49.png",
+        "Sdf": ""
+      },
+      "SourceSha256": {
+        "Base": "d717459641bfd3a9d2e6596a253898c61ae37df52dce5cf03a0241fdc0718fb2",
+        "Deform": "6ebbb1d67d4da0b4529a121c3440cb860ce0e3134793b8ebd640ec059d3e4951",
+        "Mask": "15c4fbf4740f5d9b33ee12a866edc24e2b923fcb7e569ff7a6e3f499201391ab",
+        "Sdf": ""
+      },
+      "Dependencies": [
+        {
+          "Source": "Dataset/base_shape/49.mtl",
+          "SourceSha256": "ef6be672988ffa4103939064a8b0d215280692f96888de9a82eb0a5ba61f033e",
+          "Output": "DatasetOfficial/base_shape/13BaseMaterial01.mtl"
+        },
+        {
+          "Source": "Dataset/base_shape/49.png",
+          "SourceSha256": "4a0ccc41b3a17a538036ddb21fbe172cd552e1f4d07f9f586e18a753de256027",
+          "Output": "DatasetOfficial/base_shape/13BaseTexture01.png"
+        }
+      ],
+      "MissingColorResources": [],
+      "AlternativeDeforms": [
+        "Dataset/deform_train/49.ply",
+        "Dataset/deform_train_new/49_deform.ply",
+        "Dataset/deform_raw_denoise/49.ply",
+        "Dataset/deform_raw/49.ply"
+      ],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "49"
+    },
+    {
+      "Id": "14",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/14.obj",
+      "Deform": "DatasetOfficial/deform_train/14_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/14.png",
+      "Sdf": "",
+      "DeformGeometry": "PointCloud",
+      "SdfStatus": "NotAvailable",
+      "Sources": {
+        "Base": "Dataset/base_shape/50.obj",
+        "Deform": "Dataset/deform_train/50_deform.ply",
+        "Mask": "Dataset/base_mask/50.png",
+        "Sdf": ""
+      },
+      "SourceSha256": {
+        "Base": "f1e17590f001b661623912a82f0b8cce22a268c880e489815d15e0b474228ec6",
+        "Deform": "e1a23fa7b35f8bfb8ba29007b7730b3009c4b9c787f0c257d04e755ad3b22a86",
+        "Mask": "570de647abe315de6dc2e52a583bdb2554abcb089160126f57837ad33c200e95",
+        "Sdf": ""
+      },
+      "Dependencies": [],
+      "MissingColorResources": [
+        "/Disk/HDD/Tzz/DeformLeaf/Dataset/base_shape/50.mtl"
+      ],
+      "AlternativeDeforms": [
+        "Dataset/deform_train/50.ply",
+        "Dataset/deform_train_new/50_deform.ply",
+        "Dataset/deform_raw/50.ply"
+      ],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "50"
+    },
+    {
+      "Id": "15",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/15.obj",
+      "Deform": "DatasetOfficial/deform_train/15_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/15.png",
+      "Sdf": "",
+      "DeformGeometry": "PointCloud",
+      "SdfStatus": "NotAvailable",
+      "Sources": {
+        "Base": "Dataset/base_shape/6.obj",
+        "Deform": "Dataset/deform_train/6_deform.ply",
+        "Mask": "Dataset/base_mask/6.png",
+        "Sdf": ""
+      },
+      "SourceSha256": {
+        "Base": "f05cfe2913466b329c3e6e5599fc3fb2849dcf8cee76d039c1d8218f2c4eea60",
+        "Deform": "1902dd983d1b6de3280d2e40f2d811ecfa3a65cc6ab907b6e61b95fedb81d6ca",
+        "Mask": "dcf2e76909bce18225ca5fa716d13646c99d62d62b92fbc6293605a1126faa21",
+        "Sdf": ""
+      },
+      "Dependencies": [],
+      "MissingColorResources": [
+        "/Disk/HDD/Tzz/DeformLeaf/Dataset/base_shape/6.mtl"
+      ],
+      "AlternativeDeforms": [
+        "Dataset/deform_train/6.ply",
+        "Dataset/deform_raw_denoise/6.ply",
+        "Dataset/deform_raw/6.ply"
+      ],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "6"
+    },
+    {
+      "Id": "16",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/16.obj",
+      "Deform": "DatasetOfficial/deform_train/16_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/16.png",
+      "Sdf": "",
+      "DeformGeometry": "PointCloud",
+      "SdfStatus": "NotAvailable",
+      "Sources": {
+        "Base": "Dataset/base_shape/66.obj",
+        "Deform": "Dataset/deform_train/66_deform.ply",
+        "Mask": "Dataset/base_mask/66.png",
+        "Sdf": ""
+      },
+      "SourceSha256": {
+        "Base": "bbd584bb3c93a1609a34161a6fdb8644a93404109fa90154f4c25836ee2fe21f",
+        "Deform": "4fb1c71dc9d3493b83019e667123d535a8e29d608f007fc8c800db455c45668a",
+        "Mask": "8c89f2bf765f05e2ac8dffd9c322d6ac40271b753a7816bb329ad63e412f28cb",
+        "Sdf": ""
+      },
+      "Dependencies": [],
+      "MissingColorResources": [
+        "/Disk/HDD/Tzz/DeformLeaf/Dataset/base_shape/66.mtl"
+      ],
+      "AlternativeDeforms": [
+        "Dataset/deform_train/66.ply",
+        "Dataset/deform_raw/66.ply"
+      ],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "66"
+    },
+    {
+      "Id": "17",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/17.obj",
+      "Deform": "DatasetOfficial/deform_train/17.obj",
+      "Mask": "DatasetOfficial/base_mask/17.png",
+      "Sdf": "",
+      "DeformGeometry": "Mesh",
+      "SdfStatus": "NotAvailable",
+      "Sources": {
+        "Base": "Dataset/base_shape/7-1.obj",
+        "Deform": "Dataset/deform_train_new/7-1.obj",
+        "Mask": "Dataset/base_mask/7-1.png",
+        "Sdf": ""
+      },
+      "SourceSha256": {
+        "Base": "51d96d3ab1b40f5b90b8eb9efcc1d119c0aff88601eef1588e005c95f802831e",
+        "Deform": "6d7b5c5ce5a1a248f44cff6c0cc38286b95c6cdb1986b43ba6798d37acefe7bf",
+        "Mask": "c1f5c6d8c2ca8de8a8437d28a08ae4ffcb766ab3760da552f651848fbc2d261a",
+        "Sdf": ""
+      },
+      "Dependencies": [
+        {
+          "Source": "Dataset/base_shape/7-1.mtl",
+          "SourceSha256": "72e33ff90a06cb969fd86abfd5e637a46dc3e7b244af425c7623185df0383953",
+          "Output": "DatasetOfficial/base_shape/17BaseMaterial01.mtl"
+        }
+      ],
+      "MissingColorResources": [
+        "7-1.png"
+      ],
+      "AlternativeDeforms": [
+        "Dataset/deform_raw/7-1.obj"
+      ],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "7-1"
+    },
+    {
+      "Id": "18",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/18.obj",
+      "Deform": "DatasetOfficial/deform_train/18.obj",
+      "Mask": "DatasetOfficial/base_mask/18.png",
+      "Sdf": "",
+      "DeformGeometry": "Mesh",
+      "SdfStatus": "NotAvailable",
+      "Sources": {
+        "Base": "Dataset/base_shape/7-3.obj",
+        "Deform": "Dataset/deform_raw/7-3.obj",
+        "Mask": "Dataset/base_mask/7-3.png",
+        "Sdf": ""
+      },
+      "SourceSha256": {
+        "Base": "a59abcabb4d2c29713475797b74686138a8d77601e0e82608fee28b557054ea2",
+        "Deform": "8f2df0441236f5c4a827b9c7ff8f9d9d143a3901eedd2f9e90cc2f30afb81bb2",
+        "Mask": "6455fbed0a8c42e84fc0ff2e1f9b29b9b570235323bdaa88dac1ac3826f8357f",
+        "Sdf": ""
+      },
+      "Dependencies": [
+        {
+          "Source": "Dataset/base_shape/7-3.mtl",
+          "SourceSha256": "c1152acf09e59aa9e34317d50982a033ee778a2f15a8c3ea0b783104e846afcb",
+          "Output": "DatasetOfficial/base_shape/18BaseMaterial01.mtl"
+        },
+        {
+          "Source": "Dataset/base_shape/7-3.png",
+          "SourceSha256": "89c0df108d79520d23b5b9fb3a1bfb588eadf1cc4b6bdb3807c737fd3b8df5fe",
+          "Output": "DatasetOfficial/base_shape/18BaseTexture01.png"
+        }
+      ],
+      "MissingColorResources": [],
+      "AlternativeDeforms": [],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "7-3"
+    },
+    {
+      "Id": "19",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/19.obj",
+      "Deform": "DatasetOfficial/deform_train/19_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/19.png",
+      "Sdf": "",
+      "DeformGeometry": "PointCloud",
+      "SdfStatus": "NotAvailable",
+      "Sources": {
+        "Base": "Dataset/base_shape/77.obj",
+        "Deform": "Dataset/deform_train_new/77_deform.ply",
+        "Mask": "Dataset/base_mask/77.png",
+        "Sdf": ""
+      },
+      "SourceSha256": {
+        "Base": "c9203c4a5fb780ad80fb9261ab1adff8feecebb611e4050f1698c78b5fb37cfb",
+        "Deform": "9b017c1f9fbf6a429d66a841191eb29a59f9bd20d83835c5ba69e85c64bff816",
+        "Mask": "639010a786a30ee2361293ed8c60f0a08ad5ff309898477fd1fc34e5df1952a0",
+        "Sdf": ""
+      },
+      "Dependencies": [
+        {
+          "Source": "Dataset/base_shape/77.mtl",
+          "SourceSha256": "a7004ce18033f298ea5ce0970fc4cd805c5fb0fd8d6297a385372b350fcaa61e",
+          "Output": "DatasetOfficial/base_shape/19BaseMaterial01.mtl"
+        },
+        {
+          "Source": "Dataset/base_shape/77.png",
+          "SourceSha256": "a1e7be91bacc4188711af71cf44a353765003024de151b48eb743b9d8edbf3a5",
+          "Output": "DatasetOfficial/base_shape/19BaseTexture01.png"
+        }
+      ],
+      "MissingColorResources": [],
+      "AlternativeDeforms": [
+        "Dataset/deform_raw/77.ply"
+      ],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "77"
+    },
+    {
+      "Id": "20",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/20.obj",
+      "Deform": "DatasetOfficial/deform_train/20_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/20.png",
+      "Sdf": "DatasetOfficial/base_mask/sdf/20_sdf.npy",
+      "DeformGeometry": "PointCloud",
+      "SdfStatus": "SameNameAndDimensions_NotRecomputed",
+      "Sources": {
+        "Base": "Dataset/base_shape/78.obj",
+        "Deform": "Dataset/deform_train/78_deform.ply",
+        "Mask": "Dataset/base_mask/78.png",
+        "Sdf": "Dataset/base_mask/sdf/78_sdf.npy"
+      },
+      "SourceSha256": {
+        "Base": "3cb624a461c483a9938b613c80ac52dfb37e38fbdddcb1483f6a85dd2bb176a0",
+        "Deform": "89f1ea2f7b721f54be4500ef44611b116715ee3bea6c76ec18e9c5d0cb262c75",
+        "Mask": "b4b5c0f2f1faafe761b32f037778a7a5fce884621ea423581d6bd617eae94032",
+        "Sdf": "f19c11fd9b2ea2763fd75993820f9010a86cec55058968ea69cd86272a341b6a"
+      },
+      "Dependencies": [
+        {
+          "Source": "Dataset/base_shape/78.mtl",
+          "SourceSha256": "ac160eea13b30cd0dec62b9f8e3c2be20480fbdf10d51213fb4b966935805628",
+          "Output": "DatasetOfficial/base_shape/20BaseMaterial01.mtl"
+        },
+        {
+          "Source": "Dataset/base_shape/78.png",
+          "SourceSha256": "da66e791d841a5981427ed466010acb59ec11c35f2419c82d4028bab88086843",
+          "Output": "DatasetOfficial/base_shape/20BaseTexture01.png"
+        }
+      ],
+      "MissingColorResources": [],
+      "AlternativeDeforms": [
+        "Dataset/deform_train_new/78_deform.ply"
+      ],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "78"
+    },
+    {
+      "Id": "21",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/21.obj",
+      "Deform": "DatasetOfficial/deform_train/21_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/21.png",
+      "Sdf": "",
+      "DeformGeometry": "PointCloud",
+      "SdfStatus": "NotAvailable",
+      "Sources": {
+        "Base": "Dataset/base_shape/79.obj",
+        "Deform": "Dataset/deform_train/79_deform.ply",
+        "Mask": "Dataset/base_mask/79.png",
+        "Sdf": ""
+      },
+      "SourceSha256": {
+        "Base": "d18c16f5fd1236550926746839979dd13ade1f589daca25706a5f5f5b236eb2e",
+        "Deform": "d5c6bc0d2b3b86f3c3da6d51d10cd4acf5b20331a32c225cde5cf856799b217f",
+        "Mask": "7bfa817d233878b6c50e8ffe54ff4db5f7f0a4f55eaf769bcd394f2834aa3321",
+        "Sdf": ""
+      },
+      "Dependencies": [],
+      "MissingColorResources": [
+        "/Disk/HDD/Tzz/DeformLeaf/Dataset/base_shape/79.mtl"
+      ],
+      "AlternativeDeforms": [
+        "Dataset/deform_train/79.ply",
+        "Dataset/deform_train_new/79_deform.ply",
+        "Dataset/deform_raw_denoise/79.ply",
+        "Dataset/deform_raw/79.ply"
+      ],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "79"
+    },
+    {
+      "Id": "22",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/22.obj",
+      "Deform": "DatasetOfficial/deform_train/22_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/22.png",
+      "Sdf": "DatasetOfficial/base_mask/sdf/22_sdf.npy",
+      "DeformGeometry": "PointCloud",
+      "SdfStatus": "SameNameAndDimensions_NotRecomputed",
+      "Sources": {
+        "Base": "Dataset/base_shape/8.obj",
+        "Deform": "Dataset/deform_train/8_deform.ply",
+        "Mask": "Dataset/base_mask/8.png",
+        "Sdf": "Dataset/base_mask/sdf/8_sdf.npy"
+      },
+      "SourceSha256": {
+        "Base": "1d3477f61af180e55add9b87b1e4f7b3463a9dff115368cce18c948370d4d4bc",
+        "Deform": "1342f760829f7b6eb4bd08b60b322cab644abaaf427c8746e803f3e9aae76396",
+        "Mask": "1d881848e6a22d42d56829a7a777638117d3e54a53ad33a0b053f95028d172bc",
+        "Sdf": "7dd6ed6c00346f1a98e69993b485b155de2dae55ff18b812e884902e49a1e54d"
+      },
+      "Dependencies": [],
+      "MissingColorResources": [
+        "/Disk/HDD/Tzz/DeformLeaf/Dataset/base_shape/8.mtl"
+      ],
+      "AlternativeDeforms": [
+        "Dataset/deform_train/8.ply",
+        "Dataset/deform_raw_denoise/8.ply"
+      ],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "8"
+    },
+    {
+      "Id": "23",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/23.obj",
+      "Deform": "DatasetOfficial/deform_train/23_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/23.png",
+      "Sdf": "DatasetOfficial/base_mask/sdf/23_sdf.npy",
+      "DeformGeometry": "PointCloud",
+      "SdfStatus": "SameNameAndDimensions_NotRecomputed",
+      "Sources": {
+        "Base": "Dataset/base_shape/82.obj",
+        "Deform": "Dataset/deform_raw_denoise/82.ply",
+        "Mask": "Dataset/base_mask/82.png",
+        "Sdf": "Dataset/base_mask/sdf/82_sdf.npy"
+      },
+      "SourceSha256": {
+        "Base": "7dbbc4de04a5c2f447d1f11e95bd789b745ce8f8931c600d7a587cd35a0a7e0f",
+        "Deform": "f94c611eb242c15d8ace72c8c7b270deb0c56cdf4d6d75f8cce96c6cc85e6721",
+        "Mask": "8e17dd8cc7bb6e6e38b0605ac2033b564b3df9689ea505c184bb1631f0b948b0",
+        "Sdf": "4994b5109ab8ab6b7db550d1d216774ae2d26083a9a2c73ca4283b5047881a13"
+      },
+      "Dependencies": [
+        {
+          "Source": "Dataset/base_shape/82.mtl",
+          "SourceSha256": "413ffaf74f630db70a9b97fb7a85cd9b4d2b4d6ffbfee864540a4cfb542bcb0c",
+          "Output": "DatasetOfficial/base_shape/23BaseMaterial01.mtl"
+        },
+        {
+          "Source": "Dataset/base_shape/82.png",
+          "SourceSha256": "fd57ab747fa69c149452d10aff7e24c0176a5a7758fae273099817570809df8e",
+          "Output": "DatasetOfficial/base_shape/23BaseTexture01.png"
+        }
+      ],
+      "MissingColorResources": [],
+      "AlternativeDeforms": [
+        "Dataset/deform_raw/82.ply"
+      ],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "82"
+    },
+    {
+      "Id": "24",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/24.obj",
+      "Deform": "DatasetOfficial/deform_train/24_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/24.png",
+      "Sdf": "",
+      "DeformGeometry": "PointCloud",
+      "SdfStatus": "NotAvailable",
+      "Sources": {
+        "Base": "Dataset/base_shape/88.obj",
+        "Deform": "Dataset/deform_train/88_deform.ply",
+        "Mask": "Dataset/base_mask/88.png",
+        "Sdf": ""
+      },
+      "SourceSha256": {
+        "Base": "a44334b15b86e2148ea775e2ae161f105f24aed4fa075b78d3ba3abddc18cabf",
+        "Deform": "787e8756c394ff28ccdb2b7d1d8e1a10a6b81c57ba911b5583e5bd91cfa0ff97",
+        "Mask": "d9d7007f4ce883c374fa558059edf31d1cae7f1acbf796189b1d605080c7add7",
+        "Sdf": ""
+      },
+      "Dependencies": [],
+      "MissingColorResources": [
+        "/Disk/HDD/Tzz/DeformLeaf/Dataset/base_shape/88.mtl"
+      ],
+      "AlternativeDeforms": [
+        "Dataset/deform_train/88.ply",
+        "Dataset/deform_train_new/88_deform.ply",
+        "Dataset/deform_raw/88.ply"
+      ],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "88"
+    },
+    {
+      "Id": "25",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/25.obj",
+      "Deform": "DatasetOfficial/deform_train/25_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/25.png",
+      "Sdf": "",
+      "DeformGeometry": "PointCloud",
+      "SdfStatus": "NotAvailable",
+      "Sources": {
+        "Base": "Dataset/base_shape/89.obj",
+        "Deform": "Dataset/deform_train/89.ply",
+        "Mask": "Dataset/base_mask/89.png",
+        "Sdf": ""
+      },
+      "SourceSha256": {
+        "Base": "05b648c572ad7236cb0bcf4c5d23eb399b22709a817f801e65ace7af402e9fb1",
+        "Deform": "00428821052191a1aef713014a3c7809f3cc209771171746eac13e083618f044",
+        "Mask": "3d2e0affdf7682c806a283d9ad9dd394a4670bda58d9f4e97e30d5fcc4adc883",
+        "Sdf": ""
+      },
+      "Dependencies": [
+        {
+          "Source": "Dataset/base_shape/89.mtl",
+          "SourceSha256": "10dcbc541679bacac4ebbef8c31b5085e3f2e2bdba35d21323e3dc73388e40b2",
+          "Output": "DatasetOfficial/base_shape/25BaseMaterial01.mtl"
+        }
+      ],
+      "MissingColorResources": [
+        "89.png"
+      ],
+      "AlternativeDeforms": [
+        "Dataset/deform_train_new/89_deform.ply",
+        "Dataset/deform_raw_denoise/89.ply",
+        "Dataset/deform_raw/89.ply"
+      ],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "89"
+    },
+    {
+      "Id": "26",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/26.obj",
+      "Deform": "DatasetOfficial/deform_train/26_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/26.png",
+      "Sdf": "",
+      "DeformGeometry": "PointCloud",
+      "SdfStatus": "NotAvailable",
+      "Sources": {
+        "Base": "Dataset/base_shape/9.obj",
+        "Deform": "Dataset/deform_train/9.ply",
+        "Mask": "Dataset/base_mask/9.png",
+        "Sdf": ""
+      },
+      "SourceSha256": {
+        "Base": "9813142d87c63b3531ff4eb552b3be9c66f3bdaae3977b552c1d16c4f76e7ec8",
+        "Deform": "d7287aaca3408f098cdb6020f11069e097a8d40c38441c863bc70ded013df553",
+        "Mask": "ce0bddd5fa768735fc3f9453c3d8bc754e2b9ba6b79a51d8c90f696e7c89403d",
+        "Sdf": ""
+      },
+      "Dependencies": [
+        {
+          "Source": "Dataset/base_shape/9.mtl",
+          "SourceSha256": "f48cafc9f843dc06e4d4ce92f1d41b591829ad2341b359d9b4a85c34984c8c0b",
+          "Output": "DatasetOfficial/base_shape/26BaseMaterial01.mtl"
+        },
+        {
+          "Source": "Dataset/base_shape/9.png",
+          "SourceSha256": "0ab0975bf19d3c8bdbbf2decd4c57771ece0c9daaeab80dddd645e413b21b98f",
+          "Output": "DatasetOfficial/base_shape/26BaseTexture01.png"
+        }
+      ],
+      "MissingColorResources": [],
+      "AlternativeDeforms": [],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "9"
+    },
+    {
+      "Id": "27",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/27.obj",
+      "Deform": "DatasetOfficial/deform_train/27_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/27.png",
+      "Sdf": "DatasetOfficial/base_mask/sdf/27_sdf.npy",
+      "DeformGeometry": "PointCloud",
+      "SdfStatus": "SameNameAndDimensions_NotRecomputed",
+      "Sources": {
+        "Base": "Dataset/base_shape/leaf_11.obj",
+        "Deform": "Dataset/deform_train/leaf_11_deform.ply",
+        "Mask": "Dataset/base_mask/leaf_11.png",
+        "Sdf": "Dataset/base_mask/sdf/leaf_11_sdf.npy"
+      },
+      "SourceSha256": {
+        "Base": "2e2767c3da3c5b55d6e16f538acffd824a56c4cd541838f20717af05675334af",
+        "Deform": "7fd7910574e8311937f41ee41b29903e9b7deb7f2dd26f91e0ac578be684c2ff",
+        "Mask": "3c3ddfef80ddae0e0706a34e5178bc32e0cb86d2be2610593a5334aba9b7ffd7",
+        "Sdf": "95e251e4f54d78f2b2720abdb36f69e278c632e34919018f30e86a2e451c9b1a"
+      },
+      "Dependencies": [
+        {
+          "Source": "Dataset/base_shape/leaf_11.mtl",
+          "SourceSha256": "990d065a049d9f91119bf5eabaf278360e75c19c49ddf72b189c2b374332c2ba",
+          "Output": "DatasetOfficial/base_shape/27BaseMaterial01.mtl"
+        },
+        {
+          "Source": "Dataset/base_shape/leaf_11.png",
+          "SourceSha256": "3bc04529c1e3e885c61aa69ffa63210451ab309dd506df3e56b358a63fcda87d",
+          "Output": "DatasetOfficial/base_shape/27BaseTexture01.png"
+        }
+      ],
+      "MissingColorResources": [],
+      "AlternativeDeforms": [],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "leaf_11"
+    },
+    {
+      "Id": "28",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/28.obj",
+      "Deform": "DatasetOfficial/deform_train/28_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/28.png",
+      "Sdf": "",
+      "DeformGeometry": "PointCloud",
+      "SdfStatus": "NotAvailable",
+      "Sources": {
+        "Base": "Dataset/base_shape/leaf_18.obj",
+        "Deform": "Dataset/deform_train_new/leaf_18_deform.ply",
+        "Mask": "Dataset/base_mask/leaf_18.png",
+        "Sdf": ""
+      },
+      "SourceSha256": {
+        "Base": "8237a251bee7b145fd87101fe935f8ca00c6ba079332a79d369d7eb5cf170351",
+        "Deform": "225094e32f0fac2580c0d6a07410e75946245ed3ac0850209d085e31167931da",
+        "Mask": "7be882943921e44195b095e3f99e7cc1f0a120fb064c92ea87f96c3c3a09cf0f",
+        "Sdf": ""
+      },
+      "Dependencies": [],
+      "MissingColorResources": [
+        "/Disk/HDD/Tzz/DeformLeaf/Dataset/base_shape/leaf_18.mtl"
+      ],
+      "AlternativeDeforms": [],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "leaf_18"
+    },
+    {
+      "Id": "29",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/29.obj",
+      "Deform": "DatasetOfficial/deform_train/29_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/29.png",
+      "Sdf": "DatasetOfficial/base_mask/sdf/29_sdf.npy",
+      "DeformGeometry": "PointCloud",
+      "SdfStatus": "SameNameAndDimensions_NotRecomputed",
+      "Sources": {
+        "Base": "Dataset/base_shape/leaf_2.obj",
+        "Deform": "Dataset/deform_train_new/leaf_2_deform.ply",
+        "Mask": "Dataset/base_mask/leaf_2.png",
+        "Sdf": "Dataset/base_mask/sdf/leaf_2_sdf.npy"
+      },
+      "SourceSha256": {
+        "Base": "8d140d7b89d4e2c1aa325ccb201e7f14eb6e18c16aef1007d36d5aa599977af5",
+        "Deform": "75086fcecf641444192db8620a19e8832d4275bcb5b3d0684836f5d347782fd5",
+        "Mask": "4a59ac7ea35a65c9ab3c9845e80a3d9585a27d82b9bfdb1c348ad1995a39e19f",
+        "Sdf": "22ea59108c04094d2856ddb839348ce8bebf2abaddfb031c0af280306072e33b"
+      },
+      "Dependencies": [],
+      "MissingColorResources": [
+        "/Disk/HDD/Tzz/DeformLeaf/Dataset/base_shape/leaf_2.mtl"
+      ],
+      "AlternativeDeforms": [],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "leaf_2"
+    },
+    {
+      "Id": "30",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/30.obj",
+      "Deform": "DatasetOfficial/deform_train/30_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/30.png",
+      "Sdf": "",
+      "DeformGeometry": "PointCloud",
+      "SdfStatus": "NotAvailable",
+      "Sources": {
+        "Base": "Dataset/base_shape/leaf_28.obj",
+        "Deform": "Dataset/deform_train_new/leaf_28_deform.ply",
+        "Mask": "Dataset/base_mask/leaf_28.png",
+        "Sdf": ""
+      },
+      "SourceSha256": {
+        "Base": "b70474cd60b9f3de5e9b12acfb3bdcb9775c8c06eb6ab5c9a04c3bf3516dbac8",
+        "Deform": "ef4830f1efab4b904636bce1aaa86a8c672e4f2411292f01806d8718c4276629",
+        "Mask": "d02a113f24c189c51506e387daaaf81647e0847c5ff81d8ff40d5b7738ef1fb1",
+        "Sdf": ""
+      },
+      "Dependencies": [],
+      "MissingColorResources": [
+        "/Disk/HDD/Tzz/DeformLeaf/Dataset/base_shape/leaf_28.mtl"
+      ],
+      "AlternativeDeforms": [],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "leaf_28"
+    },
+    {
+      "Id": "31",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/31.obj",
+      "Deform": "DatasetOfficial/deform_train/31_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/31.png",
+      "Sdf": "",
+      "DeformGeometry": "PointCloud",
+      "SdfStatus": "NotAvailable",
+      "Sources": {
+        "Base": "Dataset/base_shape/leaf_29.obj",
+        "Deform": "Dataset/deform_train_new/leaf_29_deform.ply",
+        "Mask": "Dataset/base_mask/leaf_29.png",
+        "Sdf": ""
+      },
+      "SourceSha256": {
+        "Base": "5d4c2e22f7b1be07a2bc4de3505c919ccbe408954c3d891e3fe4a99cdd747d95",
+        "Deform": "bceda96a7024ba7ee93f391be54da49230e0fe415cba99564cf4d54ed12f1f48",
+        "Mask": "e084bbcb93d560242ae625574a8da5054ae72eadf01e64033af9d44cc60fb85e",
+        "Sdf": ""
+      },
+      "Dependencies": [
+        {
+          "Source": "Dataset/base_shape/leaf_29.mtl",
+          "SourceSha256": "321384055751054f0f1e8e83b6c896ca5c841848212396a6248f2741b161b3b7",
+          "Output": "DatasetOfficial/base_shape/31BaseMaterial01.mtl"
+        },
+        {
+          "Source": "Dataset/base_shape/leaf_29.png",
+          "SourceSha256": "66b2ae8a8416be42d3d02d90d86d76d76c2b118033be2a7af010db02398a2ce3",
+          "Output": "DatasetOfficial/base_shape/31BaseTexture01.png"
+        }
+      ],
+      "MissingColorResources": [],
+      "AlternativeDeforms": [],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "leaf_29"
+    },
+    {
+      "Id": "32",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/32.obj",
+      "Deform": "DatasetOfficial/deform_train/32_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/32.png",
+      "Sdf": "DatasetOfficial/base_mask/sdf/32_sdf.npy",
+      "DeformGeometry": "PointCloud",
+      "SdfStatus": "SameNameAndDimensions_NotRecomputed",
+      "Sources": {
+        "Base": "Dataset/base_shape/leaf_35.obj",
+        "Deform": "Dataset/deform_train/leaf_35_deform.ply",
+        "Mask": "Dataset/base_mask/leaf_35.png",
+        "Sdf": "Dataset/base_mask/sdf/leaf_35_sdf.npy"
+      },
+      "SourceSha256": {
+        "Base": "1aedbff5eff11504f0ad7f55f4a2cf44852eaaea470b5e89d880b3e7a3872fd5",
+        "Deform": "776089013a9a525365be758c0daf36f0078c2cb1963b2ba079e258fe2eee3c95",
+        "Mask": "bee3e58d414fd5962223016cac8259bfca628974955b8cf15ad263dc96ebf704",
+        "Sdf": "9c93dcb44c143122324ed9106957c95297d4fb6295203de0ed36f0a894de29e1"
+      },
+      "Dependencies": [],
+      "MissingColorResources": [
+        "/Disk/HDD/Tzz/DeformLeaf/Dataset/base_shape/leaf_35.mtl"
+      ],
+      "AlternativeDeforms": [],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "leaf_35"
+    },
+    {
+      "Id": "33",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/33.obj",
+      "Deform": "DatasetOfficial/deform_train/33_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/33.png",
+      "Sdf": "DatasetOfficial/base_mask/sdf/33_sdf.npy",
+      "DeformGeometry": "PointCloud",
+      "SdfStatus": "SameNameAndDimensions_NotRecomputed",
+      "Sources": {
+        "Base": "Dataset/base_shape/leaf_41.obj",
+        "Deform": "Dataset/deform_train/leaf_41_deform.ply",
+        "Mask": "Dataset/base_mask/leaf_41.png",
+        "Sdf": "Dataset/base_mask/sdf/leaf_41_sdf.npy"
+      },
+      "SourceSha256": {
+        "Base": "1bfe5dc9f4609852b412343ffa9b0f653a765c63b00a889722035e0526bd5846",
+        "Deform": "a58bc6d2a332af403b7586ba78baf786a637ac9b67320a8badc13537cef49237",
+        "Mask": "684031caa66b9e5d70863b11fe62c1941c66aadf2a474f6e988b732ffd685b69",
+        "Sdf": "df1eee54b617881b0ddeb545df71c23a6fdb4bd11d8f8380436061688932478a"
+      },
+      "Dependencies": [],
+      "MissingColorResources": [
+        "/Disk/HDD/Tzz/DeformLeaf/Dataset/base_shape/leaf_41.mtl"
+      ],
+      "AlternativeDeforms": [],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "leaf_41"
+    },
+    {
+      "Id": "34",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/34.obj",
+      "Deform": "DatasetOfficial/deform_train/34_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/34.png",
+      "Sdf": "DatasetOfficial/base_mask/sdf/34_sdf.npy",
+      "DeformGeometry": "Mesh",
+      "SdfStatus": "SameNameAndDimensions_NotRecomputed",
+      "Sources": {
+        "Base": "Dataset/base_shape/maple10_d1.obj",
+        "Deform": "Dataset/deform_train_new/maple10_d1.ply",
+        "Mask": "Dataset/base_mask/maple10_d1.png",
+        "Sdf": "Dataset/base_mask/sdf/maple10_d1_sdf.npy"
+      },
+      "SourceSha256": {
+        "Base": "6e953d4d6a1415f2d12e9b9e031ce670f13d821721437f2444b097dc0bfb6b6e",
+        "Deform": "e9b6efed58fed7f1f5b56f49228c8cb636a02e092908c6945e6ec000850f9216",
+        "Mask": "7aa52cedef15821a73433a3be73851274df6dc2e02816cea6f9c80e256adbefe",
+        "Sdf": "c13523d49c39a21b6a17a18e8bb72b204ee40224a5297c372f758bc21e7a2000"
+      },
+      "Dependencies": [
+        {
+          "Source": "Dataset/base_shape/maple10_d1.mtl",
+          "SourceSha256": "d68de10a5507b996c4170014807a6375dd97888b9d8cf42b56b9f4dffcaa6f8a",
+          "Output": "DatasetOfficial/base_shape/34BaseMaterial01.mtl"
+        },
+        {
+          "Source": "Dataset/base_shape/maple10_d1.png",
+          "SourceSha256": "3a25525108074327de98c63966d98560bb029d0175b40240f5911ed438509e6e",
+          "Output": "DatasetOfficial/base_shape/34BaseTexture01.png"
+        }
+      ],
+      "MissingColorResources": [],
+      "AlternativeDeforms": [
+        "Dataset/deform_raw_denoise/maple10_d1.ply"
+      ],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "maple10_d1"
+    },
+    {
+      "Id": "35",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/35.obj",
+      "Deform": "DatasetOfficial/deform_train/35_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/35.png",
+      "Sdf": "",
+      "DeformGeometry": "Mesh",
+      "SdfStatus": "NotAvailable",
+      "Sources": {
+        "Base": "Dataset/base_shape/maple10_d3.obj",
+        "Deform": "Dataset/deform_raw_denoise/maple10_d3.ply",
+        "Mask": "Dataset/base_mask/maple10_d3.png",
+        "Sdf": ""
+      },
+      "SourceSha256": {
+        "Base": "99fc68c4456022b2cb3990ccf2d384bda54fbcff29e93693c04b20995a6365a5",
+        "Deform": "eb5294ce6c8348b90145dd962be327b18835f482cd9cecfa862d2afafa06f3b3",
+        "Mask": "7aa52cedef15821a73433a3be73851274df6dc2e02816cea6f9c80e256adbefe",
+        "Sdf": ""
+      },
+      "Dependencies": [
+        {
+          "Source": "Dataset/base_shape/maple10_d3.mtl",
+          "SourceSha256": "66100f798cd2aeb19cd3a934356cb30c05a8c1b69e29cac29ec9254fa81fdcc9",
+          "Output": "DatasetOfficial/base_shape/35BaseMaterial01.mtl"
+        }
+      ],
+      "MissingColorResources": [
+        "maple10_d3.png"
+      ],
+      "AlternativeDeforms": [],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "maple10_d3"
+    },
+    {
+      "Id": "36",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/36.obj",
+      "Deform": "DatasetOfficial/deform_train/36_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/36.png",
+      "Sdf": "DatasetOfficial/base_mask/sdf/36_sdf.npy",
+      "DeformGeometry": "Mesh",
+      "SdfStatus": "SameNameAndDimensions_NotRecomputed",
+      "Sources": {
+        "Base": "Dataset/base_shape/maple10_d4.obj",
+        "Deform": "Dataset/deform_train_new/maple10_d4.ply",
+        "Mask": "Dataset/base_mask/maple10_d4.png",
+        "Sdf": "Dataset/base_mask/sdf/maple10_d4_sdf.npy"
+      },
+      "SourceSha256": {
+        "Base": "03852564c0dfd023fb7dbab7b54c568676586e0b2808db0db30f7872ddd89247",
+        "Deform": "af3268433d85c47d1ca0b1a3a901194333a5639c3b9a55608758003eb41df8d0",
+        "Mask": "7aa52cedef15821a73433a3be73851274df6dc2e02816cea6f9c80e256adbefe",
+        "Sdf": "c13523d49c39a21b6a17a18e8bb72b204ee40224a5297c372f758bc21e7a2000"
+      },
+      "Dependencies": [],
+      "MissingColorResources": [
+        "/Disk/HDD/Tzz/DeformLeaf/Dataset/base_shape/maple10_d4.mtl"
+      ],
+      "AlternativeDeforms": [
+        "Dataset/deform_raw_denoise/maple10_d4.ply"
+      ],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "maple10_d4"
+    },
+    {
+      "Id": "37",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/37.obj",
+      "Deform": "DatasetOfficial/deform_train/37_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/37.png",
+      "Sdf": "",
+      "DeformGeometry": "Mesh",
+      "SdfStatus": "NotAvailable",
+      "Sources": {
+        "Base": "Dataset/base_shape/maple2_d2.obj",
+        "Deform": "Dataset/deform_train_new/maple2_d2.ply",
+        "Mask": "Dataset/base_mask/maple2_d2.png",
+        "Sdf": ""
+      },
+      "SourceSha256": {
+        "Base": "ffa1e109f05e5431379f1e82a34cdec60b8b0aa3c6ae3dc52a0608c7f994ceb8",
+        "Deform": "65956f9ffee0bb6ef6cb51df42f7e372f64960807dd4f75f9c1178e0e391de49",
+        "Mask": "7aa52cedef15821a73433a3be73851274df6dc2e02816cea6f9c80e256adbefe",
+        "Sdf": ""
+      },
+      "Dependencies": [
+        {
+          "Source": "Dataset/base_shape/maple2_d2.mtl",
+          "SourceSha256": "a7b40aff4833a85b392cbac14b3af0f8157a2cda3c8921aa87748092fbe6b600",
+          "Output": "DatasetOfficial/base_shape/37BaseMaterial01.mtl"
+        },
+        {
+          "Source": "Dataset/base_shape/maple2_d2.png",
+          "SourceSha256": "3a25525108074327de98c63966d98560bb029d0175b40240f5911ed438509e6e",
+          "Output": "DatasetOfficial/base_shape/37BaseTexture01.png"
+        }
+      ],
+      "MissingColorResources": [],
+      "AlternativeDeforms": [
+        "Dataset/deform_raw_denoise/maple2_d2.ply"
+      ],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "maple2_d2"
+    },
+    {
+      "Id": "38",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/38.obj",
+      "Deform": "DatasetOfficial/deform_train/38_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/38.png",
+      "Sdf": "DatasetOfficial/base_mask/sdf/38_sdf.npy",
+      "DeformGeometry": "Mesh",
+      "SdfStatus": "SameNameAndDimensions_NotRecomputed",
+      "Sources": {
+        "Base": "Dataset/base_shape/maple2_d6.obj",
+        "Deform": "Dataset/deform_raw_denoise/maple2_d6.ply",
+        "Mask": "Dataset/base_mask/maple2_d6.png",
+        "Sdf": "Dataset/base_mask/sdf/maple2_d6_sdf.npy"
+      },
+      "SourceSha256": {
+        "Base": "540a2455548affebfc6df62eb893ee43315b898ea9d198d7c4799de969fd9294",
+        "Deform": "a2c5f8624852026102300a6ff9878da12ee064b110ad1cf68a659ca48ee3ef34",
+        "Mask": "7aa52cedef15821a73433a3be73851274df6dc2e02816cea6f9c80e256adbefe",
+        "Sdf": "c13523d49c39a21b6a17a18e8bb72b204ee40224a5297c372f758bc21e7a2000"
+      },
+      "Dependencies": [],
+      "MissingColorResources": [
+        "/Disk/HDD/Tzz/DeformLeaf/Dataset/base_shape/maple2_d6.mtl"
+      ],
+      "AlternativeDeforms": [],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "maple2_d6"
+    },
+    {
+      "Id": "39",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/39.obj",
+      "Deform": "DatasetOfficial/deform_train/39_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/39.png",
+      "Sdf": "",
+      "DeformGeometry": "Mesh",
+      "SdfStatus": "NotAvailable",
+      "Sources": {
+        "Base": "Dataset/base_shape/maple3_d7.obj",
+        "Deform": "Dataset/deform_raw_denoise/maple3_d7.ply",
+        "Mask": "Dataset/base_mask/maple3_d7.png",
+        "Sdf": ""
+      },
+      "SourceSha256": {
+        "Base": "52ee3ab10f15dafa3440894fcc84232dfb496f27abfff12e1cfbdf14f2a3c257",
+        "Deform": "cad1337e9bcdaa1ffd3249c8af4a4e765b84dcd431056fe8cb1a38205bfaafa4",
+        "Mask": "7aa52cedef15821a73433a3be73851274df6dc2e02816cea6f9c80e256adbefe",
+        "Sdf": ""
+      },
+      "Dependencies": [
+        {
+          "Source": "Dataset/base_shape/maple3_d7.mtl",
+          "SourceSha256": "57f68cf109f639f8b6ea39cbf9b1f38a501f02fe7786b892f7f6062d693a234f",
+          "Output": "DatasetOfficial/base_shape/39BaseMaterial01.mtl"
+        }
+      ],
+      "MissingColorResources": [
+        "maple3_d7.png"
+      ],
+      "AlternativeDeforms": [],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "maple3_d7"
+    },
+    {
+      "Id": "40",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/40.obj",
+      "Deform": "DatasetOfficial/deform_train/40_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/40.png",
+      "Sdf": "DatasetOfficial/base_mask/sdf/40_sdf.npy",
+      "DeformGeometry": "Mesh",
+      "SdfStatus": "SameNameAndDimensions_NotRecomputed",
+      "Sources": {
+        "Base": "Dataset/base_shape/maple5_d2.obj",
+        "Deform": "Dataset/deform_train_new/maple5_d2.ply",
+        "Mask": "Dataset/base_mask/maple5_d2.png",
+        "Sdf": "Dataset/base_mask/sdf/maple5_d2_sdf.npy"
+      },
+      "SourceSha256": {
+        "Base": "ad4842c20d33c185dda5602807603e5ee1822dbf0a7b19fa123f2be3d0c4dbf8",
+        "Deform": "f346f76a8524e051c2f77d774907a54b713d13d2fbe19adbb459f26f2f1971ac",
+        "Mask": "7aa52cedef15821a73433a3be73851274df6dc2e02816cea6f9c80e256adbefe",
+        "Sdf": "c13523d49c39a21b6a17a18e8bb72b204ee40224a5297c372f758bc21e7a2000"
+      },
+      "Dependencies": [
+        {
+          "Source": "Dataset/base_shape/maple5_d2.mtl",
+          "SourceSha256": "25d07ba018ec4abe91ec114497e1c2cb5192685e239cecfa7e05922e88263df1",
+          "Output": "DatasetOfficial/base_shape/40BaseMaterial01.mtl"
+        },
+        {
+          "Source": "Dataset/base_shape/maple5_d2.png",
+          "SourceSha256": "3a25525108074327de98c63966d98560bb029d0175b40240f5911ed438509e6e",
+          "Output": "DatasetOfficial/base_shape/40BaseTexture01.png"
+        }
+      ],
+      "MissingColorResources": [],
+      "AlternativeDeforms": [
+        "Dataset/deform_raw_denoise/maple5_d2.ply"
+      ],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "maple5_d2"
+    },
+    {
+      "Id": "41",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/41.obj",
+      "Deform": "DatasetOfficial/deform_train/41_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/41.png",
+      "Sdf": "DatasetOfficial/base_mask/sdf/41_sdf.npy",
+      "DeformGeometry": "Mesh",
+      "SdfStatus": "SameNameAndDimensions_NotRecomputed",
+      "Sources": {
+        "Base": "Dataset/base_shape/maple5_d3.obj",
+        "Deform": "Dataset/deform_train_new/maple5_d3.ply",
+        "Mask": "Dataset/base_mask/maple5_d3.png",
+        "Sdf": "Dataset/base_mask/sdf/maple5_d3_sdf.npy"
+      },
+      "SourceSha256": {
+        "Base": "ec00c649ec29e3390be05c68040f296dca1742b79a06babf1d414cbf8969ee90",
+        "Deform": "938064bdadbccb77e26595d00a865c8e3883aaa9e5b32dbf66d5e7e7213023bd",
+        "Mask": "7aa52cedef15821a73433a3be73851274df6dc2e02816cea6f9c80e256adbefe",
+        "Sdf": "c13523d49c39a21b6a17a18e8bb72b204ee40224a5297c372f758bc21e7a2000"
+      },
+      "Dependencies": [
+        {
+          "Source": "Dataset/base_shape/maple5_d3.mtl",
+          "SourceSha256": "077c23223fca57cdeae42635719a2f5a67207614765f20e0417b2cd254ce041f",
+          "Output": "DatasetOfficial/base_shape/41BaseMaterial01.mtl"
+        }
+      ],
+      "MissingColorResources": [
+        "maple5_d3.png"
+      ],
+      "AlternativeDeforms": [],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "maple5_d3"
+    },
+    {
+      "Id": "42",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/42.obj",
+      "Deform": "DatasetOfficial/deform_train/42_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/42.png",
+      "Sdf": "DatasetOfficial/base_mask/sdf/42_sdf.npy",
+      "DeformGeometry": "Mesh",
+      "SdfStatus": "SameNameAndDimensions_NotRecomputed",
+      "Sources": {
+        "Base": "Dataset/base_shape/maple5_d4.obj",
+        "Deform": "Dataset/deform_train_new/maple5_d4.ply",
+        "Mask": "Dataset/base_mask/maple5_d4.png",
+        "Sdf": "Dataset/base_mask/sdf/maple5_d4_sdf.npy"
+      },
+      "SourceSha256": {
+        "Base": "d17036909e1e22a6817e42f44047123df750f43e21b0559163cc9c3d9cd4329d",
+        "Deform": "68553da7eb1200852492d85c4d787a01f36f7968488c155e498429d9bda9bb97",
+        "Mask": "7aa52cedef15821a73433a3be73851274df6dc2e02816cea6f9c80e256adbefe",
+        "Sdf": "c13523d49c39a21b6a17a18e8bb72b204ee40224a5297c372f758bc21e7a2000"
+      },
+      "Dependencies": [],
+      "MissingColorResources": [
+        "/Disk/HDD/Tzz/DeformLeaf/Dataset/base_shape/maple5_d4.mtl"
+      ],
+      "AlternativeDeforms": [],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "maple5_d4"
+    },
+    {
+      "Id": "43",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/43.obj",
+      "Deform": "DatasetOfficial/deform_train/43_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/43.png",
+      "Sdf": "",
+      "DeformGeometry": "Mesh",
+      "SdfStatus": "NotAvailable",
+      "Sources": {
+        "Base": "Dataset/base_shape/maple5_d8.obj",
+        "Deform": "Dataset/deform_raw_denoise/maple5_d8.ply",
+        "Mask": "Dataset/base_mask/maple5_d8.png",
+        "Sdf": ""
+      },
+      "SourceSha256": {
+        "Base": "7bf2e33f5b599ea15cc729e376358911c1344fb8237005d6c72fef14dc8eef3a",
+        "Deform": "a00e76193501a27243c4812d36f6b22a95a68e09c8fa5b627a63d133231bec2a",
+        "Mask": "7aa52cedef15821a73433a3be73851274df6dc2e02816cea6f9c80e256adbefe",
+        "Sdf": ""
+      },
+      "Dependencies": [
+        {
+          "Source": "Dataset/base_shape/maple5_d8.mtl",
+          "SourceSha256": "db676b99a38ffc56fb38dda29388f007ff1beb8af3aa816421a0023d21e128a1",
+          "Output": "DatasetOfficial/base_shape/43BaseMaterial01.mtl"
+        },
+        {
+          "Source": "Dataset/base_shape/maple5_d8.png",
+          "SourceSha256": "3a25525108074327de98c63966d98560bb029d0175b40240f5911ed438509e6e",
+          "Output": "DatasetOfficial/base_shape/43BaseTexture01.png"
+        }
+      ],
+      "MissingColorResources": [],
+      "AlternativeDeforms": [],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "maple5_d8"
+    },
+    {
+      "Id": "44",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/44.obj",
+      "Deform": "DatasetOfficial/deform_train/44_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/44.png",
+      "Sdf": "DatasetOfficial/base_mask/sdf/44_sdf.npy",
+      "DeformGeometry": "Mesh",
+      "SdfStatus": "SameNameAndDimensions_NotRecomputed",
+      "Sources": {
+        "Base": "Dataset/base_shape/maple6_d4.obj",
+        "Deform": "Dataset/deform_train_new/maple6_d4.ply",
+        "Mask": "Dataset/base_mask/maple6_d4.png",
+        "Sdf": "Dataset/base_mask/sdf/maple6_d4_sdf.npy"
+      },
+      "SourceSha256": {
+        "Base": "fc61e0c0100f3bcdae0aedfa8dc3d48015ce96fa51c092df5455471aaa66abf7",
+        "Deform": "ad6f2c69bc074a0bd7abb4d010a071aaa364e9edad6881e9205f2571bd21a7e6",
+        "Mask": "7aa52cedef15821a73433a3be73851274df6dc2e02816cea6f9c80e256adbefe",
+        "Sdf": "c13523d49c39a21b6a17a18e8bb72b204ee40224a5297c372f758bc21e7a2000"
+      },
+      "Dependencies": [],
+      "MissingColorResources": [
+        "/Disk/HDD/Tzz/DeformLeaf/Dataset/base_shape/maple6_d4.mtl"
+      ],
+      "AlternativeDeforms": [],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "maple6_d4"
+    },
+    {
+      "Id": "45",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/45.obj",
+      "Deform": "DatasetOfficial/deform_train/45_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/45.png",
+      "Sdf": "",
+      "DeformGeometry": "Mesh",
+      "SdfStatus": "NotAvailable",
+      "Sources": {
+        "Base": "Dataset/base_shape/maple7_d5.obj",
+        "Deform": "Dataset/deform_train_new/maple7_d5.ply",
+        "Mask": "Dataset/base_mask/maple7_d5.png",
+        "Sdf": ""
+      },
+      "SourceSha256": {
+        "Base": "f29d8a8897b1f1a12e4d05bfda633d9ecd2fd8f863a2837f70b4f7c5e93e8cc3",
+        "Deform": "cea7a92533ab068a5e8b385934fe96cf57c13541c70024c532ccb321e933d533",
+        "Mask": "7aa52cedef15821a73433a3be73851274df6dc2e02816cea6f9c80e256adbefe",
+        "Sdf": ""
+      },
+      "Dependencies": [],
+      "MissingColorResources": [
+        "/Disk/HDD/Tzz/DeformLeaf/Dataset/base_shape/maple7_d5.mtl"
+      ],
+      "AlternativeDeforms": [],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "maple7_d5"
+    },
+    {
+      "Id": "46",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/46.obj",
+      "Deform": "DatasetOfficial/deform_train/46_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/46.png",
+      "Sdf": "",
+      "DeformGeometry": "Mesh",
+      "SdfStatus": "NotAvailable",
+      "Sources": {
+        "Base": "Dataset/base_shape/maple7_d6.obj",
+        "Deform": "Dataset/deform_train_new/maple7_d6.ply",
+        "Mask": "Dataset/base_mask/maple7_d6.png",
+        "Sdf": ""
+      },
+      "SourceSha256": {
+        "Base": "bb5593cf7f98dd3cc0a2676b59a237f8d5205dff55895687fdda00a996a16ed4",
+        "Deform": "5d79bfb27db83e991f9cd17a3541ee5c3239931fa8f67026048a668d98a6c505",
+        "Mask": "7aa52cedef15821a73433a3be73851274df6dc2e02816cea6f9c80e256adbefe",
+        "Sdf": ""
+      },
+      "Dependencies": [],
+      "MissingColorResources": [
+        "/Disk/HDD/Tzz/DeformLeaf/Dataset/base_shape/maple7_d6.mtl"
+      ],
+      "AlternativeDeforms": [
+        "Dataset/deform_raw_denoise/maple7_d6.ply"
+      ],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "maple7_d6"
+    },
+    {
+      "Id": "47",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/47.obj",
+      "Deform": "DatasetOfficial/deform_train/47_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/47.png",
+      "Sdf": "DatasetOfficial/base_mask/sdf/47_sdf.npy",
+      "DeformGeometry": "Mesh",
+      "SdfStatus": "SameNameAndDimensions_NotRecomputed",
+      "Sources": {
+        "Base": "Dataset/base_shape/maple8_d2.obj",
+        "Deform": "Dataset/deform_raw_denoise/maple8_d2.ply",
+        "Mask": "Dataset/base_mask/maple8_d2.png",
+        "Sdf": "Dataset/base_mask/sdf/maple8_d2_sdf.npy"
+      },
+      "SourceSha256": {
+        "Base": "b9dcfde9ab29e4ca8c77c55dbf8fcda1a9b01206373352ccfaaa81d186e0f017",
+        "Deform": "f78fd8f78bc4b7bf5f84050433d1347b603d1fc6bfa19afd002f39f2ac3a0880",
+        "Mask": "7aa52cedef15821a73433a3be73851274df6dc2e02816cea6f9c80e256adbefe",
+        "Sdf": "c13523d49c39a21b6a17a18e8bb72b204ee40224a5297c372f758bc21e7a2000"
+      },
+      "Dependencies": [
+        {
+          "Source": "Dataset/base_shape/maple8_d2.mtl",
+          "SourceSha256": "3cb049a343edcc836e1baa552336f06fdb1ec78346cb2e0308f7f022c3007426",
+          "Output": "DatasetOfficial/base_shape/47BaseMaterial01.mtl"
+        }
+      ],
+      "MissingColorResources": [
+        "maple8_d2.png"
+      ],
+      "AlternativeDeforms": [],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "maple8_d2"
+    },
+    {
+      "Id": "48",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/48.obj",
+      "Deform": "DatasetOfficial/deform_train/48_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/48.png",
+      "Sdf": "",
+      "DeformGeometry": "Mesh",
+      "SdfStatus": "NotAvailable",
+      "Sources": {
+        "Base": "Dataset/base_shape/maple8_d3.obj",
+        "Deform": "Dataset/deform_raw_denoise/maple8_d3.ply",
+        "Mask": "Dataset/base_mask/maple8_d3.png",
+        "Sdf": ""
+      },
+      "SourceSha256": {
+        "Base": "b2d0df88fdab0421232d09270712a07c67ff0a0c4aafe9f4bf6b431a74e815cb",
+        "Deform": "56f9529f29a175450135df4ba1883d14c9c9ce6023849be0c451b0c1ddecc8c5",
+        "Mask": "7aa52cedef15821a73433a3be73851274df6dc2e02816cea6f9c80e256adbefe",
+        "Sdf": ""
+      },
+      "Dependencies": [],
+      "MissingColorResources": [
+        "/Disk/HDD/Tzz/DeformLeaf/Dataset/base_shape/maple8_d3.mtl"
+      ],
+      "AlternativeDeforms": [],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "maple8_d3"
+    },
+    {
+      "Id": "49",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/49.obj",
+      "Deform": "DatasetOfficial/deform_train/49_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/49.png",
+      "Sdf": "",
+      "DeformGeometry": "Mesh",
+      "SdfStatus": "NotAvailable",
+      "Sources": {
+        "Base": "Dataset/base_shape/maple8_d6.obj",
+        "Deform": "Dataset/deform_train_new/maple8_d6.ply",
+        "Mask": "Dataset/base_mask/maple8_d6.png",
+        "Sdf": ""
+      },
+      "SourceSha256": {
+        "Base": "f587399d0698ce4346e0afce170e2a040d4648f80199c73f3c54b1ec10feed89",
+        "Deform": "52f257e82c0c0e7e8f2cdc518634d6964265f1fa506dd2d7df6c338eefb9417a",
+        "Mask": "7aa52cedef15821a73433a3be73851274df6dc2e02816cea6f9c80e256adbefe",
+        "Sdf": ""
+      },
+      "Dependencies": [
+        {
+          "Source": "Dataset/base_shape/maple8_d6.mtl",
+          "SourceSha256": "93e1c7797e1ccfbc18b87954de7210a13af210b74a9f85fc401e4c860b2f73b5",
+          "Output": "DatasetOfficial/base_shape/49BaseMaterial01.mtl"
+        }
+      ],
+      "MissingColorResources": [
+        "maple8_d6.png"
+      ],
+      "AlternativeDeforms": [
+        "Dataset/deform_raw_denoise/maple8_d6.ply"
+      ],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "maple8_d6"
+    },
+    {
+      "Id": "50",
+      "Region": "Main",
+      "PairingStatus": "FilenameMatched_NotManuallyVerified",
+      "BaseMesh": "DatasetOfficial/base_shape/50.obj",
+      "Deform": "DatasetOfficial/deform_train/50_deform.ply",
+      "Mask": "DatasetOfficial/base_mask/50.png",
+      "Sdf": "DatasetOfficial/base_mask/sdf/50_sdf.npy",
+      "DeformGeometry": "Mesh",
+      "SdfStatus": "SameNameAndDimensions_NotRecomputed",
+      "Sources": {
+        "Base": "Dataset/base_shape/maple9_d4.obj",
+        "Deform": "Dataset/deform_train_new/maple9_d4.ply",
+        "Mask": "Dataset/base_mask/maple9_d4.png",
+        "Sdf": "Dataset/base_mask/sdf/maple9_d4_sdf.npy"
+      },
+      "SourceSha256": {
+        "Base": "f42c55d5028ba238977d1e3cc01bcfe86910ae273b0c6353d2ba709277da7292",
+        "Deform": "b8c9fbd9dbd1ca5b31078c7ce63478dc422cd27286c64ec600e3193ebe976e50",
+        "Mask": "7aa52cedef15821a73433a3be73851274df6dc2e02816cea6f9c80e256adbefe",
+        "Sdf": "c13523d49c39a21b6a17a18e8bb72b204ee40224a5297c372f758bc21e7a2000"
+      },
+      "Dependencies": [],
+      "MissingColorResources": [
+        "/Disk/HDD/Tzz/DeformLeaf/Dataset/base_shape/maple9_d4.mtl"
+      ],
+      "AlternativeDeforms": [
+        "Dataset/deform_raw_denoise/maple9_d4.ply"
+      ],
+      "SelectionRule": "Directory priority: deform_train > deform_train_new > deform_raw_denoise > deform_raw; explicit _deform preferred within each directory.",
+      "OriginalId": "maple9_d4"
+    }
+  ],
+  "Unmatched": [
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/1-4.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/1-4.png",
+      "Candidates": [
+        "Dataset/deform_raw/1-4.obj"
+      ],
+      "OriginalId": "1-4"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/1-6.obj",
+      "Reason": "MissingMask;MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask/1-6.png",
+      "Candidates": [],
+      "OriginalId": "1-6"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/17.obj",
+      "Reason": "MissingMask;MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask/17.png",
+      "Candidates": [],
+      "OriginalId": "17"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/2-5.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/2-5.png",
+      "Candidates": [
+        "Dataset/deform_raw/2-5.obj"
+      ],
+      "OriginalId": "2-5"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/2.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/2.png",
+      "Candidates": [
+        "Dataset/deform_train_new/2_deform.ply"
+      ],
+      "OriginalId": "2"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/29.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/29.png",
+      "Candidates": [
+        "Dataset/deform_train_new/29_deform.ply"
+      ],
+      "OriginalId": "29"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/3-1.obj",
+      "Reason": "MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask/3-1.png",
+      "Candidates": [],
+      "OriginalId": "3-1"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/3-3.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/3-3.png",
+      "Candidates": [
+        "Dataset/deform_train_new/3-3.obj"
+      ],
+      "OriginalId": "3-3"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/30.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/30.png",
+      "Candidates": [
+        "Dataset/deform_raw_denoise/30.ply",
+        "Dataset/deform_raw/30.ply"
+      ],
+      "OriginalId": "30"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/34.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/34.png",
+      "Candidates": [
+        "Dataset/deform_train/34_deform.ply",
+        "Dataset/deform_train/34.ply",
+        "Dataset/deform_train_new/34_deform.ply"
+      ],
+      "OriginalId": "34"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/36.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/36.png",
+      "Candidates": [
+        "Dataset/deform_train/36_deform.ply",
+        "Dataset/deform_train/36.ply",
+        "Dataset/deform_train_new/36_deform.ply",
+        "Dataset/deform_raw_denoise/36.ply",
+        "Dataset/deform_raw/36.ply"
+      ],
+      "OriginalId": "36"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/37.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/37.png",
+      "Candidates": [
+        "Dataset/deform_train/37.ply",
+        "Dataset/deform_train_new/37_deform.ply"
+      ],
+      "OriginalId": "37"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/42.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/42.png",
+      "Candidates": [
+        "Dataset/deform_train_new/42_deform.ply",
+        "Dataset/deform_raw/42.ply"
+      ],
+      "OriginalId": "42"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/5-1.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/5-1.png",
+      "Candidates": [
+        "Dataset/deform_raw/5-1.obj"
+      ],
+      "OriginalId": "5-1"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/56.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/56.png",
+      "Candidates": [
+        "Dataset/deform_train/56_deform.ply",
+        "Dataset/deform_train_new/56_deform.ply",
+        "Dataset/deform_raw_denoise/56.ply",
+        "Dataset/deform_raw/56.ply"
+      ],
+      "OriginalId": "56"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/58.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/58.png",
+      "Candidates": [
+        "Dataset/deform_raw_denoise/58.ply",
+        "Dataset/deform_raw/58.ply"
+      ],
+      "OriginalId": "58"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/60.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/60.png",
+      "Candidates": [
+        "Dataset/deform_train/60.ply",
+        "Dataset/deform_train_new/60_deform.ply"
+      ],
+      "OriginalId": "60"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/61.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/61.png",
+      "Candidates": [
+        "Dataset/deform_train/61_deform.ply",
+        "Dataset/deform_train/61.ply",
+        "Dataset/deform_raw_denoise/61.ply"
+      ],
+      "OriginalId": "61"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/64.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/64.png",
+      "Candidates": [
+        "Dataset/deform_train/64_deform.ply",
+        "Dataset/deform_train/64.ply",
+        "Dataset/deform_raw/64.ply"
+      ],
+      "OriginalId": "64"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/70.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/70.png",
+      "Candidates": [
+        "Dataset/deform_train_new/70_deform.ply",
+        "Dataset/deform_raw_denoise/70.ply",
+        "Dataset/deform_raw/70.ply"
+      ],
+      "OriginalId": "70"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/71.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/71.png",
+      "Candidates": [
+        "Dataset/deform_raw/71.ply"
+      ],
+      "OriginalId": "71"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/74.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/74.png",
+      "Candidates": [
+        "Dataset/deform_train/74_deform.ply",
+        "Dataset/deform_train_new/74_deform.ply",
+        "Dataset/deform_raw/74.ply"
+      ],
+      "OriginalId": "74"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/83.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/83.png",
+      "Candidates": [
+        "Dataset/deform_train/83.ply"
+      ],
+      "OriginalId": "83"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/84.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/84.png",
+      "Candidates": [
+        "Dataset/deform_train/84.ply",
+        "Dataset/deform_train_new/84_deform.ply",
+        "Dataset/deform_raw_denoise/84.ply",
+        "Dataset/deform_raw/84.ply"
+      ],
+      "OriginalId": "84"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/92.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/92.png",
+      "Candidates": [
+        "Dataset/deform_train/92.ply"
+      ],
+      "OriginalId": "92"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/93.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/93.png",
+      "Candidates": [
+        "Dataset/deform_train/93_deform.ply",
+        "Dataset/deform_train/93.ply",
+        "Dataset/deform_raw/93.ply"
+      ],
+      "OriginalId": "93"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/94.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/94.png",
+      "Candidates": [
+        "Dataset/deform_train/94_deform.ply",
+        "Dataset/deform_train/94.ply",
+        "Dataset/deform_raw/94.ply"
+      ],
+      "OriginalId": "94"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/leaf_0.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/leaf_0.png",
+      "Candidates": [
+        "Dataset/deform_train_new/leaf_0_deform.ply"
+      ],
+      "OriginalId": "leaf_0"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/leaf_1.obj",
+      "Reason": "MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask/leaf_1.png",
+      "Candidates": [],
+      "OriginalId": "leaf_1"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/leaf_17.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/leaf_17.png",
+      "Candidates": [
+        "Dataset/deform_train/leaf_17_deform.ply",
+        "Dataset/deform_train_new/leaf_17_deform.ply"
+      ],
+      "OriginalId": "leaf_17"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/leaf_21.obj",
+      "Reason": "MissingMask;MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask/leaf_21.png",
+      "Candidates": [],
+      "OriginalId": "leaf_21"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/leaf_22.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/leaf_22.png",
+      "Candidates": [
+        "Dataset/deform_train/leaf_22_deform.ply",
+        "Dataset/deform_train_new/leaf_22_deform.ply"
+      ],
+      "OriginalId": "leaf_22"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/leaf_23.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/leaf_23.png",
+      "Candidates": [
+        "Dataset/deform_train/leaf_23_deform.ply",
+        "Dataset/deform_train_new/leaf_23_deform.ply"
+      ],
+      "OriginalId": "leaf_23"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/leaf_24.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/leaf_24.png",
+      "Candidates": [
+        "Dataset/deform_train_new/leaf_24_deform.ply"
+      ],
+      "OriginalId": "leaf_24"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/leaf_27.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/leaf_27.png",
+      "Candidates": [
+        "Dataset/deform_train_new/leaf_27_deform.ply"
+      ],
+      "OriginalId": "leaf_27"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/leaf_37.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/leaf_37.png",
+      "Candidates": [
+        "Dataset/deform_train_new/leaf_37_deform.ply"
+      ],
+      "OriginalId": "leaf_37"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/leaf_40.obj",
+      "Reason": "MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask/leaf_40.png",
+      "Candidates": [],
+      "OriginalId": "leaf_40"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/leaf_46.obj",
+      "Reason": "MissingMask;MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask/leaf_46.png",
+      "Candidates": [],
+      "OriginalId": "leaf_46"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/leaf_47.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/leaf_47.png",
+      "Candidates": [
+        "Dataset/deform_train/leaf_47_deform.ply"
+      ],
+      "OriginalId": "leaf_47"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/leaf_6.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/leaf_6.png",
+      "Candidates": [
+        "Dataset/deform_train_new/leaf_6_deform.ply"
+      ],
+      "OriginalId": "leaf_6"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/maple10_d5.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/maple10_d5.png",
+      "Candidates": [
+        "Dataset/deform_train_new/maple10_d5.ply",
+        "Dataset/deform_raw_denoise/maple10_d5.ply"
+      ],
+      "OriginalId": "maple10_d5"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/maple10_d7.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/maple10_d7.png",
+      "Candidates": [
+        "Dataset/deform_train_new/maple10_d7.ply",
+        "Dataset/deform_raw_denoise/maple10_d7.ply"
+      ],
+      "OriginalId": "maple10_d7"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/maple10_d8.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/maple10_d8.png",
+      "Candidates": [
+        "Dataset/deform_raw_denoise/maple10_d8.ply"
+      ],
+      "OriginalId": "maple10_d8"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/maple1_d3.obj",
+      "Reason": "MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask/maple1_d3.png",
+      "Candidates": [],
+      "OriginalId": "maple1_d3"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/maple1_d4.obj",
+      "Reason": "MissingMask;MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask/maple1_d4.png",
+      "Candidates": [],
+      "OriginalId": "maple1_d4"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/maple1_d5.obj",
+      "Reason": "MissingMask;MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask/maple1_d5.png",
+      "Candidates": [],
+      "OriginalId": "maple1_d5"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/maple1_d8.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/maple1_d8.png",
+      "Candidates": [
+        "Dataset/deform_train_new/maple1_d8.ply",
+        "Dataset/deform_raw_denoise/maple1_d8.ply"
+      ],
+      "OriginalId": "maple1_d8"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/maple2_d1.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/maple2_d1.png",
+      "Candidates": [
+        "Dataset/deform_raw_denoise/maple2_d1.ply"
+      ],
+      "OriginalId": "maple2_d1"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/maple2_d4.obj",
+      "Reason": "MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask/maple2_d4.png",
+      "Candidates": [],
+      "OriginalId": "maple2_d4"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/maple2_d7.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/maple2_d7.png",
+      "Candidates": [
+        "Dataset/deform_raw_denoise/maple2_d7.ply"
+      ],
+      "OriginalId": "maple2_d7"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/maple3_d4.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/maple3_d4.png",
+      "Candidates": [
+        "Dataset/deform_train_new/maple3_d4.ply"
+      ],
+      "OriginalId": "maple3_d4"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/maple3_d5.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/maple3_d5.png",
+      "Candidates": [
+        "Dataset/deform_raw_denoise/maple3_d5.ply"
+      ],
+      "OriginalId": "maple3_d5"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/maple4_d3.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/maple4_d3.png",
+      "Candidates": [
+        "Dataset/deform_train_new/maple4_d3.ply"
+      ],
+      "OriginalId": "maple4_d3"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/maple4_d4.obj",
+      "Reason": "MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask/maple4_d4.png",
+      "Candidates": [],
+      "OriginalId": "maple4_d4"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/maple4_d6.obj",
+      "Reason": "MissingMask;MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask/maple4_d6.png",
+      "Candidates": [],
+      "OriginalId": "maple4_d6"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/maple4_d7.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/maple4_d7.png",
+      "Candidates": [
+        "Dataset/deform_train_new/maple4_d7.ply"
+      ],
+      "OriginalId": "maple4_d7"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/maple5_d5.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/maple5_d5.png",
+      "Candidates": [
+        "Dataset/deform_train_new/maple5_d5.ply",
+        "Dataset/deform_raw_denoise/maple5_d5.ply"
+      ],
+      "OriginalId": "maple5_d5"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/maple5_d7.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/maple5_d7.png",
+      "Candidates": [
+        "Dataset/deform_raw_denoise/maple5_d7.ply"
+      ],
+      "OriginalId": "maple5_d7"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/maple7_d7.obj",
+      "Reason": "MissingMask;MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask/maple7_d7.png",
+      "Candidates": [],
+      "OriginalId": "maple7_d7"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/maple8_d4.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/maple8_d4.png",
+      "Candidates": [
+        "Dataset/deform_train_new/maple8_d4.ply"
+      ],
+      "OriginalId": "maple8_d4"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/maple8_d5.obj",
+      "Reason": "MissingMask;MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask/maple8_d5.png",
+      "Candidates": [],
+      "OriginalId": "maple8_d5"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/maple8_d7.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/maple8_d7.png",
+      "Candidates": [
+        "Dataset/deform_train_new/maple8_d7.ply",
+        "Dataset/deform_raw_denoise/maple8_d7.ply"
+      ],
+      "OriginalId": "maple8_d7"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/maple9_d2.obj",
+      "Reason": "MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask/maple9_d2.png",
+      "Candidates": [],
+      "OriginalId": "maple9_d2"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/maple9_d3.obj",
+      "Reason": "MissingMask",
+      "ExpectedMask": "Dataset/base_mask/maple9_d3.png",
+      "Candidates": [
+        "Dataset/deform_train_new/maple9_d3.ply"
+      ],
+      "OriginalId": "maple9_d3"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/maple9_d7.obj",
+      "Reason": "MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask/maple9_d7.png",
+      "Candidates": [],
+      "OriginalId": "maple9_d7"
+    },
+    {
+      "Region": "Main",
+      "Source": "Dataset/base_shape/maple9_d8.obj",
+      "Reason": "MissingMask;MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask/maple9_d8.png",
+      "Candidates": [],
+      "OriginalId": "maple9_d8"
+    },
+    {
+      "Region": "Extra",
+      "Source": "Dataset/base_shape_extra/0003_0030_rgb.obj",
+      "Reason": "MissingMask;MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask_extra/0003_0030_mask.png",
+      "Candidates": [],
+      "OriginalId": "0003_0030"
+    },
+    {
+      "Region": "Extra",
+      "Source": "Dataset/base_shape_extra/0003_0140_rgb.obj",
+      "Reason": "MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask_extra/0003_0140_mask.png",
+      "Candidates": [],
+      "OriginalId": "0003_0140"
+    },
+    {
+      "Region": "Extra",
+      "Source": "Dataset/base_shape_extra/0006_0040_rgb.obj",
+      "Reason": "MissingMask;MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask_extra/0006_0040_mask.png",
+      "Candidates": [],
+      "OriginalId": "0006_0040"
+    },
+    {
+      "Region": "Extra",
+      "Source": "Dataset/base_shape_extra/0006_0108_rgb.obj",
+      "Reason": "MissingMask;MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask_extra/0006_0108_mask.png",
+      "Candidates": [],
+      "OriginalId": "0006_0108"
+    },
+    {
+      "Region": "Extra",
+      "Source": "Dataset/base_shape_extra/0008_0025_rgb.obj",
+      "Reason": "MissingMask;MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask_extra/0008_0025_mask.png",
+      "Candidates": [],
+      "OriginalId": "0008_0025"
+    },
+    {
+      "Region": "Extra",
+      "Source": "Dataset/base_shape_extra/0008_0116_rgb.obj",
+      "Reason": "MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask_extra/0008_0116_mask.png",
+      "Candidates": [],
+      "OriginalId": "0008_0116"
+    },
+    {
+      "Region": "Extra",
+      "Source": "Dataset/base_shape_extra/0011_0026_rgb.obj",
+      "Reason": "MissingMask;MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask_extra/0011_0026_mask.png",
+      "Candidates": [],
+      "OriginalId": "0011_0026"
+    },
+    {
+      "Region": "Extra",
+      "Source": "Dataset/base_shape_extra/0011_0082_rgb.obj",
+      "Reason": "MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask_extra/0011_0082_mask.png",
+      "Candidates": [],
+      "OriginalId": "0011_0082"
+    },
+    {
+      "Region": "Extra",
+      "Source": "Dataset/base_shape_extra/0016_0024_rgb.obj",
+      "Reason": "MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask_extra/0016_0024_mask.png",
+      "Candidates": [],
+      "OriginalId": "0016_0024"
+    },
+    {
+      "Region": "Extra",
+      "Source": "Dataset/base_shape_extra/0016_0074_rgb.obj",
+      "Reason": "MissingMask;MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask_extra/0016_0074_mask.png",
+      "Candidates": [],
+      "OriginalId": "0016_0074"
+    },
+    {
+      "Region": "Extra",
+      "Source": "Dataset/base_shape_extra/0016_0090_rgb.obj",
+      "Reason": "MissingMask;MissingDeformation",
+      "ExpectedMask": "Dataset/base_mask_extra/0016_0090_mask.png",
+      "Candidates": [],
+      "OriginalId": "0016_0090"
+    },
+    {
+      "Region": "MapleExtra",
+      "Source": "Dataset/maple_extra/base_shape/maple_1.obj",
+      "Reason": "MissingDeformation",
+      "ExpectedMask": "Dataset/maple_extra/base_mask/maple_1.png",
+      "Candidates": [],
+      "OriginalId": "maple_1"
+    },
+    {
+      "Region": "MapleExtra",
+      "Source": "Dataset/maple_extra/base_shape/maple_3.obj",
+      "Reason": "MissingDeformation",
+      "ExpectedMask": "Dataset/maple_extra/base_mask/maple_3.png",
+      "Candidates": [],
+      "OriginalId": "maple_3"
+    },
+    {
+      "Region": "MapleExtra",
+      "Source": "Dataset/maple_extra/base_shape/maple_4.obj",
+      "Reason": "MissingDeformation",
+      "ExpectedMask": "Dataset/maple_extra/base_mask/maple_4.png",
+      "Candidates": [],
+      "OriginalId": "maple_4"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/1-2.obj",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "1-2"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/1-4.obj",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "1-4"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/1-7.obj",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "1-7"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/1.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "1"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/14.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "14"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/2-3.obj",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "2-3"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/2-5.obj",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "2-5"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/2-6.obj",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "2-6"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/20.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "20"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/22.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "22"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/27.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "27"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/30.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "30"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/31.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "31"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/36.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "36"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/4.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "4"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/40.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "40"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/42.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "42"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/44.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "44"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/47.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "47"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/49.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "49"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/5-1.obj",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "5-1"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/50.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "50"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/52.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "52"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/56.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "56"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/57.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "57"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/58.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "58"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/6-2.obj",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "6-2"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/6-3.obj",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "6-3"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/6.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "6"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/64.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "64"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/65.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "65"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/66.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "66"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/68.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "68"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/69.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "69"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/7-1.obj",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "7-1"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/7-2.obj",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "7-2"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/7.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "7"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/70.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "70"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/71.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "71"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/74.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "74"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/75.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "75"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/76.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "76"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/77.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "77"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/79.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "79"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/82.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "82"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/84.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "84"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/85.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "85"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/88.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "88"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/89.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "89"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/90.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "90"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/91.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "91"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/93.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "93"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/94.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "94"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw/95.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "95"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/11.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "11"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/14.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "14"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/22.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "22"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/27.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "27"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/28.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "28"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/3.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "3"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/30.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "30"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/31.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "31"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/32.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "32"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/36.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "36"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/40.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "40"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/41.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "41"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/43.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "43"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/49.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "49"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/54.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "54"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/56.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "56"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/58.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "58"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/59.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "59"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/6.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "6"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/61.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "61"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/63.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "63"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/68.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "68"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/69.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "69"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/7.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "7"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/70.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "70"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/75.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "75"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/79.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "79"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/8.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "8"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/81.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "81"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/84.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "84"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/86.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "86"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/89.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "89"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple10_d1.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple10_d1"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple10_d4.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple10_d4"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple10_d5.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple10_d5"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple10_d7.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple10_d7"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple10_d8.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple10_d8"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple1_d1.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple1_d1"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple1_d2.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple1_d2"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple1_d6.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple1_d6"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple1_d7.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple1_d7"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple1_d8.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple1_d8"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple2_d1.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple2_d1"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple2_d2.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple2_d2"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple2_d3.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple2_d3"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple2_d5.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple2_d5"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple2_d7.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple2_d7"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple2_d8.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple2_d8"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple3_d5.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple3_d5"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple4_d2.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple4_d2"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple4_d5.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple4_d5"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple5_d2.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple5_d2"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple5_d5.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple5_d5"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple5_d6.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple5_d6"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple5_d7.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple5_d7"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple6_d1.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple6_d1"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple6_d6.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple6_d6"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple6_d8.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple6_d8"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple7_d1.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple7_d1"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple7_d3.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple7_d3"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple7_d6.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple7_d6"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple7_d8.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple7_d8"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple8_d6.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple8_d6"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple8_d7.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple8_d7"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple9_d1.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple9_d1"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple9_d4.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple9_d4"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_raw_denoise/maple9_d6.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple9_d6"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/12.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "12"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/12_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "12"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/14.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "14"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/14_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "14"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/1_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "1"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/20.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "20"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/20_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "20"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/21_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "21"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/22.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "22"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/22_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "22"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/24_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "24"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/27.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "27"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/27_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "27"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/28.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "28"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/28_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "28"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/3.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "3"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/34.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "34"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/34_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "34"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/36.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "36"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/36_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "36"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/37.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "37"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/39.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "39"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/47.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "47"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/47_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "47"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/49.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "49"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/50.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "50"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/51.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "51"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/51_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "51"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/54.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "54"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/54_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "54"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/55.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "55"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/56_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "56"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/57.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "57"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/57_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "57"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/6.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "6"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/60.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "60"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/61.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "61"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/61_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "61"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/64.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "64"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/64_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "64"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/65.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "65"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/65_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "65"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/66.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "66"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/67_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "67"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/68_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "68"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/7.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "7"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/73_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "73"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/74_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "74"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/75.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "75"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/79.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "79"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/8.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "8"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/81.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "81"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/81_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "81"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/83.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "83"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/84.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "84"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/86_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "86"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/88.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "88"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/90_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "90"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/91_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "91"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/92.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "92"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/93.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "93"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/93_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "93"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/94.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "94"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/94_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "94"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/95.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "95"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/95_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "95"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_0_base.ply",
+      "Reason": "BaseTagged_NotDeformation",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_0_base"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_12_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_12"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_15_base.ply",
+      "Reason": "BaseTagged_NotDeformation",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_15_base"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_15_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_15"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_16_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_16"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_17_base.ply",
+      "Reason": "BaseTagged_NotDeformation",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_17_base"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_17_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_17"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_18_base.ply",
+      "Reason": "BaseTagged_NotDeformation",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_18_base"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_19_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_19"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_1_base.ply",
+      "Reason": "BaseTagged_NotDeformation",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_1_base"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_20_base.ply",
+      "Reason": "BaseTagged_NotDeformation",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_20_base"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_22_base.ply",
+      "Reason": "BaseTagged_NotDeformation",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_22_base"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_22_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_22"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_23_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_23"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_25_base.ply",
+      "Reason": "BaseTagged_NotDeformation",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_25_base"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_27_base.ply",
+      "Reason": "BaseTagged_NotDeformation",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_27_base"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_28_base.ply",
+      "Reason": "BaseTagged_NotDeformation",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_28_base"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_29_base.ply",
+      "Reason": "BaseTagged_NotDeformation",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_29_base"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_2_base.ply",
+      "Reason": "BaseTagged_NotDeformation",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_2_base"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_32_base.ply",
+      "Reason": "BaseTagged_NotDeformation",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_32_base"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_32_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_32"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_34_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_34"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_36_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_36"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_37_base.ply",
+      "Reason": "BaseTagged_NotDeformation",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_37_base"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_38_base.ply",
+      "Reason": "BaseTagged_NotDeformation",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_38_base"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_3_base.ply",
+      "Reason": "BaseTagged_NotDeformation",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_3_base"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_3_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_3"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_42_base.ply",
+      "Reason": "BaseTagged_NotDeformation",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_42_base"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_42_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_42"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_43_base.ply",
+      "Reason": "BaseTagged_NotDeformation",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_43_base"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_43_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_43"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_44_base.ply",
+      "Reason": "BaseTagged_NotDeformation",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_44_base"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_44_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_44"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_47_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_47"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_6_base.ply",
+      "Reason": "BaseTagged_NotDeformation",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_6_base"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train/leaf_7_base.ply",
+      "Reason": "BaseTagged_NotDeformation",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_7_base"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/1-3.obj",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "1-3"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/1-7.obj",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "1-7"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/11_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "11"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/12_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "12"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/14_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "14"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/1_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "1"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/2-1.obj",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "2-1"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/2-3.obj",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "2-3"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/21_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "21"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/22_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "22"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/23_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "23"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/27_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "27"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/28_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "28"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/29_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "29"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/2_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "2"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/3-3.obj",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "3-3"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/31_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "31"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/34_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "34"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/35_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "35"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/36_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "36"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/37_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "37"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/39_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "39"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/4-1.obj",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "4-1"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/40_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "40"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/42_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "42"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/47_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "47"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/49_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "49"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/5-3.obj",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "5-3"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/50_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "50"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/51_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "51"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/52_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "52"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/54_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "54"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/55_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "55"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/56_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "56"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/57_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "57"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/6-2.obj",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "6-2"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/6-3.obj",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "6-3"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/60_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "60"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/62_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "62"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/63_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "63"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/69_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "69"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/7-4.obj",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "7-4"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/7-5.obj",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "7-5"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/7-6.obj",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "7-6"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/70_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "70"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/74_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "74"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/75_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "75"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/76_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "76"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/78_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "78"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/79_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "79"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/7_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "7"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/81_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "81"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/84_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "84"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/85_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "85"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/88_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "88"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/89_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "89"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/95_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "95"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/leaf_0_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_0"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/leaf_12_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_12"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/leaf_15_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_15"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/leaf_16_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_16"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/leaf_17_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_17"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/leaf_19_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_19"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/leaf_22_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_22"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/leaf_23_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_23"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/leaf_24_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_24"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/leaf_26_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_26"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/leaf_27_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_27"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/leaf_34_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_34"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/leaf_37_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_37"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/leaf_42_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_42"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/leaf_44_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_44"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/leaf_5_deform.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_5"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/leaf_6_deform.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "leaf_6"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/maple10_d2.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple10_d2"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/maple10_d5.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple10_d5"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/maple10_d6.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple10_d6"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/maple10_d7.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple10_d7"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/maple1_d1.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple1_d1"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/maple1_d8.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple1_d8"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/maple3_d1.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple3_d1"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/maple3_d2.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple3_d2"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/maple3_d4.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple3_d4"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/maple3_d8.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple3_d8"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/maple4_d3.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple4_d3"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/maple4_d7.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple4_d7"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/maple5_d1.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple5_d1"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/maple5_d5.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple5_d5"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/maple6_d2.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple6_d2"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/maple6_d3.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple6_d3"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/maple6_d5.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple6_d5"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/maple6_d6.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple6_d6"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/maple6_d8.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple6_d8"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/maple7_d1.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple7_d1"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/maple7_d2.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple7_d2"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/maple8_d4.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple8_d4"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/maple8_d7.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple8_d7"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/maple9_d1.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple9_d1"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/maple9_d3.ply",
+      "Reason": "AlternativeOrIncompleteTriple",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple9_d3"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/deform_train_new/maple9_d5.ply",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple9_d5"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/maple_extra/deform_raw_denoise/maple_5.obj",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple_5"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/maple_extra/deform_raw_denoise/maple_6.obj",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple_6"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/maple_extra/deform_train/maple_5.obj",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple_5"
+    },
+    {
+      "Region": "",
+      "Source": "Dataset/maple_extra/deform_train/maple_6.obj",
+      "Reason": "NoMatchingBaseMesh",
+      "ExpectedMask": "",
+      "Candidates": [],
+      "OriginalId": "maple_6"
+    }
+  ],
+  "Numbering": "Sequential IDs starting at 1 in sample index order. OriginalId and Sources preserve provenance."
+}

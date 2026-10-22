@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "LeafPair001",
+    "SourceA": "Dataset/base_shape/14.obj",
+    "SourceB": "Dataset/deform_raw_denoise/14.ply",
+    "Kind": "ShapeComparison",
+    "PairingStatus": "Unverified",
+    "IncludeReverse": true
+  },
+  {
+    "Id": "LeafPair002",
+    "SourceA": "Dataset/base_shape/17.obj",
+    "SourceB": "Dataset/deform_raw_denoise/17.ply",
+    "Kind": "ShapeComparison",
+    "PairingStatus": "Unverified",
+    "IncludeReverse": true
+  },
+  {
+    "Id": "LeafControl001",
+    "SourceA": "Dataset/deform_raw_denoise/14.ply",
+    "SourceB": "Dataset/deform_raw_denoise/14.ply",
+    "Kind": "SameObjectControl",
+    "PairingStatus": "VerifiedSameFile",
+    "IncludeReverse": false
+  }
+]

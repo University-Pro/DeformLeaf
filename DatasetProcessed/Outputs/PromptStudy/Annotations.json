@@ -1,0 +1,986 @@
+[
+  {
+    "id": "SingleAOriginal1",
+    "object_ids": [
+      "LeafPointClouds.npz::Leaf697f4704c596cd47"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<point>\nDescribe the geometry of the object. Focus on the outline, elongation, bending, curling, and twisting. Avoid unsupported claims about species, health, or surface finish."
+      },
+      {
+        "from": "gpt",
+        "value": ""
+      }
+    ],
+    "metadata": {
+      "source_paths": [
+        "Dataset/base_shape/2.obj"
+      ],
+      "archive_keys": [
+        "Leaf697f4704c596cd47"
+      ],
+      "subset": "Single",
+      "pair_kind": "SingleObjectDescription",
+      "pairing_status": "NotApplicable",
+      "order": "",
+      "reference_status": "Unlabeled",
+      "name_stem": "",
+      "color_policy": "SourceRgbOrTextureWithGrayFallback",
+      "gray_fallback_points": [
+        8192
+      ],
+      "study_input": "SingleA",
+      "prompt_variant": "Original",
+      "repeat": 1,
+      "sampling_seed": 20261019,
+      "study_same_object_truth": false
+    }
+  },
+  {
+    "id": "SingleAOriginal2",
+    "object_ids": [
+      "LeafPointClouds.npz::Leaf697f4704c596cd47"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<point>\nDescribe the geometry of the object. Focus on the outline, elongation, bending, curling, and twisting. Avoid unsupported claims about species, health, or surface finish."
+      },
+      {
+        "from": "gpt",
+        "value": ""
+      }
+    ],
+    "metadata": {
+      "source_paths": [
+        "Dataset/base_shape/2.obj"
+      ],
+      "archive_keys": [
+        "Leaf697f4704c596cd47"
+      ],
+      "subset": "Single",
+      "pair_kind": "SingleObjectDescription",
+      "pairing_status": "NotApplicable",
+      "order": "",
+      "reference_status": "Unlabeled",
+      "name_stem": "",
+      "color_policy": "SourceRgbOrTextureWithGrayFallback",
+      "gray_fallback_points": [
+        8192
+      ],
+      "study_input": "SingleA",
+      "prompt_variant": "Original",
+      "repeat": 2,
+      "sampling_seed": 20261020,
+      "study_same_object_truth": false
+    }
+  },
+  {
+    "id": "SingleAGeometryOnly1",
+    "object_ids": [
+      "LeafPointClouds.npz::Leaf697f4704c596cd47"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<point>\nDescribe only observable geometry of this point cloud in at most three short sentences. Discuss outline, elongation, and out-of-plane bending or twisting only when supported. Do not infer object identity, function, surrounding objects, or unseen parts. Say uncertain when evidence is insufficient. Do not compare it with an unseen object."
+      },
+      {
+        "from": "gpt",
+        "value": ""
+      }
+    ],
+    "metadata": {
+      "source_paths": [
+        "Dataset/base_shape/2.obj"
+      ],
+      "archive_keys": [
+        "Leaf697f4704c596cd47"
+      ],
+      "subset": "Single",
+      "pair_kind": "SingleObjectDescription",
+      "pairing_status": "NotApplicable",
+      "order": "",
+      "reference_status": "Unlabeled",
+      "name_stem": "",
+      "color_policy": "SourceRgbOrTextureWithGrayFallback",
+      "gray_fallback_points": [
+        8192
+      ],
+      "study_input": "SingleA",
+      "prompt_variant": "GeometryOnly",
+      "repeat": 1,
+      "sampling_seed": 20261019,
+      "study_same_object_truth": false
+    }
+  },
+  {
+    "id": "SingleAGeometryOnly2",
+    "object_ids": [
+      "LeafPointClouds.npz::Leaf697f4704c596cd47"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<point>\nDescribe only observable geometry of this point cloud in at most three short sentences. Discuss outline, elongation, and out-of-plane bending or twisting only when supported. Do not infer object identity, function, surrounding objects, or unseen parts. Say uncertain when evidence is insufficient. Do not compare it with an unseen object."
+      },
+      {
+        "from": "gpt",
+        "value": ""
+      }
+    ],
+    "metadata": {
+      "source_paths": [
+        "Dataset/base_shape/2.obj"
+      ],
+      "archive_keys": [
+        "Leaf697f4704c596cd47"
+      ],
+      "subset": "Single",
+      "pair_kind": "SingleObjectDescription",
+      "pairing_status": "NotApplicable",
+      "order": "",
+      "reference_status": "Unlabeled",
+      "name_stem": "",
+      "color_policy": "SourceRgbOrTextureWithGrayFallback",
+      "gray_fallback_points": [
+        8192
+      ],
+      "study_input": "SingleA",
+      "prompt_variant": "GeometryOnly",
+      "repeat": 2,
+      "sampling_seed": 20261020,
+      "study_same_object_truth": false
+    }
+  },
+  {
+    "id": "SingleALeafContext1",
+    "object_ids": [
+      "LeafPointClouds.npz::Leaf697f4704c596cd47"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<point>\nThe input is a point cloud of a plant leaf. Describe only observable geometry of this point cloud in at most three short sentences. Discuss outline, elongation, and out-of-plane bending or twisting only when supported. Do not infer object identity, function, surrounding objects, or unseen parts. Say uncertain when evidence is insufficient. Do not compare it with an unseen object."
+      },
+      {
+        "from": "gpt",
+        "value": ""
+      }
+    ],
+    "metadata": {
+      "source_paths": [
+        "Dataset/base_shape/2.obj"
+      ],
+      "archive_keys": [
+        "Leaf697f4704c596cd47"
+      ],
+      "subset": "Single",
+      "pair_kind": "SingleObjectDescription",
+      "pairing_status": "NotApplicable",
+      "order": "",
+      "reference_status": "Unlabeled",
+      "name_stem": "",
+      "color_policy": "SourceRgbOrTextureWithGrayFallback",
+      "gray_fallback_points": [
+        8192
+      ],
+      "study_input": "SingleA",
+      "prompt_variant": "LeafContext",
+      "repeat": 1,
+      "sampling_seed": 20261019,
+      "study_same_object_truth": false
+    }
+  },
+  {
+    "id": "SingleALeafContext2",
+    "object_ids": [
+      "LeafPointClouds.npz::Leaf697f4704c596cd47"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<point>\nThe input is a point cloud of a plant leaf. Describe only observable geometry of this point cloud in at most three short sentences. Discuss outline, elongation, and out-of-plane bending or twisting only when supported. Do not infer object identity, function, surrounding objects, or unseen parts. Say uncertain when evidence is insufficient. Do not compare it with an unseen object."
+      },
+      {
+        "from": "gpt",
+        "value": ""
+      }
+    ],
+    "metadata": {
+      "source_paths": [
+        "Dataset/base_shape/2.obj"
+      ],
+      "archive_keys": [
+        "Leaf697f4704c596cd47"
+      ],
+      "subset": "Single",
+      "pair_kind": "SingleObjectDescription",
+      "pairing_status": "NotApplicable",
+      "order": "",
+      "reference_status": "Unlabeled",
+      "name_stem": "",
+      "color_policy": "SourceRgbOrTextureWithGrayFallback",
+      "gray_fallback_points": [
+        8192
+      ],
+      "study_input": "SingleA",
+      "prompt_variant": "LeafContext",
+      "repeat": 2,
+      "sampling_seed": 20261020,
+      "study_same_object_truth": false
+    }
+  },
+  {
+    "id": "SingleBOriginal1",
+    "object_ids": [
+      "LeafPointClouds.npz::Leafdf25980624a555f1"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<point>\nDescribe the geometry of the object. Focus on the outline, elongation, bending, curling, and twisting. Avoid unsupported claims about species, health, or surface finish."
+      },
+      {
+        "from": "gpt",
+        "value": ""
+      }
+    ],
+    "metadata": {
+      "source_paths": [
+        "Dataset/deform_raw_denoise/2.ply"
+      ],
+      "archive_keys": [
+        "Leafdf25980624a555f1"
+      ],
+      "subset": "Single",
+      "pair_kind": "SingleObjectDescription",
+      "pairing_status": "NotApplicable",
+      "order": "",
+      "reference_status": "Unlabeled",
+      "name_stem": "",
+      "color_policy": "SourceRgbOrTextureWithGrayFallback",
+      "gray_fallback_points": [
+        0
+      ],
+      "study_input": "SingleB",
+      "prompt_variant": "Original",
+      "repeat": 1,
+      "sampling_seed": 20261019,
+      "study_same_object_truth": false
+    }
+  },
+  {
+    "id": "SingleBOriginal2",
+    "object_ids": [
+      "LeafPointClouds.npz::Leafdf25980624a555f1"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<point>\nDescribe the geometry of the object. Focus on the outline, elongation, bending, curling, and twisting. Avoid unsupported claims about species, health, or surface finish."
+      },
+      {
+        "from": "gpt",
+        "value": ""
+      }
+    ],
+    "metadata": {
+      "source_paths": [
+        "Dataset/deform_raw_denoise/2.ply"
+      ],
+      "archive_keys": [
+        "Leafdf25980624a555f1"
+      ],
+      "subset": "Single",
+      "pair_kind": "SingleObjectDescription",
+      "pairing_status": "NotApplicable",
+      "order": "",
+      "reference_status": "Unlabeled",
+      "name_stem": "",
+      "color_policy": "SourceRgbOrTextureWithGrayFallback",
+      "gray_fallback_points": [
+        0
+      ],
+      "study_input": "SingleB",
+      "prompt_variant": "Original",
+      "repeat": 2,
+      "sampling_seed": 20261020,
+      "study_same_object_truth": false
+    }
+  },
+  {
+    "id": "SingleBGeometryOnly1",
+    "object_ids": [
+      "LeafPointClouds.npz::Leafdf25980624a555f1"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<point>\nDescribe only observable geometry of this point cloud in at most three short sentences. Discuss outline, elongation, and out-of-plane bending or twisting only when supported. Do not infer object identity, function, surrounding objects, or unseen parts. Say uncertain when evidence is insufficient. Do not compare it with an unseen object."
+      },
+      {
+        "from": "gpt",
+        "value": ""
+      }
+    ],
+    "metadata": {
+      "source_paths": [
+        "Dataset/deform_raw_denoise/2.ply"
+      ],
+      "archive_keys": [
+        "Leafdf25980624a555f1"
+      ],
+      "subset": "Single",
+      "pair_kind": "SingleObjectDescription",
+      "pairing_status": "NotApplicable",
+      "order": "",
+      "reference_status": "Unlabeled",
+      "name_stem": "",
+      "color_policy": "SourceRgbOrTextureWithGrayFallback",
+      "gray_fallback_points": [
+        0
+      ],
+      "study_input": "SingleB",
+      "prompt_variant": "GeometryOnly",
+      "repeat": 1,
+      "sampling_seed": 20261019,
+      "study_same_object_truth": false
+    }
+  },
+  {
+    "id": "SingleBGeometryOnly2",
+    "object_ids": [
+      "LeafPointClouds.npz::Leafdf25980624a555f1"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<point>\nDescribe only observable geometry of this point cloud in at most three short sentences. Discuss outline, elongation, and out-of-plane bending or twisting only when supported. Do not infer object identity, function, surrounding objects, or unseen parts. Say uncertain when evidence is insufficient. Do not compare it with an unseen object."
+      },
+      {
+        "from": "gpt",
+        "value": ""
+      }
+    ],
+    "metadata": {
+      "source_paths": [
+        "Dataset/deform_raw_denoise/2.ply"
+      ],
+      "archive_keys": [
+        "Leafdf25980624a555f1"
+      ],
+      "subset": "Single",
+      "pair_kind": "SingleObjectDescription",
+      "pairing_status": "NotApplicable",
+      "order": "",
+      "reference_status": "Unlabeled",
+      "name_stem": "",
+      "color_policy": "SourceRgbOrTextureWithGrayFallback",
+      "gray_fallback_points": [
+        0
+      ],
+      "study_input": "SingleB",
+      "prompt_variant": "GeometryOnly",
+      "repeat": 2,
+      "sampling_seed": 20261020,
+      "study_same_object_truth": false
+    }
+  },
+  {
+    "id": "SingleBLeafContext1",
+    "object_ids": [
+      "LeafPointClouds.npz::Leafdf25980624a555f1"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<point>\nThe input is a point cloud of a plant leaf. Describe only observable geometry of this point cloud in at most three short sentences. Discuss outline, elongation, and out-of-plane bending or twisting only when supported. Do not infer object identity, function, surrounding objects, or unseen parts. Say uncertain when evidence is insufficient. Do not compare it with an unseen object."
+      },
+      {
+        "from": "gpt",
+        "value": ""
+      }
+    ],
+    "metadata": {
+      "source_paths": [
+        "Dataset/deform_raw_denoise/2.ply"
+      ],
+      "archive_keys": [
+        "Leafdf25980624a555f1"
+      ],
+      "subset": "Single",
+      "pair_kind": "SingleObjectDescription",
+      "pairing_status": "NotApplicable",
+      "order": "",
+      "reference_status": "Unlabeled",
+      "name_stem": "",
+      "color_policy": "SourceRgbOrTextureWithGrayFallback",
+      "gray_fallback_points": [
+        0
+      ],
+      "study_input": "SingleB",
+      "prompt_variant": "LeafContext",
+      "repeat": 1,
+      "sampling_seed": 20261019,
+      "study_same_object_truth": false
+    }
+  },
+  {
+    "id": "SingleBLeafContext2",
+    "object_ids": [
+      "LeafPointClouds.npz::Leafdf25980624a555f1"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<point>\nThe input is a point cloud of a plant leaf. Describe only observable geometry of this point cloud in at most three short sentences. Discuss outline, elongation, and out-of-plane bending or twisting only when supported. Do not infer object identity, function, surrounding objects, or unseen parts. Say uncertain when evidence is insufficient. Do not compare it with an unseen object."
+      },
+      {
+        "from": "gpt",
+        "value": ""
+      }
+    ],
+    "metadata": {
+      "source_paths": [
+        "Dataset/deform_raw_denoise/2.ply"
+      ],
+      "archive_keys": [
+        "Leafdf25980624a555f1"
+      ],
+      "subset": "Single",
+      "pair_kind": "SingleObjectDescription",
+      "pairing_status": "NotApplicable",
+      "order": "",
+      "reference_status": "Unlabeled",
+      "name_stem": "",
+      "color_policy": "SourceRgbOrTextureWithGrayFallback",
+      "gray_fallback_points": [
+        0
+      ],
+      "study_input": "SingleB",
+      "prompt_variant": "LeafContext",
+      "repeat": 2,
+      "sampling_seed": 20261020,
+      "study_same_object_truth": false
+    }
+  },
+  {
+    "id": "DifferentInputsOriginal1",
+    "object_ids": [
+      "LeafPointClouds.npz::Leaf697f4704c596cd47",
+      "LeafPointClouds.npz::Leafdf25980624a555f1"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<point> <point>\nDescribe the geometry of Object 1 and Object 2, then compare their main shape differences. Focus on the outline, elongation, bending, curling, and twisting. Avoid unsupported claims about species, health, or surface finish."
+      },
+      {
+        "from": "gpt",
+        "value": ""
+      }
+    ],
+    "metadata": {
+      "source_paths": [
+        "Dataset/base_shape/2.obj",
+        "Dataset/deform_raw_denoise/2.ply"
+      ],
+      "archive_keys": [
+        "Leaf697f4704c596cd47",
+        "Leafdf25980624a555f1"
+      ],
+      "subset": "PairSameName",
+      "pair_kind": "ShapeComparison",
+      "pairing_status": "Unverified",
+      "order": "AB",
+      "reference_status": "Unlabeled",
+      "name_stem": "2",
+      "color_policy": "SourceRgbOrTextureWithGrayFallback",
+      "gray_fallback_points": [
+        8192,
+        0
+      ],
+      "study_input": "DifferentInputs",
+      "prompt_variant": "Original",
+      "repeat": 1,
+      "sampling_seed": 20261019,
+      "study_same_object_truth": false
+    }
+  },
+  {
+    "id": "DifferentInputsOriginal2",
+    "object_ids": [
+      "LeafPointClouds.npz::Leaf697f4704c596cd47",
+      "LeafPointClouds.npz::Leafdf25980624a555f1"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<point> <point>\nDescribe the geometry of Object 1 and Object 2, then compare their main shape differences. Focus on the outline, elongation, bending, curling, and twisting. Avoid unsupported claims about species, health, or surface finish."
+      },
+      {
+        "from": "gpt",
+        "value": ""
+      }
+    ],
+    "metadata": {
+      "source_paths": [
+        "Dataset/base_shape/2.obj",
+        "Dataset/deform_raw_denoise/2.ply"
+      ],
+      "archive_keys": [
+        "Leaf697f4704c596cd47",
+        "Leafdf25980624a555f1"
+      ],
+      "subset": "PairSameName",
+      "pair_kind": "ShapeComparison",
+      "pairing_status": "Unverified",
+      "order": "AB",
+      "reference_status": "Unlabeled",
+      "name_stem": "2",
+      "color_policy": "SourceRgbOrTextureWithGrayFallback",
+      "gray_fallback_points": [
+        8192,
+        0
+      ],
+      "study_input": "DifferentInputs",
+      "prompt_variant": "Original",
+      "repeat": 2,
+      "sampling_seed": 20261020,
+      "study_same_object_truth": false
+    }
+  },
+  {
+    "id": "DifferentInputsGeometryOnly1",
+    "object_ids": [
+      "LeafPointClouds.npz::Leaf697f4704c596cd47",
+      "LeafPointClouds.npz::Leafdf25980624a555f1"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<point> <point>\nCompare only the observable geometry of Object 1 and Object 2. First state whether they appear geometrically identical, similar, or different. They may be identical. Then give at most three supported similarities or differences. If no reliable difference is visible, say so. Do not infer object identity, function, surroundings, or unseen parts."
+      },
+      {
+        "from": "gpt",
+        "value": ""
+      }
+    ],
+    "metadata": {
+      "source_paths": [
+        "Dataset/base_shape/2.obj",
+        "Dataset/deform_raw_denoise/2.ply"
+      ],
+      "archive_keys": [
+        "Leaf697f4704c596cd47",
+        "Leafdf25980624a555f1"
+      ],
+      "subset": "PairSameName",
+      "pair_kind": "ShapeComparison",
+      "pairing_status": "Unverified",
+      "order": "AB",
+      "reference_status": "Unlabeled",
+      "name_stem": "2",
+      "color_policy": "SourceRgbOrTextureWithGrayFallback",
+      "gray_fallback_points": [
+        8192,
+        0
+      ],
+      "study_input": "DifferentInputs",
+      "prompt_variant": "GeometryOnly",
+      "repeat": 1,
+      "sampling_seed": 20261019,
+      "study_same_object_truth": false
+    }
+  },
+  {
+    "id": "DifferentInputsGeometryOnly2",
+    "object_ids": [
+      "LeafPointClouds.npz::Leaf697f4704c596cd47",
+      "LeafPointClouds.npz::Leafdf25980624a555f1"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<point> <point>\nCompare only the observable geometry of Object 1 and Object 2. First state whether they appear geometrically identical, similar, or different. They may be identical. Then give at most three supported similarities or differences. If no reliable difference is visible, say so. Do not infer object identity, function, surroundings, or unseen parts."
+      },
+      {
+        "from": "gpt",
+        "value": ""
+      }
+    ],
+    "metadata": {
+      "source_paths": [
+        "Dataset/base_shape/2.obj",
+        "Dataset/deform_raw_denoise/2.ply"
+      ],
+      "archive_keys": [
+        "Leaf697f4704c596cd47",
+        "Leafdf25980624a555f1"
+      ],
+      "subset": "PairSameName",
+      "pair_kind": "ShapeComparison",
+      "pairing_status": "Unverified",
+      "order": "AB",
+      "reference_status": "Unlabeled",
+      "name_stem": "2",
+      "color_policy": "SourceRgbOrTextureWithGrayFallback",
+      "gray_fallback_points": [
+        8192,
+        0
+      ],
+      "study_input": "DifferentInputs",
+      "prompt_variant": "GeometryOnly",
+      "repeat": 2,
+      "sampling_seed": 20261020,
+      "study_same_object_truth": false
+    }
+  },
+  {
+    "id": "DifferentInputsLeafContext1",
+    "object_ids": [
+      "LeafPointClouds.npz::Leaf697f4704c596cd47",
+      "LeafPointClouds.npz::Leafdf25980624a555f1"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<point> <point>\nBoth inputs are point clouds of plant leaves. Compare only the observable geometry of Object 1 and Object 2. First state whether they appear geometrically identical, similar, or different. They may be identical. Then give at most three supported similarities or differences. If no reliable difference is visible, say so. Do not infer object identity, function, surroundings, or unseen parts."
+      },
+      {
+        "from": "gpt",
+        "value": ""
+      }
+    ],
+    "metadata": {
+      "source_paths": [
+        "Dataset/base_shape/2.obj",
+        "Dataset/deform_raw_denoise/2.ply"
+      ],
+      "archive_keys": [
+        "Leaf697f4704c596cd47",
+        "Leafdf25980624a555f1"
+      ],
+      "subset": "PairSameName",
+      "pair_kind": "ShapeComparison",
+      "pairing_status": "Unverified",
+      "order": "AB",
+      "reference_status": "Unlabeled",
+      "name_stem": "2",
+      "color_policy": "SourceRgbOrTextureWithGrayFallback",
+      "gray_fallback_points": [
+        8192,
+        0
+      ],
+      "study_input": "DifferentInputs",
+      "prompt_variant": "LeafContext",
+      "repeat": 1,
+      "sampling_seed": 20261019,
+      "study_same_object_truth": false
+    }
+  },
+  {
+    "id": "DifferentInputsLeafContext2",
+    "object_ids": [
+      "LeafPointClouds.npz::Leaf697f4704c596cd47",
+      "LeafPointClouds.npz::Leafdf25980624a555f1"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<point> <point>\nBoth inputs are point clouds of plant leaves. Compare only the observable geometry of Object 1 and Object 2. First state whether they appear geometrically identical, similar, or different. They may be identical. Then give at most three supported similarities or differences. If no reliable difference is visible, say so. Do not infer object identity, function, surroundings, or unseen parts."
+      },
+      {
+        "from": "gpt",
+        "value": ""
+      }
+    ],
+    "metadata": {
+      "source_paths": [
+        "Dataset/base_shape/2.obj",
+        "Dataset/deform_raw_denoise/2.ply"
+      ],
+      "archive_keys": [
+        "Leaf697f4704c596cd47",
+        "Leafdf25980624a555f1"
+      ],
+      "subset": "PairSameName",
+      "pair_kind": "ShapeComparison",
+      "pairing_status": "Unverified",
+      "order": "AB",
+      "reference_status": "Unlabeled",
+      "name_stem": "2",
+      "color_policy": "SourceRgbOrTextureWithGrayFallback",
+      "gray_fallback_points": [
+        8192,
+        0
+      ],
+      "study_input": "DifferentInputs",
+      "prompt_variant": "LeafContext",
+      "repeat": 2,
+      "sampling_seed": 20261020,
+      "study_same_object_truth": false
+    }
+  },
+  {
+    "id": "SameObjectControlOriginal1",
+    "object_ids": [
+      "LeafPointClouds.npz::Leaf3122a3d14910427e",
+      "LeafPointClouds.npz::Leaf3122a3d14910427e"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<point> <point>\nDescribe the geometry of Object 1 and Object 2, then compare their main shape differences. Focus on the outline, elongation, bending, curling, and twisting. Avoid unsupported claims about species, health, or surface finish."
+      },
+      {
+        "from": "gpt",
+        "value": ""
+      }
+    ],
+    "metadata": {
+      "source_paths": [
+        "Dataset/deform_raw_denoise/14.ply",
+        "Dataset/deform_raw_denoise/14.ply"
+      ],
+      "archive_keys": [
+        "Leaf3122a3d14910427e",
+        "Leaf3122a3d14910427e"
+      ],
+      "subset": "SameObjectControl",
+      "pair_kind": "SameObjectControl",
+      "pairing_status": "VerifiedSameFile",
+      "order": "AB",
+      "reference_status": "Unlabeled",
+      "name_stem": "14",
+      "color_policy": "SourceRgbOrTextureWithGrayFallback",
+      "gray_fallback_points": [
+        0,
+        0
+      ],
+      "study_input": "SameObjectControl",
+      "prompt_variant": "Original",
+      "repeat": 1,
+      "sampling_seed": 20261019,
+      "study_same_object_truth": true
+    }
+  },
+  {
+    "id": "SameObjectControlOriginal2",
+    "object_ids": [
+      "LeafPointClouds.npz::Leaf3122a3d14910427e",
+      "LeafPointClouds.npz::Leaf3122a3d14910427e"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<point> <point>\nDescribe the geometry of Object 1 and Object 2, then compare their main shape differences. Focus on the outline, elongation, bending, curling, and twisting. Avoid unsupported claims about species, health, or surface finish."
+      },
+      {
+        "from": "gpt",
+        "value": ""
+      }
+    ],
+    "metadata": {
+      "source_paths": [
+        "Dataset/deform_raw_denoise/14.ply",
+        "Dataset/deform_raw_denoise/14.ply"
+      ],
+      "archive_keys": [
+        "Leaf3122a3d14910427e",
+        "Leaf3122a3d14910427e"
+      ],
+      "subset": "SameObjectControl",
+      "pair_kind": "SameObjectControl",
+      "pairing_status": "VerifiedSameFile",
+      "order": "AB",
+      "reference_status": "Unlabeled",
+      "name_stem": "14",
+      "color_policy": "SourceRgbOrTextureWithGrayFallback",
+      "gray_fallback_points": [
+        0,
+        0
+      ],
+      "study_input": "SameObjectControl",
+      "prompt_variant": "Original",
+      "repeat": 2,
+      "sampling_seed": 20261020,
+      "study_same_object_truth": true
+    }
+  },
+  {
+    "id": "SameObjectControlGeometryOnly1",
+    "object_ids": [
+      "LeafPointClouds.npz::Leaf3122a3d14910427e",
+      "LeafPointClouds.npz::Leaf3122a3d14910427e"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<point> <point>\nCompare only the observable geometry of Object 1 and Object 2. First state whether they appear geometrically identical, similar, or different. They may be identical. Then give at most three supported similarities or differences. If no reliable difference is visible, say so. Do not infer object identity, function, surroundings, or unseen parts."
+      },
+      {
+        "from": "gpt",
+        "value": ""
+      }
+    ],
+    "metadata": {
+      "source_paths": [
+        "Dataset/deform_raw_denoise/14.ply",
+        "Dataset/deform_raw_denoise/14.ply"
+      ],
+      "archive_keys": [
+        "Leaf3122a3d14910427e",
+        "Leaf3122a3d14910427e"
+      ],
+      "subset": "SameObjectControl",
+      "pair_kind": "SameObjectControl",
+      "pairing_status": "VerifiedSameFile",
+      "order": "AB",
+      "reference_status": "Unlabeled",
+      "name_stem": "14",
+      "color_policy": "SourceRgbOrTextureWithGrayFallback",
+      "gray_fallback_points": [
+        0,
+        0
+      ],
+      "study_input": "SameObjectControl",
+      "prompt_variant": "GeometryOnly",
+      "repeat": 1,
+      "sampling_seed": 20261019,
+      "study_same_object_truth": true
+    }
+  },
+  {
+    "id": "SameObjectControlGeometryOnly2",
+    "object_ids": [
+      "LeafPointClouds.npz::Leaf3122a3d14910427e",
+      "LeafPointClouds.npz::Leaf3122a3d14910427e"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<point> <point>\nCompare only the observable geometry of Object 1 and Object 2. First state whether they appear geometrically identical, similar, or different. They may be identical. Then give at most three supported similarities or differences. If no reliable difference is visible, say so. Do not infer object identity, function, surroundings, or unseen parts."
+      },
+      {
+        "from": "gpt",
+        "value": ""
+      }
+    ],
+    "metadata": {
+      "source_paths": [
+        "Dataset/deform_raw_denoise/14.ply",
+        "Dataset/deform_raw_denoise/14.ply"
+      ],
+      "archive_keys": [
+        "Leaf3122a3d14910427e",
+        "Leaf3122a3d14910427e"
+      ],
+      "subset": "SameObjectControl",
+      "pair_kind": "SameObjectControl",
+      "pairing_status": "VerifiedSameFile",
+      "order": "AB",
+      "reference_status": "Unlabeled",
+      "name_stem": "14",
+      "color_policy": "SourceRgbOrTextureWithGrayFallback",
+      "gray_fallback_points": [
+        0,
+        0
+      ],
+      "study_input": "SameObjectControl",
+      "prompt_variant": "GeometryOnly",
+      "repeat": 2,
+      "sampling_seed": 20261020,
+      "study_same_object_truth": true
+    }
+  },
+  {
+    "id": "SameObjectControlLeafContext1",
+    "object_ids": [
+      "LeafPointClouds.npz::Leaf3122a3d14910427e",
+      "LeafPointClouds.npz::Leaf3122a3d14910427e"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<point> <point>\nBoth inputs are point clouds of plant leaves. Compare only the observable geometry of Object 1 and Object 2. First state whether they appear geometrically identical, similar, or different. They may be identical. Then give at most three supported similarities or differences. If no reliable difference is visible, say so. Do not infer object identity, function, surroundings, or unseen parts."
+      },
+      {
+        "from": "gpt",
+        "value": ""
+      }
+    ],
+    "metadata": {
+      "source_paths": [
+        "Dataset/deform_raw_denoise/14.ply",
+        "Dataset/deform_raw_denoise/14.ply"
+      ],
+      "archive_keys": [
+        "Leaf3122a3d14910427e",
+        "Leaf3122a3d14910427e"
+      ],
+      "subset": "SameObjectControl",
+      "pair_kind": "SameObjectControl",
+      "pairing_status": "VerifiedSameFile",
+      "order": "AB",
+      "reference_status": "Unlabeled",
+      "name_stem": "14",
+      "color_policy": "SourceRgbOrTextureWithGrayFallback",
+      "gray_fallback_points": [
+        0,
+        0
+      ],
+      "study_input": "SameObjectControl",
+      "prompt_variant": "LeafContext",
+      "repeat": 1,
+      "sampling_seed": 20261019,
+      "study_same_object_truth": true
+    }
+  },
+  {
+    "id": "SameObjectControlLeafContext2",
+    "object_ids": [
+      "LeafPointClouds.npz::Leaf3122a3d14910427e",
+      "LeafPointClouds.npz::Leaf3122a3d14910427e"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<point> <point>\nBoth inputs are point clouds of plant leaves. Compare only the observable geometry of Object 1 and Object 2. First state whether they appear geometrically identical, similar, or different. They may be identical. Then give at most three supported similarities or differences. If no reliable difference is visible, say so. Do not infer object identity, function, surroundings, or unseen parts."
+      },
+      {
+        "from": "gpt",
+        "value": ""
+      }
+    ],
+    "metadata": {
+      "source_paths": [
+        "Dataset/deform_raw_denoise/14.ply",
+        "Dataset/deform_raw_denoise/14.ply"
+      ],
+      "archive_keys": [
+        "Leaf3122a3d14910427e",
+        "Leaf3122a3d14910427e"
+      ],
+      "subset": "SameObjectControl",
+      "pair_kind": "SameObjectControl",
+      "pairing_status": "VerifiedSameFile",
+      "order": "AB",
+      "reference_status": "Unlabeled",
+      "name_stem": "14",
+      "color_policy": "SourceRgbOrTextureWithGrayFallback",
+      "gray_fallback_points": [
+        0,
+        0
+      ],
+      "study_input": "SameObjectControl",
+      "prompt_variant": "LeafContext",
+      "repeat": 2,
+      "sampling_seed": 20261020,
+      "study_same_object_truth": true
+    }
+  }
+]

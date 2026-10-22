@@ -1,0 +1,14 @@
+{
+  "Cases": 24,
+  "Inputs": 4,
+  "Variants": 3,
+  "SamplingSeeds": [
+    20261019,
+    20261020
+  ],
+  "MaxNewTokens": 128,
+  "Temperature": 0,
+  "RawInferenceSha256": "6959dfd33d18c4d74b86e5c79fd247f885518c927e27f8449106b417be703412",
+  "LeafContextCaveat": "Explicitly supplies the class; improved leaf naming would not demonstrate class recognition.",
+  "SamplingControl": "Reset Python/NumPy/Torch/CUDA RNGs before each input. Same seed across variants within each input. CUDA numerical nondeterminism may remain."
+}

@@ -1,0 +1,12 @@
+numpy
+torch
+torchvision
+timm
+ftfy
+regex
+plyfile
+shortuuid
+markdown2
+gradio
+fastapi
+uvicorn

@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>叶片点云与模型回答</title>
+<style>
+:root{color-scheme:light;--Ink:#17261f;--Muted:#63746c;--Line:#dfe7e1;--Green:#146b52;--GreenSoft:#e8f2ec;--Paper:#fff;--Bg:#f3f6f2;--Amber:#8a6420;--AmberBg:#fbf3e1;--Radius:14px}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--Bg);color:var(--Ink);font:14px/1.6 system-ui,-apple-system,"Segoe UI","Microsoft YaHei","Hiragino Kaku Gothic ProN","Yu Gothic","Noto Sans JP",sans-serif;-webkit-font-smoothing:antialiased}
+button,select,input{font:inherit;color:inherit}
+button{cursor:pointer}
+header{background:linear-gradient(135deg,#10392e 0%,#185440 58%,#1e6a51 100%);color:#f3f8f4;padding:24px 28px 20px}
+.HeaderInner{max-width:1660px;margin:auto;display:flex;justify-content:space-between;gap:24px;align-items:flex-start;flex-wrap:wrap}
+.Eyebrow{font-size:10.5px;letter-spacing:.22em;opacity:.72;font-weight:600}
+h1{font-size:clamp(22px,2.4vw,30px);line-height:1.25;margin:5px 0 6px;font-weight:650;letter-spacing:.01em}
+.Sub{margin:0;color:#cfe3d8;font-size:13px}
+.HeaderRight{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.LangSwitch{display:flex;gap:3px;padding:3px;border:1px solid rgba(255,255,255,.24);background:rgba(255,255,255,.10);border-radius:10px}
+.LangSwitch button{border:0;background:transparent;color:#d8e9df;padding:6px 12px;border-radius:7px;font-size:12px;line-height:1.2}
+.LangSwitch button:hover{background:rgba(255,255,255,.12)}
+.LangSwitch button.Active{background:#f4f8f1;color:#14503f;font-weight:650}
+.HeaderMeta{color:#c6ddd1;font-size:12px;text-align:right}
+main{max-width:1660px;margin:auto;padding:20px 28px 44px}
+.Card{background:var(--Paper);border:1px solid var(--Line);border-radius:var(--Radius)}
+.Stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:14px}
+.Stat{padding:13px 16px;background:var(--Paper);border:1px solid var(--Line);border-radius:12px}
+.Stat b{display:block;font-size:26px;line-height:1.15;font-weight:660;color:var(--Green);font-variant-numeric:tabular-nums}
+.Stat span{display:block;margin-top:3px;color:var(--Muted);font-size:11px;letter-spacing:.06em;text-transform:uppercase}
+.Toolbar{padding:14px 16px;display:flex;gap:12px;align-items:flex-end;flex-wrap:wrap}
+.Field{display:flex;flex-direction:column;gap:5px;min-width:170px}
+.Field.Grow{flex:1;min-width:260px}
+.Field label,.Label{color:var(--Muted);font-size:11.5px;letter-spacing:.03em}
+select,input[type=search]{padding:9px 12px;border:1px solid #c9d6cd;border-radius:8px;background:#fff;max-width:100%;transition:border-color .15s,box-shadow .15s}
+select:focus,input:focus{outline:none;border-color:var(--Green);box-shadow:0 0 0 3px rgba(20,107,82,.12)}
+.BtnGroup{display:flex;gap:6px;flex-wrap:wrap}
+button{padding:8px 12px;border:1px solid #c9d6cd;border-radius:8px;background:#fff;transition:border-color .15s,background .15s}
+button:hover{border-color:var(--Green);background:#eff7f1}
+button:disabled{opacity:.38;cursor:default;background:#fff}
+button.Active{background:var(--Green);color:#fff;border-color:var(--Green)}
+.Seg{display:flex;gap:4px;padding:3px;border:1px solid var(--Line);background:#f5f8f5;border-radius:9px}
+.Seg button{border:0;background:transparent;padding:6px 11px;border-radius:6px;font-size:12.5px}
+.Seg button.Active{background:var(--Green);color:#fff}
+.Toggle{display:flex;align-items:center;gap:6px;padding-bottom:8px;color:var(--Muted);font-size:12.5px;white-space:nowrap}
+.Toggle input{accent-color:var(--Green)}
+.RangeRow{display:flex;align-items:center;gap:8px;padding-bottom:8px;color:var(--Muted);font-size:12.5px}
+input[type=range]{width:92px;accent-color:var(--Green)}
+.Notice{margin:12px 0 14px;padding:11px 14px;background:#eef5f0;border:1px solid #d5e6da;border-left:3px solid var(--Green);border-radius:9px;color:#3c5a4b;font-size:12px}
+.Overview{margin:0 0 14px;overflow:hidden}
+.Overview summary{padding:12px 16px;cursor:pointer;font-weight:600;color:var(--Green);display:flex;align-items:center;gap:10px;list-style:none}
+.Overview summary::-webkit-details-marker{display:none}
+.Overview summary::before{content:"▸";font-size:11px;transition:transform .15s}
+.Overview[open] summary::before{transform:rotate(90deg)}
+.CaseGrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(78px,1fr));gap:6px;padding:0 14px 14px}
+.CaseChip{display:flex;flex-direction:column;align-items:flex-start;gap:1px;padding:6px 8px;border:1px solid var(--Line);border-radius:8px;background:#fff;line-height:1.25}
+.CaseChip b{font-size:13px;font-variant-numeric:tabular-nums}
+.CaseChip .Id{font-size:10px;color:var(--Muted);max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.CaseChip:hover{border-color:var(--Green)}
+.CaseChip.Active{background:var(--Green);border-color:var(--Green);color:#fff}
+.CaseChip.Active .Id{color:#cfe3d8}
+.Views{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.Panel{overflow:hidden;display:flex;flex-direction:column}
+.PanelTop{padding:14px 16px 12px;border-bottom:1px solid var(--Line);display:flex;flex-direction:column;gap:9px}
+.PanelTitle{display:flex;align-items:center;gap:10px}
+.Letter{width:28px;height:28px;display:grid;place-items:center;background:var(--GreenSoft);color:var(--Green);font-weight:700;border-radius:8px;flex:none}
+.PanelTitle strong{font-size:15px;display:block}
+.PanelTitle .Small{margin-left:auto;text-align:right}
+input[type=search]{width:100%}
+.PanelTop select{width:100%}
+.Cloud{height:360px;position:relative;background:radial-gradient(ellipse at 50% 42%,#27443b,#10221c 78%);overflow:hidden}
+.Cloud canvas{width:100%;height:100%;display:block;touch-action:none;cursor:grab}
+.Cloud canvas:active{cursor:grabbing}
+.Overlay{position:absolute;left:13px;top:10px;color:#bdd8c8;font:11px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;pointer-events:none;letter-spacing:.03em}
+.Overlay.Bottom{top:auto;left:auto;bottom:10px;right:13px;color:#83a894}
+.CloudError{position:absolute;inset:0;display:none;place-items:center;color:#fff;padding:22px;text-align:center;background:rgba(10,20,16,.72)}
+.PanelBody{padding:13px 16px 17px;display:flex;flex-direction:column;flex:1}
+.Source{font:11px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--Muted);overflow-wrap:anywhere;white-space:pre-line;min-height:32px}
+.Badges{display:flex;gap:6px;flex-wrap:wrap;margin:9px 0 4px}
+.Badge{border-radius:20px;padding:3px 9px;background:#edf2ee;color:#496555;font-size:11px;white-space:nowrap}
+.Badge.Warning{background:var(--AmberBg);color:var(--Amber)}
+.Badge.Good{background:#e3f1e8;color:#176b50}
+.SectionTitle{display:flex;justify-content:space-between;gap:10px;align-items:baseline;margin-top:15px;font-size:11.5px;color:var(--Green);font-weight:650;letter-spacing:.02em}
+.Prediction{white-space:pre-wrap;line-height:1.85;font-size:14px;color:#233b30;margin:9px 0 0;overflow-wrap:anywhere;transition:filter .2s}
+.Empty{color:#829087;font-style:italic}
+.HideAnswers .Prediction:not(.Empty){filter:blur(6px);user-select:none}
+.HideAnswers .Copy{opacity:.3;pointer-events:none}
+details{margin-top:10px;color:var(--Muted);font-size:12px}
+summary{cursor:pointer}
+details p{white-space:pre-wrap;overflow-wrap:anywhere}
+.Compare{margin-top:18px;padding:18px 18px 16px}
+.CompareHead{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.CompareHead h2{margin:0;font-size:17px}
+.CompareHead .Small{flex:1;min-width:220px}
+.Mask{width:40px;height:40px;object-fit:contain;background:#697a6e;border-radius:6px;margin-left:auto}
+.PairGrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:14px}
+.AnswerCard{border:1px solid var(--Line);border-radius:11px;padding:14px 15px;background:#fcfdfb}
+.AnswerCard header{display:flex;align-items:center;gap:10px;margin-bottom:2px}
+.AnswerCard h3{font-size:13px;margin:0;color:var(--Green);font-weight:640;flex:1}
+.Copy{padding:4px 9px;font-size:11px;border-radius:6px;color:var(--Muted);background:#fff}
+.RunCard{margin-top:14px;padding:14px 17px}
+.RunCard summary{font-weight:600;color:var(--Green)}
+.RunInfo{font:12px/1.75 ui-monospace,SFMono-Regular,Menlo,monospace;color:#3f574b;white-space:pre-wrap;overflow-wrap:anywhere;margin:12px 0 10px}
+.Small{font-size:12px;color:var(--Muted)}
+.Footer{color:var(--Muted);font-size:11px;margin-top:20px;display:flex;gap:18px;flex-wrap:wrap}
+.Footer a{color:var(--Green)}
+.Loading{position:fixed;inset:0;background:var(--Bg);display:grid;place-items:center;z-index:20;text-align:center;padding:24px}
+.LoadingBox strong{display:block;font-size:21px;margin:8px 0 4px}
+.LoadingBox p{color:var(--Muted);margin:0}
+.Spinner{width:26px;height:26px;margin:18px auto 0;border:3px solid #d7e4da;border-top-color:var(--Green);border-radius:50%;animation:Spin 1s linear infinite}
+@keyframes Spin{to{transform:rotate(360deg)}}
+@media(min-width:1500px){.Cloud{height:430px}}
+@media(max-width:960px){.Stats{grid-template-columns:repeat(2,1fr)}.Views,.PairGrid{grid-template-columns:1fr}.Cloud{height:320px}}
+@media(max-width:640px){header{padding:18px}main{padding:14px}.HeaderRight{align-items:flex-start}.HeaderMeta{text-align:left}.Field,.Field.Grow{min-width:100%}.Toolbar{gap:10px}.CompareHead .Small{min-width:100%}.Mask{display:none}}
+</style>
+</head>
+<body>
+<div id="Loading" class="Loading"><div class="LoadingBox"><div class="Eyebrow">DEFORMLEAF / COMPARE</div><strong data-i18n="loading"></strong><p data-i18n="loadingHint"></p><div class="Spinner"></div></div></div>
+<header>
+ <div class="HeaderInner">
+  <div class="Brand">
+   <div class="Eyebrow">DEFORMLEAF / RESEARCH VIEWER</div>
+   <h1 data-i18n="title"></h1>
+   <p class="Sub" data-i18n="subtitle"></p>
+  </div>
+  <div class="HeaderRight">
+   <div class="LangSwitch" id="LangSwitch" role="group" aria-label="Language">
+    <button type="button" data-lang="zh">中文</button><button type="button" data-lang="ja">日本語</button><button type="button" data-lang="en">English</button>
+   </div>
+   <div class="HeaderMeta" id="HeaderMeta"></div>
+  </div>
+ </div>
+</header>
+<main>
+ <section class="Stats">
+  <div class="Stat"><b id="StatPairs">—</b><span data-i18n="statPairs"></span></div>
+  <div class="Stat"><b id="StatClouds">—</b><span data-i18n="statClouds"></span></div>
+  <div class="Stat"><b id="StatAnswers">—</b><span data-i18n="statAnswers"></span></div>
+  <div class="Stat"><b id="StatPoints">—</b><span data-i18n="statPoints"></span></div>
+ </section>
+ <section class="Card Toolbar">
+  <div class="Field Grow"><label for="Case" data-i18n="caseLabel"></label><select id="Case"></select></div>
+  <div class="BtnGroup"><button type="button" id="Previous" data-i18n="prev"></button><button type="button" id="Next" data-i18n="next"></button><button type="button" id="Swap" data-i18n="swap"></button><button type="button" id="Random" data-i18n="random"></button></div>
+  <div class="Field"><span class="Label" data-i18n="viewLabel"></span><div class="Seg" id="ViewSeg"><button type="button" data-view="Front" data-i18n="viewFront"></button><button type="button" data-view="Side" data-i18n="viewSide"></button><button type="button" data-view="Oblique" class="Active" data-i18n="viewOblique"></button></div></div>
+  <label class="Toggle"><input id="Sync" type="checkbox" checked><span data-i18n="sync"></span></label>
+  <label class="Toggle"><input id="Color" type="checkbox" checked><span data-i18n="rgb"></span></label>
+  <label class="RangeRow"><span data-i18n="pointSize"></span><input id="PointSize" type="range" min="1" max="5" step=".5" value="2"></label>
+  <button type="button" id="AnswerToggle"></button>
+ </section>
+ <div id="Notice" class="Notice"></div>
+ <details class="Card Overview" id="Overview"><summary><span data-i18n="overview"></span><span class="Small" id="OverviewMeta"></span></summary><div class="CaseGrid" id="CaseGrid"></div></details>
+ <div class="Views" id="Views"></div>
+ <section class="Card Compare">
+  <div class="CompareHead"><h2 data-i18n="compareTitle"></h2><span class="Badge" id="PairStatus"></span><span class="Small" data-i18n="compareNote"></span><span class="Badge Good" id="PairingBadge"></span><img id="Mask" class="Mask" hidden alt=""></div>
+  <div class="PairGrid">
+   <article class="AnswerCard"><header><h3 data-i18n="forward"></h3><button type="button" class="Copy" data-copy="Forward" data-i18n="copy"></button></header><div class="Prediction AnswerBody" id="Forward"></div><details><summary data-i18n="questionDetails"></summary><p id="ForwardQuestion"></p></details></article>
+   <article class="AnswerCard"><header><h3 data-i18n="reverse"></h3><button type="button" class="Copy" data-copy="Reverse" data-i18n="copy"></button></header><div class="Prediction AnswerBody" id="Reverse"></div><details><summary data-i18n="questionDetails"></summary><p id="ReverseQuestion"></p></details></article>
+  </div>
+ </section>
+ <details class="Card RunCard"><summary data-i18n="dataTitle"></summary><p class="RunInfo" id="RunInfo"></p><p class="Small" data-i18n="displayNote"></p></details>
+ <div class="Footer"><span data-i18n="footerLocal"></span><a href="../DatasetOfficial/index.html" data-i18n="footerOfficial"></a><a id="InferenceLink" href="../DatasetProcessed/Outputs/OfficialEval/inference.json" data-i18n="footerInference"></a><a id="DocsLink" href="../ReadMe.md#对比页面" data-i18n="footerDocs"></a><span data-i18n="keys"></span></div>
+</main>
+<script id="Payload" type="application/json">__PAYLOAD__</script>
+<script>
+'use strict';
+const Data=JSON.parse(document.getElementById('Payload').textContent);
+const Get=Id=>document.getElementById(Id);
+
+const I18n={
+ zh:{
+  title:'叶片点云与模型回答',subtitle:'DatasetOfficial · 50 套配对样本 · 200 条模型回答',
+  loading:'正在读取点云与推理记录',loadingHint:'解压本地数据，不会调用模型或上传文件。',loadingFail:'加载失败：',
+  statPairs:'配对样本',statClouds:'点云',statAnswers:'模型回答',statPoints:'每片点数',
+  caseLabel:'选择样本对',prev:'← 上一组',next:'下一组 →',swap:'交换 A / B',random:'随机一组',custom:'自选两个点云',
+  viewLabel:'视角',viewFront:'正面',viewSide:'侧面',viewOblique:'斜视',reset:'重置视角',
+  sync:'联动旋转与缩放',pointSize:'点大小',rgb:'原始 RGB',hideAnswers:'隐藏回答',showAnswers:'显示回答',
+  overview:'样本总览',overviewHint:'点击编号跳转',overviewMeta:(a,b)=>`共 ${a} 组 · 第 ${b} 组`,overviewCustom:a=>`共 ${a} 组 · 自选点云`,
+  notice:'仅展示 DatasetOfficial 的 50 套配对样本（100 个点云、200 条回答）。回答直接来自 inference.json，未改写、未翻译、未自动评分。配对仅按文件名，叶片身份与配准未经人工核实。',
+  skipped:n=>`构建时跳过了 ${n} 条引用了缺失点云的回答。`,
+  left:'左侧点云',right:'右侧点云',searchPlaceholder:'搜索编号或原始文件名',dragHint:'拖动旋转 · 滚轮缩放',
+  singleTitle:'这个点云的单独描述',rawAnswer:'模型原始回答',questionDetails:'查看提问与记录编号',reasoning:'补充推理',
+  source:'来源',originalSource:'原始来源',noSingle:'尚无这个点云的单独描述结果。',noQuestion:'尚无对应记录。',
+  compareTitle:'两个点云的比较回答',forward:'A → B · Object 1 为左侧，Object 2 为右侧',reverse:'B → A · Object 1 为右侧，Object 2 为左侧',
+  noPair:'尚无这两个点云按此顺序进行比较的推理结果。',sameObject:'同物体对照',recorded:'已有记录',notInferred:'尚未推理',
+  compareNote:'回答为模型原始输出（英文），未翻译、未改写、未自动评分。',copy:'复制',copied:'已复制',
+  dataTitle:'数据与显示方式',runModel:'模型',runAnno:'标注',runPoints:'每片点数',runHash:'结果 SHA256',runMatched:'归档覆盖',runPairing:'配对状态',
+  displayNote:'每个点云显示全部 8192 个点，XYZ 按模型加载规则独立居中并按最大半径缩放，因此不能比较真实尺寸或物体间位置。颜色来自点云 RGB；缺失颜色的位置保留灰色补值。',
+  footerLocal:'全本地运行 · 无需模型服务',footerOfficial:'整理样本与 mask 索引',footerInference:'原始 inference.json',footerDocs:'使用说明',
+  keys:'快捷键：← → 切换样本 · S 交换 · 1/2/3 视角 · R 重置 · H 隐藏回答',
+  badgePoints:n=>`${n} 点`,badgeGray:n=>`${n} 点使用灰色补值`,badgeRgb:'全点 RGB',badgeArchive:'与本页归档一致',badgeNoArchive:'未匹配本页归档',badgePairing:'文件名匹配 · 未人工核实',
+  cloudLabel:(n,role)=>`样本 ${n} · ${role}`,roleBase:'基础形状',roleDeform:'形变数据',
+  caseLabelText:n=>`样本 ${n}`,caseOriginal:id=>`原始编号 ${id}`,docTitle:n=>`样本 ${n} · 叶片点云对比`,
+  headerMeta:(p,c,a)=>`${p} 组配对 · ${c} 个点云 · ${a} 条回答`,maskAlt:'样本掩膜',webglError:'浏览器未启用 WebGL。请启用硬件加速，或使用支持 WebGL 的浏览器。'
+ },
+ ja:{
+  title:'葉の点群とモデル回答',subtitle:'DatasetOfficial · 50 組のペアサンプル · 200 件のモデル回答',
+  loading:'点群と推論記録を読み込み中',loadingHint:'ローカルデータを展開します。モデルの呼び出しやアップロードは行いません。',loadingFail:'読み込みに失敗しました：',
+  statPairs:'ペアサンプル',statClouds:'点群',statAnswers:'モデル回答',statPoints:'1点群の点数',
+  caseLabel:'サンプルペアを選択',prev:'← 前へ',next:'次へ →',swap:'A / B を入れ替え',random:'ランダム',custom:'任意の 2 点群',
+  viewLabel:'視点',viewFront:'正面',viewSide:'側面',viewOblique:'斜め',reset:'視点をリセット',
+  sync:'回転とズームを同期',pointSize:'点の大きさ',rgb:'元の RGB',hideAnswers:'回答を隠す',showAnswers:'回答を表示',
+  overview:'サンプル一覧',overviewHint:'番号をクリックして移動',overviewMeta:(a,b)=>`全 ${a} 組 · ${b} 組目`,overviewCustom:a=>`全 ${a} 組 · 任意の点群`,
+  notice:'DatasetOfficial の 50 組（100 点群・200 回答）のみを表示します。回答は inference.json の原文で、翻訳・改変・自動評価は行っていません。ペアリングはファイル名のみで、葉の同一性と位置合わせは人手未確認です。',
+  skipped:n=>`ビルド時に、存在しない点群を参照する ${n} 件の回答を除外しました。`,
+  left:'左の点群',right:'右の点群',searchPlaceholder:'番号または元ファイル名で検索',dragHint:'ドラッグで回転 · ホイールでズーム',
+  singleTitle:'この点群の単体記述',rawAnswer:'モデルの原文回答',questionDetails:'プロンプトと記録番号',reasoning:'補足推論',
+  source:'出典',originalSource:'元の出典',noSingle:'この点群の単体記述はまだありません。',noQuestion:'対応する記録がありません。',
+  compareTitle:'2 点群の比較回答',forward:'A → B · Object 1 が左、Object 2 が右',reverse:'B → A · Object 1 が右、Object 2 が左',
+  noPair:'この 2 点群をこの順序で比較した推論結果はありません。',sameObject:'同一物体の対照',recorded:'記録あり',notInferred:'未推論',
+  compareNote:'回答はモデルの原文（英語）で、翻訳・改変・自動評価は行っていません。',copy:'コピー',copied:'コピーしました',
+  dataTitle:'データと表示方法',runModel:'モデル',runAnno:'アノテーション',runPoints:'1点群の点数',runHash:'結果 SHA256',runMatched:'アーカイブ照合',runPairing:'ペアリング状態',
+  displayNote:'各点群は 8192 点をすべて表示します。XYZ はモデル読み込み規則で個別に中心化し最大半径で正規化するため、実寸や物体間の位置は比較できません。色は点群 RGB に由来し、色がない点はグレーで補完しています。',
+  footerLocal:'すべてローカル実行 · モデルサービス不要',footerOfficial:'整理サンプルと mask 索引',footerInference:'元の inference.json',footerDocs:'使い方',
+  keys:'ショートカット：← → サンプル切替 · S 入れ替え · 1/2/3 視点 · R リセット · H 回答を隠す',
+  badgePoints:n=>`${n} 点`,badgeGray:n=>`${n} 点がグレー補完`,badgeRgb:'全点 RGB',badgeArchive:'本ページのアーカイブと一致',badgeNoArchive:'アーカイブに未一致',badgePairing:'ファイル名一致 · 人手未確認',
+  cloudLabel:(n,role)=>`サンプル ${n} · ${role}`,roleBase:'基本形状',roleDeform:'変形形状',
+  caseLabelText:n=>`サンプル ${n}`,caseOriginal:id=>`元 ID ${id}`,docTitle:n=>`サンプル ${n} · 葉の点群比較`,
+  headerMeta:(p,c,a)=>`${p} 組 · ${c} 点群 · ${a} 回答`,maskAlt:'サンプルのマスク',webglError:'ブラウザで WebGL が有効になっていません。ハードウェア高速化を有効にするか、WebGL 対応ブラウザを使用してください。'
+ },
+ en:{
+  title:'Leaf Point Clouds & Model Answers',subtitle:'DatasetOfficial · 50 paired samples · 200 model answers',
+  loading:'Loading point clouds and inference records',loadingHint:'Unpacking local data. No model calls or uploads.',loadingFail:'Failed to load: ',
+  statPairs:'Paired samples',statClouds:'Point clouds',statAnswers:'Model answers',statPoints:'Points per cloud',
+  caseLabel:'Select sample pair',prev:'← Previous',next:'Next →',swap:'Swap A / B',random:'Random',custom:'Custom pair',
+  viewLabel:'View',viewFront:'Front',viewSide:'Side',viewOblique:'Oblique',reset:'Reset view',
+  sync:'Link rotate & zoom',pointSize:'Point size',rgb:'Original RGB',hideAnswers:'Hide answers',showAnswers:'Show answers',
+  overview:'Sample overview',overviewHint:'Click a number to jump',overviewMeta:(a,b)=>`${a} pairs · #${b}`,overviewCustom:a=>`${a} pairs · custom clouds`,
+  notice:'Showing only the 50 paired DatasetOfficial samples (100 clouds, 200 answers). Answers come verbatim from inference.json; nothing is translated, rewritten, or auto-scored. Pairing is filename-based; leaf identity and registration are not manually verified.',
+  skipped:n=>`${n} answers referencing missing clouds were skipped while building.`,
+  left:'Left cloud',right:'Right cloud',searchPlaceholder:'Search number or original filename',dragHint:'Drag to rotate · Scroll to zoom',
+  singleTitle:'Description of this cloud',rawAnswer:'Raw model answer',questionDetails:'Prompt & record index',reasoning:'Reasoning',
+  source:'Source',originalSource:'Original source',noSingle:'No single-object description for this cloud yet.',noQuestion:'No matching record.',
+  compareTitle:'Comparison answers for the pair',forward:'A → B · Object 1 is left, Object 2 is right',reverse:'B → A · Object 1 is right, Object 2 is left',
+  noPair:'No comparison result for these two clouds in this order yet.',sameObject:'Same-object control',recorded:'Recorded',notInferred:'Not inferred',
+  compareNote:'Answers are raw model output (English), neither translated nor rewritten nor auto-scored.',copy:'Copy',copied:'Copied',
+  dataTitle:'Data & display',runModel:'Model',runAnno:'Annotation',runPoints:'Points per cloud',runHash:'Result SHA256',runMatched:'Archive coverage',runPairing:'Pairing status',
+  displayNote:'Every cloud renders all 8192 points. XYZ is centered and scaled per cloud using the model loading rule, so true size and relative placement cannot be compared. Colors come from point RGB; missing colors keep the gray fallback.',
+  footerLocal:'Fully local · no model service',footerOfficial:'Organized samples & masks',footerInference:'Raw inference.json',footerDocs:'Documentation',
+  keys:'Shortcuts: ← → sample · S swap · 1/2/3 view · R reset · H hide answers',
+  badgePoints:n=>`${n} points`,badgeGray:n=>`${n} gray-filled points`,badgeRgb:'Full RGB',badgeArchive:'Matches page archive',badgeNoArchive:'Not in page archive',badgePairing:'Filename-matched · unverified',
+  cloudLabel:(n,role)=>`Sample ${n} · ${role}`,roleBase:'base shape',roleDeform:'deformed shape',
+  caseLabelText:n=>`Sample ${n}`,caseOriginal:id=>`original ${id}`,docTitle:n=>`Sample ${n} · Leaf cloud comparison`,
+  headerMeta:(p,c,a)=>`${p} pairs · ${c} clouds · ${a} answers`,maskAlt:'Sample mask',webglError:'WebGL is not available. Enable hardware acceleration or use a WebGL-capable browser.'
+ }
+};
+const LangCodes={zh:'zh-CN',ja:'ja',en:'en'};
+const DocsLinks={zh:'../ReadMe.md#对比页面',ja:'../ReadMe_JP.md#比較ページ',en:'../ReadMe_EN.md#comparison-page'};
+const SavedLang=(()=>{try{return localStorage.getItem('deformleaf.lang');}catch(Error){return null;}})();
+const BrowserLang=(navigator.language||'en').toLowerCase();
+const State={Lang:SavedLang&&I18n[SavedLang]?SavedLang:(BrowserLang.startsWith('ja')?'ja':BrowserLang.startsWith('zh')?'zh':'en'),CaseIndex:0,Indices:[0,1],Views:[{Yaw:.55,Pitch:.35,Zoom:1},{Yaw:.55,Pitch:.35,Zoom:1}],Color:true,PointSize:2,Answers:true};
+const T=(Key,...Values)=>{const Value=I18n[State.Lang][Key];return typeof Value==='function'?Value(...Values):(Value===undefined?Key:Value);};
+const AnswerText={Forward:'',Reverse:'',Single0:'',Single1:''};
+let Binary,FramePending=false;
+const SingleResults=new Map();
+const PairResults=new Map();
+for(const Result of Data.Results){const Key=JSON.stringify(Result.References);const Map=Result.References.length===1?SingleResults:PairResults;if(!Map.has(Key))Map.set(Key,[]);Map.get(Key).push(Result);}
+
+function Text(Id,Value,Empty=false){const Target=Get(Id);Target.textContent=Value;Target.classList.toggle('Empty',Empty);}
+function RoleLabel(Role){return Role==='Base'?T('roleBase'):T('roleDeform');}
+function CloudLabel(Cloud){return T('cloudLabel',Cloud.Number,RoleLabel(Cloud.Role))+(Cloud.OriginalId?' · '+Cloud.OriginalId:'');}
+function FormatResult(Records){return Records.map(Result=>Result.Prediction+(Result.Reasoning?'\n\n'+T('reasoning')+':\n'+Result.Reasoning:'')).join('\n\n────────\n\n');}
+function AnswerTextOf(Records){return FormatResult(Records);}
+
+function ApplyStatic(){
+ document.documentElement.lang=LangCodes[State.Lang];
+ document.title=T('title');
+ document.querySelectorAll('[data-i18n]').forEach(Element=>{Element.textContent=T(Element.dataset.i18n);});
+ document.querySelectorAll('[data-i18n-ph]').forEach(Element=>{Element.placeholder=T(Element.dataset.i18nPh);});
+ document.querySelectorAll('[data-lang]').forEach(Button=>Button.classList.toggle('Active',Button.dataset.lang===State.Lang));
+ if(Data.Clouds[State.Indices[0]])Get('Search0').placeholder=T('searchPlaceholder');
+ if(Data.Clouds[State.Indices[1]])Get('Search1').placeholder=T('searchPlaceholder');
+ if(Get('SideTitle0')){
+  Text('SideTitle0',T('left'));
+  Text('SideTitle1',T('right'));
+  Get('Search0').setAttribute('aria-label',T('left'));
+  Get('Search1').setAttribute('aria-label',T('right'));
+ }
+ UpdateAnswerToggle();
+ if(Get('StatPairs')){
+  Text('StatPairs',Data.Report.Samples);
+  Text('StatClouds',Data.Report.Clouds);
+  Text('StatAnswers',Data.Report.Results);
+  Text('StatPoints',Data.Report.PointCount.toLocaleString());
+ }
+ Text('HeaderMeta',T('headerMeta',Data.Report.Samples,Data.Report.Clouds,Data.Report.Results));
+ let Notice=T('notice');
+ if(Data.Report.SkippedPredictions)Notice+=' '+T('skipped',Data.Report.SkippedPredictions);
+ Text('Notice',Notice);
+ Text('PairingBadge',T('badgePairing'));
+ if(Get('DocsLink'))Get('DocsLink').href=DocsLinks[State.Lang];
+ const Run=Data.Run||{},Report=Data.Report;
+ Text('RunInfo',[
+  `${T('runModel')}: ${Run.model_path||'—'}`,
+  `${T('runAnno')}: ${Run.anno_path||'—'}`,
+  `${T('runPoints')}: ${Run.pointnum||Report.PointCount}`,
+  `${T('runHash')}: ${Report.InferenceSha256}`,
+  `${T('runMatched')}: ${Report.Clouds} / ${Report.Clouds}`,
+  `${T('runPairing')}: ${T('badgePairing')}`
+ ].join('\n'));
+ if(State.CaseIndex>=0&&Data.Cases[State.CaseIndex])document.title=T('docTitle',Data.Cases[State.CaseIndex].Number);
+}
+
+function UpdateAnswerToggle(){
+ const Button=Get('AnswerToggle');
+ if(!Button)return;
+ Button.textContent=T(State.Answers?'hideAnswers':'showAnswers');
+ Button.classList.toggle('Active',!State.Answers);
+ document.body.classList.toggle('HideAnswers',!State.Answers);
+}
+
+function UpdateOverview(){
+ const Grid=Get('CaseGrid');
+ if(!Grid)return;
+ Grid.replaceChildren();
+ Data.Cases.forEach((Entry,Index)=>{
+  const Button=document.createElement('button');
+  Button.type='button';
+  Button.className='CaseChip'+(Index===State.CaseIndex?' Active':'');
+  Button.dataset.index=String(Index);
+  const Number=document.createElement('b');Number.textContent=Entry.Number;
+  const Id=document.createElement('span');Id.className='Id';Id.textContent=Entry.OriginalId||'—';
+  Button.append(Number,Id);
+  Button.addEventListener('click',()=>{SelectCase(Index);Get('Views').scrollIntoView({behavior:'smooth',block:'start'});});
+  Grid.appendChild(Button);
+ });
+ if(State.CaseIndex>=0)Text('OverviewMeta',T('overviewMeta',Data.Cases.length,State.CaseIndex+1));
+ else Text('OverviewMeta',T('overviewCustom',Data.Cases.length));
+}
+
+function PopulateCaseSelect(){
+ const Select=Get('Case');
+ Select.replaceChildren();
+ const Placeholder=new Option(T('custom'),'');
+ Placeholder.disabled=true;
+ Select.appendChild(Placeholder);
+ Data.Cases.forEach((Entry,Index)=>{
+  const Label=T('caseLabelText',Entry.Number)+(Entry.OriginalId?' · '+T('caseOriginal',Entry.OriginalId):'');
+  Select.appendChild(new Option(Label,String(Index)));
+ });
+ Select.value=State.CaseIndex>=0?String(State.CaseIndex):'';
+}
+
+function SetAnswer(Id,QuestionId,Records){
+ AnswerText[Id]=AnswerTextOf(Records);
+ Text(Id,Records.length?FormatResult(Records):T(Id==='Forward'||Id==='Reverse'?'noPair':'noSingle'),!Records.length);
+ Text(QuestionId,Records.length?Records.map(Result=>`inference.json · results[${Result.Id}]\n${Result.Question}`).join('\n\n'):T('noQuestion'));
+ const Copy=document.querySelector('.Copy[data-copy="'+Id+'"]');
+ if(Copy)Copy.disabled=!Records.length;
+}
+
+function UpdateResults(){
+ State.Indices.forEach((Index,Side)=>{
+  const Cloud=Data.Clouds[Index];
+  if(!Cloud)return;
+  const Records=Cloud.PredictionReference?(SingleResults.get(JSON.stringify([Cloud.PredictionReference]))||[]):[];
+  SetAnswer('Single'+Side,'SingleQuestion'+Side,Records);
+  Text('Source'+Side,`${T('source')}: ${Cloud.Source}\n${T('originalSource')}: ${Cloud.OriginalSource}`);
+  const Badges=Get('Badges'+Side);
+  Badges.replaceChildren();
+  const Tags=[[T('badgePoints',Cloud.Count.toLocaleString()),false],
+              [Cloud.GrayPoints?T('badgeGray',Cloud.GrayPoints.toLocaleString()):T('badgeRgb'),Cloud.GrayPoints?true:false],
+              [Cloud.PredictionReference?T('badgeArchive'):T('badgeNoArchive'),!Cloud.PredictionReference]];
+  for(const [Label,Warning] of Tags){
+   const Span=document.createElement('span');
+   Span.className='Badge'+(Warning?' Warning':'');
+   Span.textContent=Label;
+   Badges.appendChild(Span);
+  }
+  Text('Overlay'+Side,`XYZRGB · ${Cloud.Count.toLocaleString()} POINTS`);
+ });
+ const [A,B]=State.Indices.map(Index=>Data.Clouds[Index].PredictionReference);
+ const Forward=A&&B?(PairResults.get(JSON.stringify([A,B]))||[]):[];
+ const Reverse=A&&B?(PairResults.get(JSON.stringify([B,A]))||[]):[];
+ SetAnswer('Forward','ForwardQuestion',Forward);
+ SetAnswer('Reverse','ReverseQuestion',Reverse);
+ const Status=State.Indices[0]===State.Indices[1]||(A&&B&&A===B)?T('sameObject'):(Forward.length||Reverse.length?T('recorded'):T('notInferred'));
+ const Badge=Get('PairStatus');
+ Badge.textContent=Status;
+ Badge.className='Badge '+((Forward.length||Reverse.length||State.Indices[0]===State.Indices[1])?'Good':'Warning');
+ Get('Previous').disabled=State.CaseIndex<=0;
+ Get('Next').disabled=State.CaseIndex<0||State.CaseIndex>=Data.Cases.length-1;
+}
+
+const VertexSource=`attribute vec3 Position;attribute vec3 Color;uniform float Yaw;uniform float Pitch;uniform vec2 Scale;uniform float PointSize;varying vec3 Rgb;void main(){float C=cos(Yaw),S=sin(Yaw);vec3 R=vec3(C*Position.x+S*Position.z,Position.y,-S*Position.x+C*Position.z);C=cos(Pitch);S=sin(Pitch);vec3 P=vec3(R.x,C*R.y-S*R.z,S*R.y+C*R.z);gl_Position=vec4(P.xy*Scale,-P.z*.2,1.);gl_PointSize=PointSize;Rgb=Color;}`;
+const FragmentSource=`precision mediump float;varying vec3 Rgb;uniform bool UseColor;void main(){if(distance(gl_PointCoord,vec2(.5))>.5)discard;gl_FragColor=vec4(UseColor?Rgb:vec3(.55,.82,.64),1.);}`;
+function MakeRenderer(Canvas){
+ const Gl=Canvas.getContext('webgl',{alpha:true,antialias:true,preserveDrawingBuffer:true});
+ if(!Gl)throw Error(T('webglError'));
+ function Shader(Type,Source){const Value=Gl.createShader(Type);Gl.shaderSource(Value,Source);Gl.compileShader(Value);if(!Gl.getShaderParameter(Value,Gl.COMPILE_STATUS))throw Error(Gl.getShaderInfoLog(Value));return Value;}
+ const Program=Gl.createProgram();Gl.attachShader(Program,Shader(Gl.VERTEX_SHADER,VertexSource));Gl.attachShader(Program,Shader(Gl.FRAGMENT_SHADER,FragmentSource));Gl.linkProgram(Program);if(!Gl.getProgramParameter(Program,Gl.LINK_STATUS))throw Error(Gl.getProgramInfoLog(Program));Gl.useProgram(Program);
+ const Buffer=Gl.createBuffer();Gl.bindBuffer(Gl.ARRAY_BUFFER,Buffer);
+ for(const [Name,Offset] of [['Position',0],['Color',12]]){const Location=Gl.getAttribLocation(Program,Name);Gl.enableVertexAttribArray(Location);Gl.vertexAttribPointer(Location,3,Gl.FLOAT,false,24,Offset);}
+ const Uniforms={};for(const Name of ['Yaw','Pitch','Scale','PointSize','UseColor'])Uniforms[Name]=Gl.getUniformLocation(Program,Name);
+ let Count=0;
+ return {Load(Cloud){const Source=Binary.subarray(Cloud.Offset,Cloud.Offset+Cloud.Count*6);const Points=new Float32Array(Source);const Center=[0,0,0];for(let I=0;I<Points.length;I+=6)for(let J=0;J<3;J++)Center[J]+=Points[I+J]/Cloud.Count;let Radius=0;for(let I=0;I<Points.length;I+=6){for(let J=0;J<3;J++)Points[I+J]-=Center[J];Radius=Math.max(Radius,Math.hypot(Points[I],Points[I+1],Points[I+2]));}for(let I=0;I<Points.length;I+=6)for(let J=0;J<3;J++)Points[I+J]/=Radius||1;Gl.bindBuffer(Gl.ARRAY_BUFFER,Buffer);Gl.bufferData(Gl.ARRAY_BUFFER,Points,Gl.STATIC_DRAW);Count=Cloud.Count;},Draw(View){const Ratio=Math.min(window.devicePixelRatio||1,2),Width=Math.round(Canvas.clientWidth*Ratio),Height=Math.round(Canvas.clientHeight*Ratio);if(Canvas.width!==Width||Canvas.height!==Height){Canvas.width=Width;Canvas.height=Height;}Gl.viewport(0,0,Width,Height);Gl.clearColor(0,0,0,0);Gl.clear(Gl.COLOR_BUFFER_BIT|Gl.DEPTH_BUFFER_BIT);Gl.enable(Gl.DEPTH_TEST);Gl.uniform1f(Uniforms.Yaw,View.Yaw);Gl.uniform1f(Uniforms.Pitch,View.Pitch);const Size=Math.min(Width,Height)*.83*View.Zoom;Gl.uniform2f(Uniforms.Scale,Size/Width,Size/Height);Gl.uniform1f(Uniforms.PointSize,State.PointSize*Ratio);Gl.uniform1i(Uniforms.UseColor,State.Color?1:0);Gl.drawArrays(Gl.POINTS,0,Count);}};
+}
+const Renderers=[];
+function RequestDraw(){if(FramePending)return;FramePending=true;requestAnimationFrame(()=>{FramePending=false;Renderers.forEach((Renderer,Index)=>Renderer&&Renderer.Draw(State.Views[Index]));});}
+function ChangeView(Side,Action){Action(State.Views[Side]);if(Get('Sync').checked)State.Views[1-Side]={...State.Views[Side]};RequestDraw();}
+
+function InitializePanels(){
+ for(let Side=0;Side<2;Side++){
+  const Card=document.createElement('section');
+  Card.className='Card Panel';
+  Card.innerHTML=`<div class="PanelTop"><div class="PanelTitle"><span class="Letter">${Side?'B':'A'}</span><div><strong id="SideTitle${Side}">${Side?T('right'):T('left')}</strong><span class="Small" id="SideHint${Side}"></span></div><span class="Small" id="SideMeta${Side}"></span></div><input id="Search${Side}" type="search" data-i18n-ph="searchPlaceholder" aria-label="${Side?T('right'):T('left')}"><select id="Cloud${Side}" aria-label="${Side?T('right'):T('left')}"></select></div><div class="Cloud"><canvas id="Canvas${Side}" aria-label="${Side?T('right'):T('left')}"></canvas><span class="Overlay" id="Overlay${Side}"></span><span class="Overlay Bottom" data-i18n="dragHint"></span><div class="CloudError" id="Error${Side}"></div></div><div class="PanelBody"><div class="Source" id="Source${Side}"></div><div class="Badges" id="Badges${Side}"></div><div class="SectionTitle"><span data-i18n="singleTitle"></span><span data-i18n="rawAnswer"></span></div><div class="Prediction AnswerBody" id="Single${Side}"></div><details><summary data-i18n="questionDetails"></summary><p id="SingleQuestion${Side}"></p></details></div>`;
+  Get('Views').appendChild(Card);
+  try{Renderers[Side]=MakeRenderer(Get('Canvas'+Side));}
+  catch(Error){Renderers[Side]=null;Text('Error'+Side,Error.message);Get('Error'+Side).style.display='grid';}
+  Get('Search'+Side).addEventListener('input',Event=>PopulateOptions(Side,Event.target.value));
+  Get('Cloud'+Side).addEventListener('change',Event=>{
+   State.Indices[Side]=Number(Event.target.value);
+   State.CaseIndex=-1;
+   Get('Case').value='';
+   Get('Mask').hidden=true;
+   LoadPanels();
+   UpdateOverview();
+  });
+  const Canvas=Get('Canvas'+Side);
+  let Previous=null;
+  Canvas.addEventListener('pointerdown',Event=>{Previous=[Event.clientX,Event.clientY];Canvas.setPointerCapture(Event.pointerId);});
+  Canvas.addEventListener('pointermove',Event=>{if(!Previous)return;const Dx=Event.clientX-Previous[0],Dy=Event.clientY-Previous[1];Previous=[Event.clientX,Event.clientY];ChangeView(Side,View=>{View.Yaw+=Dx*.009;View.Pitch+=Dy*.009;});});
+  for(const Name of ['pointerup','pointercancel','lostpointercapture'])Canvas.addEventListener(Name,()=>Previous=null);
+  Canvas.addEventListener('wheel',Event=>{Event.preventDefault();ChangeView(Side,View=>View.Zoom=Math.max(.2,Math.min(6,View.Zoom*Math.exp(-Event.deltaY*.001))));},{passive:false});
+ }
+}
+
+function PopulateOptions(Side,Query=''){
+ const Selected=State.Indices[Side];
+ const Select=Get('Cloud'+Side);
+ Select.replaceChildren();
+ const QueryText=Query.trim().toLowerCase();
+ Data.Clouds.forEach((Cloud,Index)=>{
+  if(Index===Selected||CloudLabel(Cloud).toLowerCase().includes(QueryText))Select.appendChild(new Option(CloudLabel(Cloud),String(Index)));
+ });
+ Select.value=String(Selected);
+}
+
+function LoadPanels(){
+ State.Indices.forEach((Index,Side)=>{
+  PopulateOptions(Side,Get('Search'+Side).value);
+  Renderers[Side]?.Load(Data.Clouds[Index]);
+ });
+ UpdateResults();
+ RequestDraw();
+}
+
+function SelectCase(Index){
+ if(Index<0||Index>=Data.Cases.length)return;
+ State.CaseIndex=Index;
+ const Entry=Data.Cases[Index];
+ State.Indices=[Entry.A,Entry.B];
+ Get('Case').value=String(Index);
+ const Mask=Get('Mask');
+ Mask.hidden=!Entry.Mask;
+ if(Entry.Mask){Mask.src=Entry.Mask;Mask.alt=T('maskAlt');}
+ LoadPanels();
+ UpdateOverview();
+ document.title=T('docTitle',Entry.Number);
+}
+
+function SetPreset(Name){
+ const [Yaw,Pitch]=({Front:[0,0],Side:[Math.PI/2,0],Oblique:[.55,.35]})[Name];
+ State.Views=[{Yaw,Pitch,Zoom:1},{Yaw,Pitch,Zoom:1}];
+ document.querySelectorAll('[data-view]').forEach(Button=>Button.classList.toggle('Active',Button.dataset.view===Name));
+ RequestDraw();
+}
+
+document.querySelectorAll('[data-lang]').forEach(Button=>Button.addEventListener('click',()=>{
+ State.Lang=Button.dataset.lang;
+ try{localStorage.setItem('deformleaf.lang',State.Lang);}catch(Error){}
+ ApplyStatic();
+ PopulateCaseSelect();
+ for(let Side=0;Side<2;Side++)PopulateOptions(Side,Get('Search'+Side).value);
+ UpdateResults();
+ UpdateOverview();
+ if(!Get('Mask').hidden)Get('Mask').alt=T('maskAlt');
+ if(Data.Cases[State.CaseIndex])document.title=T('docTitle',Data.Cases[State.CaseIndex].Number);
+}));
+document.querySelectorAll('[data-view]').forEach(Button=>Button.onclick=()=>SetPreset(Button.dataset.view));
+Get('PointSize').oninput=Event=>{State.PointSize=Number(Event.target.value);RequestDraw();};
+Get('Color').onchange=Event=>{State.Color=Event.target.checked;RequestDraw();};
+Get('Sync').onchange=()=>{if(Get('Sync').checked){State.Views[1]={...State.Views[0]};RequestDraw();}};
+Get('Previous').onclick=()=>SelectCase(State.CaseIndex-1);
+Get('Next').onclick=()=>SelectCase(State.CaseIndex+1);
+Get('Swap').onclick=()=>{State.Indices.reverse();LoadPanels();};
+Get('Random').onclick=()=>SelectCase(Math.floor(Math.random()*Data.Cases.length));
+Get('AnswerToggle').onclick=()=>{State.Answers=!State.Answers;UpdateAnswerToggle();};
+Get('Case').addEventListener('change',Event=>{if(Event.target.value!=='')SelectCase(Number(Event.target.value));});
+document.addEventListener('click',Event=>{
+ const Button=Event.target.closest('.Copy');
+ if(!Button)return;
+ const TextValue=AnswerText[Button.dataset.copy]||'';
+ const Done=()=>{Button.textContent=T('copied');setTimeout(()=>{Button.textContent=T('copy');},1300);};
+ if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(TextValue).then(Done,()=>{});
+});
+window.addEventListener('keydown',Event=>{
+ if(/^(INPUT|SELECT|TEXTAREA)$/.test(Event.target.tagName))return;
+ const Key=Event.key.toLowerCase();
+ if(Event.key==='ArrowLeft'){SelectCase(State.CaseIndex-1);Event.preventDefault();}
+ else if(Event.key==='ArrowRight'){SelectCase(State.CaseIndex+1);Event.preventDefault();}
+ else if(Key==='s'){Get('Swap').click();}
+ else if(Key==='r'){SetPreset('Oblique');}
+ else if(Key==='h'){Get('AnswerToggle').click();}
+ else if(Key==='1'){SetPreset('Front');}
+ else if(Key==='2'){SetPreset('Side');}
+ else if(Key==='3'){SetPreset('Oblique');}
+});
+window.addEventListener('resize',RequestDraw);
+
+async function Start(){
+ try{
+  const Decoded=atob(Data.Binary);
+  const Bytes=new Uint8Array(Decoded.length);
+  for(let Index=0;Index<Decoded.length;Index++)Bytes[Index]=Decoded.charCodeAt(Index);
+  delete Data.Binary;
+  const Stream=new Blob([Bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
+  const Buffer=await new Response(Stream).arrayBuffer();
+  if(Buffer.byteLength!==Data.Report.BinaryBytes)throw Error('Cloud payload length check failed');
+  Binary=new Float32Array(Buffer);
+  State.Indices=[Data.Cases[0].A,Data.Cases[0].B];
+  InitializePanels();
+  ApplyStatic();
+  Get('Overview').open=window.innerWidth>=900;
+  UpdateOverview();
+  PopulateCaseSelect();
+  SelectCase(0);
+  Get('InferenceLink').href=Data.Run.inference_relative||Get('InferenceLink').getAttribute('href');
+  Get('Loading').remove();
+  document.documentElement.dataset.ready='true';
+ }catch(Error){
+  const Status=document.querySelector('#Loading p');
+  if(Status)Status.textContent=T('loadingFail')+Error.message;
+  document.documentElement.dataset.error=Error.message;
+ }
+}
+Start();
+</script>
+</body>
+</html>

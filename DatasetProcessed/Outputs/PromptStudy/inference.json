@@ -1,0 +1,935 @@
+{
+  "model_path": "checkpoints/multi-3dllm",
+  "anno_path": "/Disk/HDD/Tzz/DeformLeaf/DatasetProcessed/Outputs/PromptStudy/Annotations.json",
+  "data_path": "/Disk/HDD/Tzz/DeformLeaf/DatasetProcessed",
+  "pointnum": 8192,
+  "metrics": {
+    "num_samples": 24,
+    "exact_match": 0.0,
+    "relaxed_match": 0.0
+  },
+  "generation_kwargs": {
+    "max_new_tokens": 128,
+    "temperature": 0.0,
+    "top_p": 0.9,
+    "top_k": 40,
+    "repetition_penalty": 1.0,
+    "no_repeat_ngram_size": 0,
+    "dedupe_delta_output": false,
+    "max_delta_output_clauses": 6
+  },
+  "results": [
+    {
+      "sample_index": 0,
+      "object_ids": [
+        "LeafPointClouds.npz::Leaf697f4704c596cd47"
+      ],
+      "question": "<point>\nDescribe the geometry of the object. Focus on the outline, elongation, bending, curling, and twisting. Avoid unsupported claims about species, health, or surface finish.",
+      "ground_truth": "",
+      "answer": null,
+      "prediction": "The object is not shaped like a leaf; The object is not bi-leafed; It does not have a stem; The object is rounder; It does not have a prominent midrib; The object is more rounded than elongated",
+      "exact_match": false,
+      "relaxed_match": false,
+      "is_shape_mating": false,
+      "metadata": {
+        "source_paths": [
+          "Dataset/base_shape/2.obj"
+        ],
+        "archive_keys": [
+          "Leaf697f4704c596cd47"
+        ],
+        "subset": "Single",
+        "pair_kind": "SingleObjectDescription",
+        "pairing_status": "NotApplicable",
+        "order": "",
+        "reference_status": "Unlabeled",
+        "name_stem": "",
+        "color_policy": "SourceRgbOrTextureWithGrayFallback",
+        "gray_fallback_points": [
+          8192
+        ],
+        "study_input": "SingleA",
+        "prompt_variant": "Original",
+        "repeat": 1,
+        "sampling_seed": 20261019,
+        "study_same_object_truth": false
+      }
+    },
+    {
+      "sample_index": 1,
+      "object_ids": [
+        "LeafPointClouds.npz::Leaf697f4704c596cd47"
+      ],
+      "question": "<point>\nDescribe the geometry of the object. Focus on the outline, elongation, bending, curling, and twisting. Avoid unsupported claims about species, health, or surface finish.",
+      "ground_truth": "",
+      "answer": null,
+      "prediction": "The object is not shaped like a leaf; The object is not bi-leafed; It does not have a stem; The object is not round; It does not have a plant in it; The object is not flat",
+      "exact_match": false,
+      "relaxed_match": false,
+      "is_shape_mating": false,
+      "metadata": {
+        "source_paths": [
+          "Dataset/base_shape/2.obj"
+        ],
+        "archive_keys": [
+          "Leaf697f4704c596cd47"
+        ],
+        "subset": "Single",
+        "pair_kind": "SingleObjectDescription",
+        "pairing_status": "NotApplicable",
+        "order": "",
+        "reference_status": "Unlabeled",
+        "name_stem": "",
+        "color_policy": "SourceRgbOrTextureWithGrayFallback",
+        "gray_fallback_points": [
+          8192
+        ],
+        "study_input": "SingleA",
+        "prompt_variant": "Original",
+        "repeat": 2,
+        "sampling_seed": 20261020,
+        "study_same_object_truth": false
+      }
+    },
+    {
+      "sample_index": 2,
+      "object_ids": [
+        "LeafPointClouds.npz::Leaf697f4704c596cd47"
+      ],
+      "question": "<point>\nDescribe only observable geometry of this point cloud in at most three short sentences. Discuss outline, elongation, and out-of-plane bending or twisting only when supported. Do not infer object identity, function, surrounding objects, or unseen parts. Say uncertain when evidence is insufficient. Do not compare it with an unseen object.",
+      "ground_truth": "",
+      "answer": null,
+      "prediction": "The cloud is not as fluffy; The cloud is smaller; The cloud does not have a small tail; The cloud is not as fat; The cloud is not as wide; The cloud is not as tall",
+      "exact_match": false,
+      "relaxed_match": false,
+      "is_shape_mating": false,
+      "metadata": {
+        "source_paths": [
+          "Dataset/base_shape/2.obj"
+        ],
+        "archive_keys": [
+          "Leaf697f4704c596cd47"
+        ],
+        "subset": "Single",
+        "pair_kind": "SingleObjectDescription",
+        "pairing_status": "NotApplicable",
+        "order": "",
+        "reference_status": "Unlabeled",
+        "name_stem": "",
+        "color_policy": "SourceRgbOrTextureWithGrayFallback",
+        "gray_fallback_points": [
+          8192
+        ],
+        "study_input": "SingleA",
+        "prompt_variant": "GeometryOnly",
+        "repeat": 1,
+        "sampling_seed": 20261019,
+        "study_same_object_truth": false
+      }
+    },
+    {
+      "sample_index": 3,
+      "object_ids": [
+        "LeafPointClouds.npz::Leaf697f4704c596cd47"
+      ],
+      "question": "<point>\nDescribe only observable geometry of this point cloud in at most three short sentences. Discuss outline, elongation, and out-of-plane bending or twisting only when supported. Do not infer object identity, function, surrounding objects, or unseen parts. Say uncertain when evidence is insufficient. Do not compare it with an unseen object.",
+      "ground_truth": "",
+      "answer": null,
+      "prediction": "The cloud is not as fluffy; The cloud is smaller; The cloud does not have a small tail; The cloud is not as fat; The cloud is not as wide; The cloud is not tapered",
+      "exact_match": false,
+      "relaxed_match": false,
+      "is_shape_mating": false,
+      "metadata": {
+        "source_paths": [
+          "Dataset/base_shape/2.obj"
+        ],
+        "archive_keys": [
+          "Leaf697f4704c596cd47"
+        ],
+        "subset": "Single",
+        "pair_kind": "SingleObjectDescription",
+        "pairing_status": "NotApplicable",
+        "order": "",
+        "reference_status": "Unlabeled",
+        "name_stem": "",
+        "color_policy": "SourceRgbOrTextureWithGrayFallback",
+        "gray_fallback_points": [
+          8192
+        ],
+        "study_input": "SingleA",
+        "prompt_variant": "GeometryOnly",
+        "repeat": 2,
+        "sampling_seed": 20261020,
+        "study_same_object_truth": false
+      }
+    },
+    {
+      "sample_index": 4,
+      "object_ids": [
+        "LeafPointClouds.npz::Leaf697f4704c596cd47"
+      ],
+      "question": "<point>\nThe input is a point cloud of a plant leaf. Describe only observable geometry of this point cloud in at most three short sentences. Discuss outline, elongation, and out-of-plane bending or twisting only when supported. Do not infer object identity, function, surrounding objects, or unseen parts. Say uncertain when evidence is insufficient. Do not compare it with an unseen object.",
+      "ground_truth": "",
+      "answer": null,
+      "prediction": "The leaf is not compounded; It is not as wide; The leaf is not toothed; It is not as long; The outline of the leaf is circular; It is not a perfect leaf",
+      "exact_match": false,
+      "relaxed_match": false,
+      "is_shape_mating": false,
+      "metadata": {
+        "source_paths": [
+          "Dataset/base_shape/2.obj"
+        ],
+        "archive_keys": [
+          "Leaf697f4704c596cd47"
+        ],
+        "subset": "Single",
+        "pair_kind": "SingleObjectDescription",
+        "pairing_status": "NotApplicable",
+        "order": "",
+        "reference_status": "Unlabeled",
+        "name_stem": "",
+        "color_policy": "SourceRgbOrTextureWithGrayFallback",
+        "gray_fallback_points": [
+          8192
+        ],
+        "study_input": "SingleA",
+        "prompt_variant": "LeafContext",
+        "repeat": 1,
+        "sampling_seed": 20261019,
+        "study_same_object_truth": false
+      }
+    },
+    {
+      "sample_index": 5,
+      "object_ids": [
+        "LeafPointClouds.npz::Leaf697f4704c596cd47"
+      ],
+      "question": "<point>\nThe input is a point cloud of a plant leaf. Describe only observable geometry of this point cloud in at most three short sentences. Discuss outline, elongation, and out-of-plane bending or twisting only when supported. Do not infer object identity, function, surrounding objects, or unseen parts. Say uncertain when evidence is insufficient. Do not compare it with an unseen object.",
+      "ground_truth": "",
+      "answer": null,
+      "prediction": "The leaf is not compounded; It is a flat, circular shape; The leaf is not attached to a branch; It is a standalone leaf; The leaf does not have a petiole; It is a maple leaf",
+      "exact_match": false,
+      "relaxed_match": false,
+      "is_shape_mating": false,
+      "metadata": {
+        "source_paths": [
+          "Dataset/base_shape/2.obj"
+        ],
+        "archive_keys": [
+          "Leaf697f4704c596cd47"
+        ],
+        "subset": "Single",
+        "pair_kind": "SingleObjectDescription",
+        "pairing_status": "NotApplicable",
+        "order": "",
+        "reference_status": "Unlabeled",
+        "name_stem": "",
+        "color_policy": "SourceRgbOrTextureWithGrayFallback",
+        "gray_fallback_points": [
+          8192
+        ],
+        "study_input": "SingleA",
+        "prompt_variant": "LeafContext",
+        "repeat": 2,
+        "sampling_seed": 20261020,
+        "study_same_object_truth": false
+      }
+    },
+    {
+      "sample_index": 6,
+      "object_ids": [
+        "LeafPointClouds.npz::Leafdf25980624a555f1"
+      ],
+      "question": "<point>\nDescribe the geometry of the object. Focus on the outline, elongation, bending, curling, and twisting. Avoid unsupported claims about species, health, or surface finish.",
+      "ground_truth": "",
+      "answer": null,
+      "prediction": "The object has a long, thin, curved stem; The leaf is a dragon fruit; The object has a smooth, rounded leaf shape; The dragon fruit has a small, rounded top; The object is relatively flat; The dragon fruit is thin and elongated",
+      "exact_match": false,
+      "relaxed_match": false,
+      "is_shape_mating": false,
+      "metadata": {
+        "source_paths": [
+          "Dataset/deform_raw_denoise/2.ply"
+        ],
+        "archive_keys": [
+          "Leafdf25980624a555f1"
+        ],
+        "subset": "Single",
+        "pair_kind": "SingleObjectDescription",
+        "pairing_status": "NotApplicable",
+        "order": "",
+        "reference_status": "Unlabeled",
+        "name_stem": "",
+        "color_policy": "SourceRgbOrTextureWithGrayFallback",
+        "gray_fallback_points": [
+          0
+        ],
+        "study_input": "SingleB",
+        "prompt_variant": "Original",
+        "repeat": 1,
+        "sampling_seed": 20261019,
+        "study_same_object_truth": false
+      }
+    },
+    {
+      "sample_index": 7,
+      "object_ids": [
+        "LeafPointClouds.npz::Leafdf25980624a555f1"
+      ],
+      "question": "<point>\nDescribe the geometry of the object. Focus on the outline, elongation, bending, curling, and twisting. Avoid unsupported claims about species, health, or surface finish.",
+      "ground_truth": "",
+      "answer": null,
+      "prediction": "The object is shaped like a leaf; The object is a leaf; It is smaller in size; The object is not a fruit; It is not as long; The object has a stem",
+      "exact_match": false,
+      "relaxed_match": false,
+      "is_shape_mating": false,
+      "metadata": {
+        "source_paths": [
+          "Dataset/deform_raw_denoise/2.ply"
+        ],
+        "archive_keys": [
+          "Leafdf25980624a555f1"
+        ],
+        "subset": "Single",
+        "pair_kind": "SingleObjectDescription",
+        "pairing_status": "NotApplicable",
+        "order": "",
+        "reference_status": "Unlabeled",
+        "name_stem": "",
+        "color_policy": "SourceRgbOrTextureWithGrayFallback",
+        "gray_fallback_points": [
+          0
+        ],
+        "study_input": "SingleB",
+        "prompt_variant": "Original",
+        "repeat": 2,
+        "sampling_seed": 20261020,
+        "study_same_object_truth": false
+      }
+    },
+    {
+      "sample_index": 8,
+      "object_ids": [
+        "LeafPointClouds.npz::Leafdf25980624a555f1"
+      ],
+      "question": "<point>\nDescribe only observable geometry of this point cloud in at most three short sentences. Discuss outline, elongation, and out-of-plane bending or twisting only when supported. Do not infer object identity, function, surrounding objects, or unseen parts. Say uncertain when evidence is insufficient. Do not compare it with an unseen object.",
+      "ground_truth": "",
+      "answer": null,
+      "prediction": "The leaf is larger; The leaf is more rounded; The leaf has a petioleon shape; It has a thinner stem; There is no visible trunk; The leaf is detached from the plant",
+      "exact_match": false,
+      "relaxed_match": false,
+      "is_shape_mating": false,
+      "metadata": {
+        "source_paths": [
+          "Dataset/deform_raw_denoise/2.ply"
+        ],
+        "archive_keys": [
+          "Leafdf25980624a555f1"
+        ],
+        "subset": "Single",
+        "pair_kind": "SingleObjectDescription",
+        "pairing_status": "NotApplicable",
+        "order": "",
+        "reference_status": "Unlabeled",
+        "name_stem": "",
+        "color_policy": "SourceRgbOrTextureWithGrayFallback",
+        "gray_fallback_points": [
+          0
+        ],
+        "study_input": "SingleB",
+        "prompt_variant": "GeometryOnly",
+        "repeat": 1,
+        "sampling_seed": 20261019,
+        "study_same_object_truth": false
+      }
+    },
+    {
+      "sample_index": 9,
+      "object_ids": [
+        "LeafPointClouds.npz::Leafdf25980624a555f1"
+      ],
+      "question": "<point>\nDescribe only observable geometry of this point cloud in at most three short sentences. Discuss outline, elongation, and out-of-plane bending or twisting only when supported. Do not infer object identity, function, surrounding objects, or unseen parts. Say uncertain when evidence is insufficient. Do not compare it with an unseen object.",
+      "ground_truth": "",
+      "answer": null,
+      "prediction": "The leaf is larger; The leaf is more rounded; It looks like a banana; The leaf is hanging; It is a single serving piece; There are no additional parts",
+      "exact_match": false,
+      "relaxed_match": false,
+      "is_shape_mating": false,
+      "metadata": {
+        "source_paths": [
+          "Dataset/deform_raw_denoise/2.ply"
+        ],
+        "archive_keys": [
+          "Leafdf25980624a555f1"
+        ],
+        "subset": "Single",
+        "pair_kind": "SingleObjectDescription",
+        "pairing_status": "NotApplicable",
+        "order": "",
+        "reference_status": "Unlabeled",
+        "name_stem": "",
+        "color_policy": "SourceRgbOrTextureWithGrayFallback",
+        "gray_fallback_points": [
+          0
+        ],
+        "study_input": "SingleB",
+        "prompt_variant": "GeometryOnly",
+        "repeat": 2,
+        "sampling_seed": 20261020,
+        "study_same_object_truth": false
+      }
+    },
+    {
+      "sample_index": 10,
+      "object_ids": [
+        "LeafPointClouds.npz::Leafdf25980624a555f1"
+      ],
+      "question": "<point>\nThe input is a point cloud of a plant leaf. Describe only observable geometry of this point cloud in at most three short sentences. Discuss outline, elongation, and out-of-plane bending or twisting only when supported. Do not infer object identity, function, surrounding objects, or unseen parts. Say uncertain when evidence is insufficient. Do not compare it with an unseen object.",
+      "ground_truth": "",
+      "answer": null,
+      "prediction": "The leaf is attached to a stem; The leaf is rounder; The leaf is asymmetrical; The leaf is not flat; The leaf has a petioleon; The leaf has a point at the end",
+      "exact_match": false,
+      "relaxed_match": false,
+      "is_shape_mating": false,
+      "metadata": {
+        "source_paths": [
+          "Dataset/deform_raw_denoise/2.ply"
+        ],
+        "archive_keys": [
+          "Leafdf25980624a555f1"
+        ],
+        "subset": "Single",
+        "pair_kind": "SingleObjectDescription",
+        "pairing_status": "NotApplicable",
+        "order": "",
+        "reference_status": "Unlabeled",
+        "name_stem": "",
+        "color_policy": "SourceRgbOrTextureWithGrayFallback",
+        "gray_fallback_points": [
+          0
+        ],
+        "study_input": "SingleB",
+        "prompt_variant": "LeafContext",
+        "repeat": 1,
+        "sampling_seed": 20261019,
+        "study_same_object_truth": false
+      }
+    },
+    {
+      "sample_index": 11,
+      "object_ids": [
+        "LeafPointClouds.npz::Leafdf25980624a555f1"
+      ],
+      "question": "<point>\nThe input is a point cloud of a plant leaf. Describe only observable geometry of this point cloud in at most three short sentences. Discuss outline, elongation, and out-of-plane bending or twisting only when supported. Do not infer object identity, function, surrounding objects, or unseen parts. Say uncertain when evidence is insufficient. Do not compare it with an unseen object.",
+      "ground_truth": "",
+      "answer": null,
+      "prediction": "The leaf is attached to a stem; The leaf is round; It is smaller in size; The leaf has a petioleon shape; The leaf does not have a long stem; It has no branches",
+      "exact_match": false,
+      "relaxed_match": false,
+      "is_shape_mating": false,
+      "metadata": {
+        "source_paths": [
+          "Dataset/deform_raw_denoise/2.ply"
+        ],
+        "archive_keys": [
+          "Leafdf25980624a555f1"
+        ],
+        "subset": "Single",
+        "pair_kind": "SingleObjectDescription",
+        "pairing_status": "NotApplicable",
+        "order": "",
+        "reference_status": "Unlabeled",
+        "name_stem": "",
+        "color_policy": "SourceRgbOrTextureWithGrayFallback",
+        "gray_fallback_points": [
+          0
+        ],
+        "study_input": "SingleB",
+        "prompt_variant": "LeafContext",
+        "repeat": 2,
+        "sampling_seed": 20261020,
+        "study_same_object_truth": false
+      }
+    },
+    {
+      "sample_index": 12,
+      "object_ids": [
+        "LeafPointClouds.npz::Leaf697f4704c596cd47",
+        "LeafPointClouds.npz::Leafdf25980624a555f1"
+      ],
+      "question": "<point> <point>\nDescribe the geometry of Object 1 and Object 2, then compare their main shape differences. Focus on the outline, elongation, bending, curling, and twisting. Avoid unsupported claims about species, health, or surface finish.",
+      "ground_truth": "",
+      "answer": null,
+      "prediction": "The first object has a more rounded outline, while the second has a more elongated form; The first object appears to be a leaf with a fuller shape, while the second resembles a more leaf-like seed; The first object is smaller, suggesting it is a young leaf; The second object has a thinner, more delicate shape",
+      "exact_match": false,
+      "relaxed_match": false,
+      "is_shape_mating": false,
+      "metadata": {
+        "source_paths": [
+          "Dataset/base_shape/2.obj",
+          "Dataset/deform_raw_denoise/2.ply"
+        ],
+        "archive_keys": [
+          "Leaf697f4704c596cd47",
+          "Leafdf25980624a555f1"
+        ],
+        "subset": "PairSameName",
+        "pair_kind": "ShapeComparison",
+        "pairing_status": "Unverified",
+        "order": "AB",
+        "reference_status": "Unlabeled",
+        "name_stem": "2",
+        "color_policy": "SourceRgbOrTextureWithGrayFallback",
+        "gray_fallback_points": [
+          8192,
+          0
+        ],
+        "study_input": "DifferentInputs",
+        "prompt_variant": "Original",
+        "repeat": 1,
+        "sampling_seed": 20261019,
+        "study_same_object_truth": false
+      }
+    },
+    {
+      "sample_index": 13,
+      "object_ids": [
+        "LeafPointClouds.npz::Leaf697f4704c596cd47",
+        "LeafPointClouds.npz::Leafdf25980624a555f1"
+      ],
+      "question": "<point> <point>\nDescribe the geometry of Object 1 and Object 2, then compare their main shape differences. Focus on the outline, elongation, bending, curling, and twisting. Avoid unsupported claims about species, health, or surface finish.",
+      "ground_truth": "",
+      "answer": null,
+      "prediction": "The first object has a more rounded outline, while the second has a more elongated form; The first object resembles a leaf, while the second object is a seed; The first object is typically found on trees, while the second is often seen on plants; The first object has a wider outline, compared to the more narrow shape of the second object",
+      "exact_match": false,
+      "relaxed_match": false,
+      "is_shape_mating": false,
+      "metadata": {
+        "source_paths": [
+          "Dataset/base_shape/2.obj",
+          "Dataset/deform_raw_denoise/2.ply"
+        ],
+        "archive_keys": [
+          "Leaf697f4704c596cd47",
+          "Leafdf25980624a555f1"
+        ],
+        "subset": "PairSameName",
+        "pair_kind": "ShapeComparison",
+        "pairing_status": "Unverified",
+        "order": "AB",
+        "reference_status": "Unlabeled",
+        "name_stem": "2",
+        "color_policy": "SourceRgbOrTextureWithGrayFallback",
+        "gray_fallback_points": [
+          8192,
+          0
+        ],
+        "study_input": "DifferentInputs",
+        "prompt_variant": "Original",
+        "repeat": 2,
+        "sampling_seed": 20261020,
+        "study_same_object_truth": false
+      }
+    },
+    {
+      "sample_index": 14,
+      "object_ids": [
+        "LeafPointClouds.npz::Leaf697f4704c596cd47",
+        "LeafPointClouds.npz::Leafdf25980624a555f1"
+      ],
+      "question": "<point> <point>\nCompare only the observable geometry of Object 1 and Object 2. First state whether they appear geometrically identical, similar, or different. They may be identical. Then give at most three supported similarities or differences. If no reliable difference is visible, say so. Do not infer object identity, function, surroundings, or unseen parts.",
+      "ground_truth": "",
+      "answer": null,
+      "prediction": "The leaf is larger; The leaf is rounder; It has a thinner stem; There is no flower; It has a thinner leaf blade; The environment is more rounded",
+      "exact_match": false,
+      "relaxed_match": false,
+      "is_shape_mating": false,
+      "metadata": {
+        "source_paths": [
+          "Dataset/base_shape/2.obj",
+          "Dataset/deform_raw_denoise/2.ply"
+        ],
+        "archive_keys": [
+          "Leaf697f4704c596cd47",
+          "Leafdf25980624a555f1"
+        ],
+        "subset": "PairSameName",
+        "pair_kind": "ShapeComparison",
+        "pairing_status": "Unverified",
+        "order": "AB",
+        "reference_status": "Unlabeled",
+        "name_stem": "2",
+        "color_policy": "SourceRgbOrTextureWithGrayFallback",
+        "gray_fallback_points": [
+          8192,
+          0
+        ],
+        "study_input": "DifferentInputs",
+        "prompt_variant": "GeometryOnly",
+        "repeat": 1,
+        "sampling_seed": 20261019,
+        "study_same_object_truth": false
+      }
+    },
+    {
+      "sample_index": 15,
+      "object_ids": [
+        "LeafPointClouds.npz::Leaf697f4704c596cd47",
+        "LeafPointClouds.npz::Leafdf25980624a555f1"
+      ],
+      "question": "<point> <point>\nCompare only the observable geometry of Object 1 and Object 2. First state whether they appear geometrically identical, similar, or different. They may be identical. Then give at most three supported similarities or differences. If no reliable difference is visible, say so. Do not infer object identity, function, surroundings, or unseen parts.",
+      "ground_truth": "",
+      "answer": null,
+      "prediction": "The first object has a stick attached to it, while the second object does not; The first object is shaped like a leaf, while the second object has a more rounded, insect-like shape; The first object is smaller; The first object has a flat, circular body, while the second object has a more elongated, cylindrical body",
+      "exact_match": false,
+      "relaxed_match": false,
+      "is_shape_mating": false,
+      "metadata": {
+        "source_paths": [
+          "Dataset/base_shape/2.obj",
+          "Dataset/deform_raw_denoise/2.ply"
+        ],
+        "archive_keys": [
+          "Leaf697f4704c596cd47",
+          "Leafdf25980624a555f1"
+        ],
+        "subset": "PairSameName",
+        "pair_kind": "ShapeComparison",
+        "pairing_status": "Unverified",
+        "order": "AB",
+        "reference_status": "Unlabeled",
+        "name_stem": "2",
+        "color_policy": "SourceRgbOrTextureWithGrayFallback",
+        "gray_fallback_points": [
+          8192,
+          0
+        ],
+        "study_input": "DifferentInputs",
+        "prompt_variant": "GeometryOnly",
+        "repeat": 2,
+        "sampling_seed": 20261020,
+        "study_same_object_truth": false
+      }
+    },
+    {
+      "sample_index": 16,
+      "object_ids": [
+        "LeafPointClouds.npz::Leaf697f4704c596cd47",
+        "LeafPointClouds.npz::Leafdf25980624a555f1"
+      ],
+      "question": "<point> <point>\nBoth inputs are point clouds of plant leaves. Compare only the observable geometry of Object 1 and Object 2. First state whether they appear geometrically identical, similar, or different. They may be identical. Then give at most three supported similarities or differences. If no reliable difference is visible, say so. Do not infer object identity, function, surroundings, or unseen parts.",
+      "ground_truth": "",
+      "answer": null,
+      "prediction": "The leaf is larger; The leaf is hanging; It is a leaf; There is no stem; It has no petals; There is no flower",
+      "exact_match": false,
+      "relaxed_match": false,
+      "is_shape_mating": false,
+      "metadata": {
+        "source_paths": [
+          "Dataset/base_shape/2.obj",
+          "Dataset/deform_raw_denoise/2.ply"
+        ],
+        "archive_keys": [
+          "Leaf697f4704c596cd47",
+          "Leafdf25980624a555f1"
+        ],
+        "subset": "PairSameName",
+        "pair_kind": "ShapeComparison",
+        "pairing_status": "Unverified",
+        "order": "AB",
+        "reference_status": "Unlabeled",
+        "name_stem": "2",
+        "color_policy": "SourceRgbOrTextureWithGrayFallback",
+        "gray_fallback_points": [
+          8192,
+          0
+        ],
+        "study_input": "DifferentInputs",
+        "prompt_variant": "LeafContext",
+        "repeat": 1,
+        "sampling_seed": 20261019,
+        "study_same_object_truth": false
+      }
+    },
+    {
+      "sample_index": 17,
+      "object_ids": [
+        "LeafPointClouds.npz::Leaf697f4704c596cd47",
+        "LeafPointClouds.npz::Leafdf25980624a555f1"
+      ],
+      "question": "<point> <point>\nBoth inputs are point clouds of plant leaves. Compare only the observable geometry of Object 1 and Object 2. First state whether they appear geometrically identical, similar, or different. They may be identical. Then give at most three supported similarities or differences. If no reliable difference is visible, say so. Do not infer object identity, function, surroundings, or unseen parts.",
+      "ground_truth": "",
+      "answer": null,
+      "prediction": "The first object has a more elongated shape; The leaf is smaller; The second object has a rounder shape; The leaf is more rounded; The second object has a thinner stem; There is a stem under the leaf",
+      "exact_match": false,
+      "relaxed_match": false,
+      "is_shape_mating": false,
+      "metadata": {
+        "source_paths": [
+          "Dataset/base_shape/2.obj",
+          "Dataset/deform_raw_denoise/2.ply"
+        ],
+        "archive_keys": [
+          "Leaf697f4704c596cd47",
+          "Leafdf25980624a555f1"
+        ],
+        "subset": "PairSameName",
+        "pair_kind": "ShapeComparison",
+        "pairing_status": "Unverified",
+        "order": "AB",
+        "reference_status": "Unlabeled",
+        "name_stem": "2",
+        "color_policy": "SourceRgbOrTextureWithGrayFallback",
+        "gray_fallback_points": [
+          8192,
+          0
+        ],
+        "study_input": "DifferentInputs",
+        "prompt_variant": "LeafContext",
+        "repeat": 2,
+        "sampling_seed": 20261020,
+        "study_same_object_truth": false
+      }
+    },
+    {
+      "sample_index": 18,
+      "object_ids": [
+        "LeafPointClouds.npz::Leaf3122a3d14910427e",
+        "LeafPointClouds.npz::Leaf3122a3d14910427e"
+      ],
+      "question": "<point> <point>\nDescribe the geometry of Object 1 and Object 2, then compare their main shape differences. Focus on the outline, elongation, bending, curling, and twisting. Avoid unsupported claims about species, health, or surface finish.",
+      "ground_truth": "",
+      "answer": null,
+      "prediction": "The first object has a more rounded, curved shape; The second object is more elongated and pointed; The first object appears to be more bulbous; The second object has a more slender, thread-like shape; The first object seems to have a more textured surface; The second object has a smoother, more polished appearance",
+      "exact_match": false,
+      "relaxed_match": false,
+      "is_shape_mating": false,
+      "metadata": {
+        "source_paths": [
+          "Dataset/deform_raw_denoise/14.ply",
+          "Dataset/deform_raw_denoise/14.ply"
+        ],
+        "archive_keys": [
+          "Leaf3122a3d14910427e",
+          "Leaf3122a3d14910427e"
+        ],
+        "subset": "SameObjectControl",
+        "pair_kind": "SameObjectControl",
+        "pairing_status": "VerifiedSameFile",
+        "order": "AB",
+        "reference_status": "Unlabeled",
+        "name_stem": "14",
+        "color_policy": "SourceRgbOrTextureWithGrayFallback",
+        "gray_fallback_points": [
+          0,
+          0
+        ],
+        "study_input": "SameObjectControl",
+        "prompt_variant": "Original",
+        "repeat": 1,
+        "sampling_seed": 20261019,
+        "study_same_object_truth": true
+      }
+    },
+    {
+      "sample_index": 19,
+      "object_ids": [
+        "LeafPointClouds.npz::Leaf3122a3d14910427e",
+        "LeafPointClouds.npz::Leaf3122a3d14910427e"
+      ],
+      "question": "<point> <point>\nDescribe the geometry of Object 1 and Object 2, then compare their main shape differences. Focus on the outline, elongation, bending, curling, and twisting. Avoid unsupported claims about species, health, or surface finish.",
+      "ground_truth": "",
+      "answer": null,
+      "prediction": "The first object has a more rounded, curved shape; The second object is more elongated and pointed; The first object appears to be more bulbous; The second object has a more slender, elongated form; The first object looks like it has a protective coating; The second object has a thinner, more delicate shape",
+      "exact_match": false,
+      "relaxed_match": false,
+      "is_shape_mating": false,
+      "metadata": {
+        "source_paths": [
+          "Dataset/deform_raw_denoise/14.ply",
+          "Dataset/deform_raw_denoise/14.ply"
+        ],
+        "archive_keys": [
+          "Leaf3122a3d14910427e",
+          "Leaf3122a3d14910427e"
+        ],
+        "subset": "SameObjectControl",
+        "pair_kind": "SameObjectControl",
+        "pairing_status": "VerifiedSameFile",
+        "order": "AB",
+        "reference_status": "Unlabeled",
+        "name_stem": "14",
+        "color_policy": "SourceRgbOrTextureWithGrayFallback",
+        "gray_fallback_points": [
+          0,
+          0
+        ],
+        "study_input": "SameObjectControl",
+        "prompt_variant": "Original",
+        "repeat": 2,
+        "sampling_seed": 20261020,
+        "study_same_object_truth": true
+      }
+    },
+    {
+      "sample_index": 20,
+      "object_ids": [
+        "LeafPointClouds.npz::Leaf3122a3d14910427e",
+        "LeafPointClouds.npz::Leaf3122a3d14910427e"
+      ],
+      "question": "<point> <point>\nCompare only the observable geometry of Object 1 and Object 2. First state whether they appear geometrically identical, similar, or different. They may be identical. Then give at most three supported similarities or differences. If no reliable difference is visible, say so. Do not infer object identity, function, surroundings, or unseen parts.",
+      "ground_truth": "",
+      "answer": null,
+      "prediction": "The first object has a narrower base; The tip of the leaf is more pointed; The second object has a wider wing span; The leaves are more jagged in appearance; The first object has a more pointed leaf; The plant is less symmetrical",
+      "exact_match": false,
+      "relaxed_match": false,
+      "is_shape_mating": false,
+      "metadata": {
+        "source_paths": [
+          "Dataset/deform_raw_denoise/14.ply",
+          "Dataset/deform_raw_denoise/14.ply"
+        ],
+        "archive_keys": [
+          "Leaf3122a3d14910427e",
+          "Leaf3122a3d14910427e"
+        ],
+        "subset": "SameObjectControl",
+        "pair_kind": "SameObjectControl",
+        "pairing_status": "VerifiedSameFile",
+        "order": "AB",
+        "reference_status": "Unlabeled",
+        "name_stem": "14",
+        "color_policy": "SourceRgbOrTextureWithGrayFallback",
+        "gray_fallback_points": [
+          0,
+          0
+        ],
+        "study_input": "SameObjectControl",
+        "prompt_variant": "GeometryOnly",
+        "repeat": 1,
+        "sampling_seed": 20261019,
+        "study_same_object_truth": true
+      }
+    },
+    {
+      "sample_index": 21,
+      "object_ids": [
+        "LeafPointClouds.npz::Leaf3122a3d14910427e",
+        "LeafPointClouds.npz::Leaf3122a3d14910427e"
+      ],
+      "question": "<point> <point>\nCompare only the observable geometry of Object 1 and Object 2. First state whether they appear geometrically identical, similar, or different. They may be identical. Then give at most three supported similarities or differences. If no reliable difference is visible, say so. Do not infer object identity, function, surroundings, or unseen parts.",
+      "ground_truth": "",
+      "answer": null,
+      "prediction": "The first object has a narrower base; The tip of the leaf is more pointed; The second object has a wider wing span; The leaf is shaped like a banana; The second object has a longer tail; The leaf is attached to the plant by a stem",
+      "exact_match": false,
+      "relaxed_match": false,
+      "is_shape_mating": false,
+      "metadata": {
+        "source_paths": [
+          "Dataset/deform_raw_denoise/14.ply",
+          "Dataset/deform_raw_denoise/14.ply"
+        ],
+        "archive_keys": [
+          "Leaf3122a3d14910427e",
+          "Leaf3122a3d14910427e"
+        ],
+        "subset": "SameObjectControl",
+        "pair_kind": "SameObjectControl",
+        "pairing_status": "VerifiedSameFile",
+        "order": "AB",
+        "reference_status": "Unlabeled",
+        "name_stem": "14",
+        "color_policy": "SourceRgbOrTextureWithGrayFallback",
+        "gray_fallback_points": [
+          0,
+          0
+        ],
+        "study_input": "SameObjectControl",
+        "prompt_variant": "GeometryOnly",
+        "repeat": 2,
+        "sampling_seed": 20261020,
+        "study_same_object_truth": true
+      }
+    },
+    {
+      "sample_index": 22,
+      "object_ids": [
+        "LeafPointClouds.npz::Leaf3122a3d14910427e",
+        "LeafPointClouds.npz::Leaf3122a3d14910427e"
+      ],
+      "question": "<point> <point>\nBoth inputs are point clouds of plant leaves. Compare only the observable geometry of Object 1 and Object 2. First state whether they appear geometrically identical, similar, or different. They may be identical. Then give at most three supported similarities or differences. If no reliable difference is visible, say so. Do not infer object identity, function, surroundings, or unseen parts.",
+      "ground_truth": "",
+      "answer": null,
+      "prediction": "The first object has a tail, while the second object has no such feature; The first object has a more complete metamorphous shape, while the second object is more leaf-like; The first object appears to be larger; The first object has a thicker body, while the second object is more thin; The first object has a more blunt shape",
+      "exact_match": false,
+      "relaxed_match": false,
+      "is_shape_mating": false,
+      "metadata": {
+        "source_paths": [
+          "Dataset/deform_raw_denoise/14.ply",
+          "Dataset/deform_raw_denoise/14.ply"
+        ],
+        "archive_keys": [
+          "Leaf3122a3d14910427e",
+          "Leaf3122a3d14910427e"
+        ],
+        "subset": "SameObjectControl",
+        "pair_kind": "SameObjectControl",
+        "pairing_status": "VerifiedSameFile",
+        "order": "AB",
+        "reference_status": "Unlabeled",
+        "name_stem": "14",
+        "color_policy": "SourceRgbOrTextureWithGrayFallback",
+        "gray_fallback_points": [
+          0,
+          0
+        ],
+        "study_input": "SameObjectControl",
+        "prompt_variant": "LeafContext",
+        "repeat": 1,
+        "sampling_seed": 20261019,
+        "study_same_object_truth": true
+      }
+    },
+    {
+      "sample_index": 23,
+      "object_ids": [
+        "LeafPointClouds.npz::Leaf3122a3d14910427e",
+        "LeafPointClouds.npz::Leaf3122a3d14910427e"
+      ],
+      "question": "<point> <point>\nBoth inputs are point clouds of plant leaves. Compare only the observable geometry of Object 1 and Object 2. First state whether they appear geometrically identical, similar, or different. They may be identical. Then give at most three supported similarities or differences. If no reliable difference is visible, say so. Do not infer object identity, function, surroundings, or unseen parts.",
+      "ground_truth": "",
+      "answer": null,
+      "prediction": "The first object has a tail, while the second object has no such feature; The first object has a more complete metamorphous shape; The second object is more leaf-like in appearance; The first object has a thicker body, while the second object is thinner; The second object has a narrower waist",
+      "exact_match": false,
+      "relaxed_match": false,
+      "is_shape_mating": false,
+      "metadata": {
+        "source_paths": [
+          "Dataset/deform_raw_denoise/14.ply",
+          "Dataset/deform_raw_denoise/14.ply"
+        ],
+        "archive_keys": [
+          "Leaf3122a3d14910427e",
+          "Leaf3122a3d14910427e"
+        ],
+        "subset": "SameObjectControl",
+        "pair_kind": "SameObjectControl",
+        "pairing_status": "VerifiedSameFile",
+        "order": "AB",
+        "reference_status": "Unlabeled",
+        "name_stem": "14",
+        "color_policy": "SourceRgbOrTextureWithGrayFallback",
+        "gray_fallback_points": [
+          0,
+          0
+        ],
+        "study_input": "SameObjectControl",
+        "prompt_variant": "LeafContext",
+        "repeat": 2,
+        "sampling_seed": 20261020,
+        "study_same_object_truth": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Editors and OS
+.vscode/*
+!.vscode/settings.json
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Local Claude configuration; kept on disk, not published
+.claude/
+
+# Logs and local backups
+*.log
+DatasetProcessed/Backup_*/
+
+# 27 GB of model weights; download separately
+BeyondSingleObject/checkpoints/
+
+# 2.2 GB raw dataset; distribute separately (Release, Zenodo, cloud drive)
+Dataset/

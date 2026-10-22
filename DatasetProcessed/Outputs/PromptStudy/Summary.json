@@ -1,0 +1,20 @@
+{
+  "Cases": 24,
+  "SameObjectControlCases": 6,
+  "SameObjectControlManualReview": "All six outputs asserted geometric differences for identical source arrays; this is a small selected control test, not a dataset accuracy estimate.",
+  "ShapeProxies": [
+    {
+      "Input": "SingleA",
+      "Source": "Dataset/base_shape/2.obj",
+      "PrincipalAxisElongation": 1.2403577925592462,
+      "RelativeThickness": 0.0
+    },
+    {
+      "Input": "SingleB",
+      "Source": "Dataset/deform_raw_denoise/2.ply",
+      "PrincipalAxisElongation": 1.333320960126685,
+      "RelativeThickness": 0.037229139440461544
+    }
+  ],
+  "OriginalInferenceUnchanged": true
+}

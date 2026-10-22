@@ -1,0 +1,13 @@
+{
+  "Samples": 50,
+  "Clouds": 100,
+  "Results": 200,
+  "SingleResults": 100,
+  "PairResults": 100,
+  "SkippedPredictions": 0,
+  "MissingPredictionReferences": 0,
+  "PointCount": 8192,
+  "BinaryBytes": 19660800,
+  "CompressedBytes": 9667855,
+  "InferenceSha256": "962151d2b4147599eb5c9911d7b8a8f1197b64264dd31768e2d17ccd94e68d2f"
+}
